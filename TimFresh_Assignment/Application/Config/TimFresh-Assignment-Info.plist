@@ -2,10 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IMAGE_BASE_URL</key>
-	<string>https://d1afu5va4iy6dc.cloudfront.net/</string>
 	<key>BASE_URL</key>
 	<string>https://smapistage.teamfresh.co.kr</string>
+	<key>IMAGE_BASE_URL</key>
+	<string>https://d1afu5va4iy6dc.cloudfront.net/</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Pretendard-Regular.otf</string>
@@ -21,10 +26,5 @@
 		<string>SpoqaHanSansNeo-Medium.otf</string>
 		<string>SpoqaHanSansNeo-Regular.otf</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

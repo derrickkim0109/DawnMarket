@@ -30,6 +30,7 @@
 		909BC9A82B079CE600D9E322 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 909BC99F2B079CE600D9E322 /* Pretendard-ExtraLight.otf */; };
 		909BC9A92B079CE600D9E322 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 909BC9A02B079CE600D9E322 /* Pretendard-SemiBold.otf */; };
 		909BC9AB2B079CEE00D9E322 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909BC9AA2B079CEE00D9E322 /* Font.swift */; };
+		90C2CF1F2B07B43300B3887F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C2CF1E2B07B43300B3887F /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		909BC99F2B079CE600D9E322 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		909BC9A02B079CE600D9E322 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		909BC9AA2B079CEE00D9E322 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		90C2CF1E2B07B43300B3887F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				909BC9962B07806A00D9E322 /* Fonts */,
 				901C46FF2B0774F300E7AF40 /* Assets.xcassets */,
+				90C2CF1E2B07B43300B3887F /* Launch Screen.storyboard */,
 				901C47012B0774F300E7AF40 /* Preview Content */,
 			);
 			path = Resources;
@@ -378,6 +381,7 @@
 				909BC9A92B079CE600D9E322 /* Pretendard-SemiBold.otf in Resources */,
 				901C47032B0774F300E7AF40 /* Preview Assets.xcassets in Resources */,
 				909BC9A62B079CE600D9E322 /* Pretendard-Bold.otf in Resources */,
+				90C2CF1F2B07B43300B3887F /* Launch Screen.storyboard in Resources */,
 				9058EE022B07A38B00FEE371 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				9058EE002B07A38B00FEE371 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				909BC9A82B079CE600D9E322 /* Pretendard-ExtraLight.otf in Resources */,
@@ -539,10 +543,11 @@
 				DEVELOPMENT_TEAM = GDKDK6KP5Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TimFresh-Assignment-Info.plist";
+				INFOPLIST_FILE = "TimFresh_Assignment/Application/config//TimFresh-Assignment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,10 +573,11 @@
 				DEVELOPMENT_TEAM = GDKDK6KP5Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TimFresh-Assignment-Info.plist";
+				INFOPLIST_FILE = "TimFresh_Assignment/Application/config//TimFresh-Assignment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
