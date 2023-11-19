@@ -241,6 +241,8 @@
 		908CBABF2B0A58E200653F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				908CBACF2B0A58E200653F66 /* Image.swift */,
+				908CBAD02B0A58E200653F66 /* Font.swift */,
 				908CBAC02B0A58E200653F66 /* Assets.xcassets */,
 				908CBAC12B0A58E200653F66 /* Preview Content */,
 				908CBAC32B0A58E200653F66 /* Launch Screen.storyboard */,
@@ -261,8 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				908CBAC52B0A58E200653F66 /* Pretendard */,
-				908CBACF2B0A58E200653F66 /* Image.swift */,
-				908CBAD02B0A58E200653F66 /* Font.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -481,7 +481,6 @@
 			children = (
 				908CBB052B0A58E300653F66 /* DTO */,
 				908CBB192B0A58E300653F66 /* DataSource */,
-				908CBB282B0A58E300653F66 /* Repository */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -556,6 +555,7 @@
 		908CBB192B0A58E300653F66 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				908CBB282B0A58E300653F66 /* Repository */,
 				908CBB1A2B0A58E300653F66 /* Network */,
 			);
 			path = DataSource;
