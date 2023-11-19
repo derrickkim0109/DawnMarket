@@ -89,10 +89,8 @@
 		908CBB9E2B0A58E300653F66 /* PaginationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB3F2B0A58E300653F66 /* PaginationModel.swift */; };
 		908CBB9F2B0A58E300653F66 /* AppDisplayClassInfoFetchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB412B0A58E300653F66 /* AppDisplayClassInfoFetchModel.swift */; };
 		908CBBA02B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB422B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift */; };
-		908CBBA32B0A58E300653F66 /* ContextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB4A2B0A58E300653F66 /* ContextPreview.swift */; };
 		908CBBAE2B0A5E0000653F66 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBBA72B0A5E0000653F66 /* CategoryViewModel.swift */; };
 		908CBBAF2B0A5E0000653F66 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBBAA2B0A5E0000653F66 /* CategoryView.swift */; };
-		908CBBB02B0A5E0000653F66 /* ContextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBBAC2B0A5E0000653F66 /* ContextPreview.swift */; };
 		909BC9772B077C6300D9E322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9762B077C6300D9E322 /* Kingfisher */; };
 		909BC97A2B077C7B00D9E322 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9792B077C7B00D9E322 /* CombineMoya */; };
 		909BC97C2B077C7B00D9E322 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97B2B077C7B00D9E322 /* Moya */; };
@@ -184,13 +182,8 @@
 		908CBB3F2B0A58E300653F66 /* PaginationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationModel.swift; sourceTree = "<group>"; };
 		908CBB412B0A58E300653F66 /* AppDisplayClassInfoFetchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchModel.swift; sourceTree = "<group>"; };
 		908CBB422B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchItemModel.swift; sourceTree = "<group>"; };
-		908CBB452B0A58E300653F66 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		908CBB482B0A58E300653F66 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		908CBB4A2B0A58E300653F66 /* ContextPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextPreview.swift; sourceTree = "<group>"; };
-		908CBB4B2B0A58E300653F66 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		908CBBA72B0A5E0000653F66 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		908CBBAA2B0A5E0000653F66 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
-		908CBBAC2B0A5E0000653F66 /* ContextPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -625,7 +618,6 @@
 			children = (
 				908CBBA52B0A5E0000653F66 /* SwiftUI */,
 				908CBB2E2B0A58E300653F66 /* Model */,
-				908CBB432B0A58E300653F66 /* SwiftUI */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -692,49 +684,6 @@
 			path = AppDisplayClassInfo;
 			sourceTree = "<group>";
 		};
-		908CBB432B0A58E300653F66 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB442B0A58E300653F66 /* ViewModel */,
-				908CBB462B0A58E300653F66 /* View */,
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		908CBB442B0A58E300653F66 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB452B0A58E300653F66 /* HomeViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		908CBB462B0A58E300653F66 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB472B0A58E300653F66 /* HomeView */,
-				908CBB492B0A58E300653F66 /* Common */,
-				908CBB4B2B0A58E300653F66 /* ContentView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		908CBB472B0A58E300653F66 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB482B0A58E300653F66 /* HomeView.swift */,
-			);
-			path = HomeView;
-			sourceTree = "<group>";
-		};
-		908CBB492B0A58E300653F66 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB4A2B0A58E300653F66 /* ContextPreview.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		908CBBA52B0A5E0000653F66 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,7 +721,6 @@
 		908CBBAB2B0A5E0000653F66 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				908CBBAC2B0A5E0000653F66 /* ContextPreview.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -932,13 +880,11 @@
 				908CBB912B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift in Sources */,
 				908CBB812B0A58E300653F66 /* AppGoodsInfoResponseDTO.swift in Sources */,
 				908CBB8A2B0A58E300653F66 /* AppGoodsInfoAPIService.swift in Sources */,
-				908CBBB02B0A5E0000653F66 /* ContextPreview.swift in Sources */,
 				908CBB582B0A58E300653F66 /* Image.swift in Sources */,
 				908CBB962B0A58E300653F66 /* AppMainQuickMenuFetchModel.swift in Sources */,
 				908CBB8C2B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift in Sources */,
 				908CBB5F2B0A58E300653F66 /* AppMainQuickMenuFetchItemEntity.swift in Sources */,
 				908CBB6F2B0A58E300653F66 /* AppGoodsInfoFetchUseCase.swift in Sources */,
-				908CBBA32B0A58E300653F66 /* ContextPreview.swift in Sources */,
 				908CBB932B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift in Sources */,
 				908CBB632B0A58E300653F66 /* AppDisplayClassInfoFetchEntity.swift in Sources */,
 				908CBB982B0A58E300653F66 /* AppSubDisplayClassInfoFetchModel.swift in Sources */,
