@@ -13,7 +13,6 @@ final class CategoryViewModel: ObservableObject {
     @Published private(set) var fetchedAppMainQuickMenuList: [AppMainQuickMenuFetchItemModel] = []
     @Published var showToast: Bool = false
     @Published var showErrorAlert: Bool = false
-    let publisher = PassthroughSubject<Void, Never>()
 
     var viewModelError: String?
 

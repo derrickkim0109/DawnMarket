@@ -21,13 +21,13 @@ struct ToastView<Content: View>: View {
                     Spacer()
 
                     HStack {
-
                         Spacer()
 
                         toastView()
 
                         Spacer()
                     }
+
                     Spacer()
                 }
                 .edgesIgnoringSafeArea(.all)
