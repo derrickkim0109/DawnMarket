@@ -11,10 +11,46 @@ struct CategoryView: View {
     @StateObject var viewModel: CategoryViewModel
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        NavigationStack {
+            ZStack {
+                ScrollView {
+                    VStack {
+                        CategoryHeaderView(viewModel: viewModel)
 
-#Preview {
-    CategoryView(viewModel: AppDIContainer().categoryViewDependencies())
+                        Spacer()
+
+                        if !viewModel.isEmptyFetchedAppDisplayClassList() {
+                            AppDisplayClassListView(viewModel: viewModel)
+                                .padding(.bottom, 40)
+
+                            Color.dividerViewBackgroundColor
+                                .frame(height: 8)
+
+                            Spacer()
+                        }
+
+                        if !viewModel.isEmptyFetchedAppMainQuickMenuList() {
+                            AppMainQuickMenuListView(viewModel: viewModel)
+                                .padding(.top, 10)
+
+                            Spacer()
+                        }
+                    }
+                    .onAppear {
+                        viewModel.viewWillAppear()
+                    }
+                    .showErrorAlert(
+                        isPresented: $viewModel.showErrorAlert,
+                        message: viewModel.viewModelError
+                    )
+                }
+                .padding(.bottom, 55)
+                
+                Spacer()
+                    .toast(isPresented: $viewModel.showToast, duration: 2) {
+                        Text("개발 예정")
+                    }
+            }
+        }
+    }
 }
