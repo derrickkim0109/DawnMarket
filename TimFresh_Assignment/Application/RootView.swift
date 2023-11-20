@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RootView: App {
+    private let appDIContainer: AppDIContainerInterface = AppDIContainer()
+
     var body: some Scene {
         WindowGroup {
-            CategoryView(viewModel: AppDIContainer().categoryViewDependencies())
+            AppTabBarView(appContainer: appDIContainer)
         }
     }
 }

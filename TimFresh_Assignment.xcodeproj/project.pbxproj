@@ -96,6 +96,19 @@
 		909BC97C2B077C7B00D9E322 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97B2B077C7B00D9E322 /* Moya */; };
 		909BC97E2B077C7B00D9E322 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97D2B077C7B00D9E322 /* ReactiveMoya */; };
 		909BC9802B077C7B00D9E322 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97F2B077C7B00D9E322 /* RxMoya */; };
+		90EFCE642B0AE04A006FE3C9 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE632B0AE04A006FE3C9 /* CustomTabBarView.swift */; };
+		90EFCE682B0AE3EE006FE3C9 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */; };
+		90EFCE6A2B0AE4F4006FE3C9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE692B0AE4F4006FE3C9 /* Color.swift */; };
+		90EFCE6C2B0AE654006FE3C9 /* TabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE6B2B0AE654006FE3C9 /* TabBarContainerView.swift */; };
+		90EFCE6F2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE6E2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift */; };
+		90EFCE712B0AE714006FE3C9 /* TabBarItemViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE702B0AE714006FE3C9 /* TabBarItemViewModifier.swift */; };
+		90EFCE732B0AE7BA006FE3C9 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE722B0AE7BA006FE3C9 /* AppTabBarView.swift */; };
+		90EFCE752B0AF8B1006FE3C9 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE742B0AF8B1006FE3C9 /* CategoryHeaderView.swift */; };
+		90EFCE792B0B0805006FE3C9 /* AppDisplayClassCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE782B0B0805006FE3C9 /* AppDisplayClassCellView.swift */; };
+		90EFCE7B2B0B0AE7006FE3C9 /* AppDisplayClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE7A2B0B0AE7006FE3C9 /* AppDisplayClassListView.swift */; };
+		90EFCE7F2B0B21D3006FE3C9 /* AppMainQuickMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE7E2B0B21D3006FE3C9 /* AppMainQuickMenuListView.swift */; };
+		90EFCE812B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE802B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift */; };
+		90EFCE832B0B30D4006FE3C9 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE822B0B30D4006FE3C9 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +197,19 @@
 		908CBB422B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchItemModel.swift; sourceTree = "<group>"; };
 		908CBBA72B0A5E0000653F66 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		908CBBAA2B0A5E0000653F66 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		90EFCE632B0AE04A006FE3C9 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
+		90EFCE692B0AE4F4006FE3C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		90EFCE6B2B0AE654006FE3C9 /* TabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContainerView.swift; sourceTree = "<group>"; };
+		90EFCE6E2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
+		90EFCE702B0AE714006FE3C9 /* TabBarItemViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemViewModifier.swift; sourceTree = "<group>"; };
+		90EFCE722B0AE7BA006FE3C9 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
+		90EFCE742B0AF8B1006FE3C9 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		90EFCE782B0B0805006FE3C9 /* AppDisplayClassCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassCellView.swift; sourceTree = "<group>"; };
+		90EFCE7A2B0B0AE7006FE3C9 /* AppDisplayClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassListView.swift; sourceTree = "<group>"; };
+		90EFCE7E2B0B21D3006FE3C9 /* AppMainQuickMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuListView.swift; sourceTree = "<group>"; };
+		90EFCE802B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuCellView.swift; sourceTree = "<group>"; };
+		90EFCE822B0B30D4006FE3C9 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +260,7 @@
 		908CBABF2B0A58E200653F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90EFCE692B0AE4F4006FE3C9 /* Color.swift */,
 				908CBACF2B0A58E200653F66 /* Image.swift */,
 				908CBAD02B0A58E200653F66 /* Font.swift */,
 				908CBAC02B0A58E200653F66 /* Assets.xcassets */,
@@ -311,8 +338,8 @@
 		908CBAD92B0A58E200653F66 /* AppMainQuickMenu */ = {
 			isa = PBXGroup;
 			children = (
-				908CBADA2B0A58E200653F66 /* AppMainQuickMenuFetchItemEntity.swift */,
 				908CBADB2B0A58E200653F66 /* AppMainQuickMenuFetchEntity.swift */,
+				908CBADA2B0A58E200653F66 /* AppMainQuickMenuFetchItemEntity.swift */,
 			);
 			path = AppMainQuickMenu;
 			sourceTree = "<group>";
@@ -320,8 +347,8 @@
 		908CBADC2B0A58E200653F66 /* AppDisplayClass */ = {
 			isa = PBXGroup;
 			children = (
-				908CBADD2B0A58E200653F66 /* AppDisplayClassInfoFetchItemEntity.swift */,
 				908CBADF2B0A58E200653F66 /* AppDisplayClassInfoFetchEntity.swift */,
+				908CBADD2B0A58E200653F66 /* AppDisplayClassInfoFetchItemEntity.swift */,
 			);
 			path = AppDisplayClass;
 			sourceTree = "<group>";
@@ -330,8 +357,8 @@
 			isa = PBXGroup;
 			children = (
 				908CBAE12B0A58E200653F66 /* AppDisplayClassInfoBySubDisplayClassFetchEntity.swift */,
-				908CBAE22B0A58E200653F66 /* AppSubDisplayClassInfoFetchItemEntity.swift */,
 				908CBAE32B0A58E200653F66 /* AppSubDisplayClassInfoFetchEntity.swift */,
+				908CBAE22B0A58E200653F66 /* AppSubDisplayClassInfoFetchItemEntity.swift */,
 			);
 			path = AppDisplaySubClass;
 			sourceTree = "<group>";
@@ -339,9 +366,9 @@
 		908CBAE42B0A58E200653F66 /* AppGoodsInfo */ = {
 			isa = PBXGroup;
 			children = (
+				908CBAE72B0A58E200653F66 /* AppGoodsInfoFetchEntity.swift */,
 				908CBAE52B0A58E200653F66 /* AppGoodsInfoFetchItemEntity.swift */,
 				908CBAE62B0A58E200653F66 /* PaginationEntity.swift */,
-				908CBAE72B0A58E200653F66 /* AppGoodsInfoFetchEntity.swift */,
 			);
 			path = AppGoodsInfo;
 			sourceTree = "<group>";
@@ -423,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				908CBAFA2B0A58E300653F66 /* LoadingIndicatorModifier.swift */,
+				90EFCE702B0AE714006FE3C9 /* TabBarItemViewModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -490,9 +518,9 @@
 		908CBB062B0A58E300653F66 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				908CBB0F2B0A58E300653F66 /* AppDisplayClass */,
 				908CBB072B0A58E300653F66 /* AppDisplayBySubClass */,
 				908CBB0C2B0A58E300653F66 /* AppMainQuickMenu */,
-				908CBB0F2B0A58E300653F66 /* AppDisplayClass */,
 				908CBB122B0A58E300653F66 /* AppGoodsInfo */,
 			);
 			path = Response;
@@ -557,11 +585,11 @@
 		908CBB1A2B0A58E300653F66 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				908CBB1B2B0A58E300653F66 /* AppDisplayBySubClass */,
+				908CBB252B0A58E300653F66 /* AppDisplayClassInfo */,
 				908CBB1E2B0A58E300653F66 /* AppMainQuickMenu */,
+				908CBB1B2B0A58E300653F66 /* AppDisplayBySubClass */,
 				908CBB212B0A58E300653F66 /* BaseAPIService.swift */,
 				908CBB222B0A58E300653F66 /* AppGoodsInfo */,
-				908CBB252B0A58E300653F66 /* AppDisplayClassInfo */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -605,10 +633,10 @@
 		908CBB282B0A58E300653F66 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift */,
 				908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */,
 				908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */,
 				908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */,
-				908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -626,10 +654,11 @@
 			isa = PBXGroup;
 			children = (
 				908CBB2F2B0A58E300653F66 /* ModelMapper */,
+				908CBB402B0A58E300653F66 /* AppDisplayClassInfo */,
 				908CBB342B0A58E300653F66 /* AppMainQuickMenu */,
 				908CBB372B0A58E300653F66 /* AppDisplaySubClasss */,
 				908CBB3B2B0A58E300653F66 /* AppGoodsInfo */,
-				908CBB402B0A58E300653F66 /* AppDisplayClassInfo */,
+				90EFCE6D2B0AE6AD006FE3C9 /* TabBar */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -657,9 +686,9 @@
 		908CBB372B0A58E300653F66 /* AppDisplaySubClasss */ = {
 			isa = PBXGroup;
 			children = (
+				908CBB3A2B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModel.swift */,
 				908CBB382B0A58E300653F66 /* AppSubDisplayClassInfoFetchModel.swift */,
 				908CBB392B0A58E300653F66 /* AppSubDisplayClassInfoFetchItemModel.swift */,
-				908CBB3A2B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModel.swift */,
 			);
 			path = AppDisplaySubClasss;
 			sourceTree = "<group>";
@@ -667,10 +696,10 @@
 		908CBB3B2B0A58E300653F66 /* AppGoodsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				908CBB3C2B0A58E300653F66 /* AppGoodsInfoFetchItemModel.swift */,
-				908CBB3D2B0A58E300653F66 /* SearchValueType.swift */,
 				908CBB3E2B0A58E300653F66 /* AppGoodsInfoFetchModel.swift */,
+				908CBB3C2B0A58E300653F66 /* AppGoodsInfoFetchItemModel.swift */,
 				908CBB3F2B0A58E300653F66 /* PaginationModel.swift */,
+				908CBB3D2B0A58E300653F66 /* SearchValueType.swift */,
 			);
 			path = AppGoodsInfo;
 			sourceTree = "<group>";
@@ -687,8 +716,8 @@
 		908CBBA52B0A5E0000653F66 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				908CBBA62B0A5E0000653F66 /* ViewModel */,
 				908CBBA82B0A5E0000653F66 /* View */,
+				908CBBA62B0A5E0000653F66 /* ViewModel */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -704,8 +733,9 @@
 		908CBBA82B0A5E0000653F66 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				908CBBA92B0A5E0000653F66 /* CategoryView */,
 				908CBBAB2B0A5E0000653F66 /* Common */,
+				90EFCE622B0AE03F006FE3C9 /* TabBar */,
+				908CBBA92B0A5E0000653F66 /* CategoryView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -714,6 +744,9 @@
 			isa = PBXGroup;
 			children = (
 				908CBBAA2B0A5E0000653F66 /* CategoryView.swift */,
+				90EFCE742B0AF8B1006FE3C9 /* CategoryHeaderView.swift */,
+				90EFCE7C2B0B0DC7006FE3C9 /* AppDisplayClass */,
+				90EFCE7D2B0B21BA006FE3C9 /* AppMainQuickMenu */,
 			);
 			path = CategoryView;
 			sourceTree = "<group>";
@@ -721,8 +754,46 @@
 		908CBBAB2B0A5E0000653F66 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				90EFCE822B0B30D4006FE3C9 /* ToastView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		90EFCE622B0AE03F006FE3C9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				90EFCE722B0AE7BA006FE3C9 /* AppTabBarView.swift */,
+				90EFCE6B2B0AE654006FE3C9 /* TabBarContainerView.swift */,
+				90EFCE632B0AE04A006FE3C9 /* CustomTabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		90EFCE6D2B0AE6AD006FE3C9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */,
+				90EFCE6E2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		90EFCE7C2B0B0DC7006FE3C9 /* AppDisplayClass */ = {
+			isa = PBXGroup;
+			children = (
+				90EFCE7A2B0B0AE7006FE3C9 /* AppDisplayClassListView.swift */,
+				90EFCE782B0B0805006FE3C9 /* AppDisplayClassCellView.swift */,
+			);
+			path = AppDisplayClass;
+			sourceTree = "<group>";
+		};
+		90EFCE7D2B0B21BA006FE3C9 /* AppMainQuickMenu */ = {
+			isa = PBXGroup;
+			children = (
+				90EFCE7E2B0B21D3006FE3C9 /* AppMainQuickMenuListView.swift */,
+				90EFCE802B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift */,
+			);
+			path = AppMainQuickMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -831,6 +902,7 @@
 				908CBB6A2B0A58E300653F66 /* AppDisplayBySubClassFetchUseCase.swift in Sources */,
 				908CBB882B0A58E300653F66 /* AppMainQuickMenuAPIService.swift in Sources */,
 				908CBB952B0A58E300653F66 /* AppGoodsInfoFetchModelMapper.swift in Sources */,
+				90EFCE812B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift in Sources */,
 				908CBB5D2B0A58E300653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift in Sources */,
 				908CBB9E2B0A58E300653F66 /* PaginationModel.swift in Sources */,
 				908CBB5B2B0A58E300653F66 /* AppDisplayClassInfoFetchRepositoryInterface.swift in Sources */,
@@ -838,11 +910,13 @@
 				908CBB5C2B0A58E300653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift in Sources */,
 				908CBB642B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchEntity.swift in Sources */,
 				908CBB892B0A58E300653F66 /* BaseAPIService.swift in Sources */,
+				90EFCE7B2B0B0AE7006FE3C9 /* AppDisplayClassListView.swift in Sources */,
 				908CBB762B0A58E300653F66 /* AppDIContainerInterface.swift in Sources */,
 				908CBB8D2B0A58E300653F66 /* AppDisplayClassInfoAPIService.swift in Sources */,
 				908CBB7E2B0A58E300653F66 /* ListResultAppDisplayClassInfoResponseDTO.swift in Sources */,
 				908CBB942B0A58E300653F66 /* AppMainQuickMenuFetchModelMapper.swift in Sources */,
 				908CBB822B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift in Sources */,
+				90EFCE732B0AE7BA006FE3C9 /* AppTabBarView.swift in Sources */,
 				908CBB782B0A58E300653F66 /* SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO.swift in Sources */,
 				908CBB7A2B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoResponseDTO.swift in Sources */,
 				908CBB592B0A58E300653F66 /* Font.swift in Sources */,
@@ -851,11 +925,15 @@
 				908CBB6B2B0A58E300653F66 /* AppDisplayBySubClassFetchError.swift in Sources */,
 				908CBB8F2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift in Sources */,
 				908CBB662B0A58E300653F66 /* AppSubDisplayClassInfoFetchEntity.swift in Sources */,
+				90EFCE6C2B0AE654006FE3C9 /* TabBarContainerView.swift in Sources */,
+				90EFCE642B0AE04A006FE3C9 /* CustomTabBarView.swift in Sources */,
 				908CBB7C2B0A58E300653F66 /* ListResultAppMainQuickMenuResponseDTO.swift in Sources */,
 				908CBB842B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift in Sources */,
 				908CBB772B0A58E300653F66 /* AppDIContainer.swift in Sources */,
 				908CBB992B0A58E300653F66 /* AppSubDisplayClassInfoFetchItemModel.swift in Sources */,
+				90EFCE7F2B0B21D3006FE3C9 /* AppMainQuickMenuListView.swift in Sources */,
 				908CBB7F2B0A58E300653F66 /* AppDisplayClassInfoResponseDTO.swift in Sources */,
+				90EFCE682B0AE3EE006FE3C9 /* TabBarItemType.swift in Sources */,
 				908CBB722B0A58E300653F66 /* View.swift in Sources */,
 				908CBB922B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift in Sources */,
 				908CBB9F2B0A58E300653F66 /* AppDisplayClassInfoFetchModel.swift in Sources */,
@@ -873,15 +951,21 @@
 				908CBB5E2B0A58E300653F66 /* AppGoodsInfoFetchRepositoryInterface.swift in Sources */,
 				908CBB732B0A58E300653F66 /* LoadingIndicatorModifier.swift in Sources */,
 				908CBB9B2B0A58E300653F66 /* AppGoodsInfoFetchItemModel.swift in Sources */,
+				90EFCE752B0AF8B1006FE3C9 /* CategoryHeaderView.swift in Sources */,
+				90EFCE832B0B30D4006FE3C9 /* ToastView.swift in Sources */,
 				908CBB612B0A58E300653F66 /* AppDisplayClassInfoFetchItemEntity.swift in Sources */,
 				908CBB972B0A58E300653F66 /* AppMainQuickMenuFetchItemModel.swift in Sources */,
 				908CBB692B0A58E300653F66 /* AppGoodsInfoFetchEntity.swift in Sources */,
+				90EFCE792B0B0805006FE3C9 /* AppDisplayClassCellView.swift in Sources */,
 				908CBB682B0A58E300653F66 /* PaginationEntity.swift in Sources */,
 				908CBB912B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift in Sources */,
 				908CBB812B0A58E300653F66 /* AppGoodsInfoResponseDTO.swift in Sources */,
 				908CBB8A2B0A58E300653F66 /* AppGoodsInfoAPIService.swift in Sources */,
 				908CBB582B0A58E300653F66 /* Image.swift in Sources */,
+				90EFCE712B0AE714006FE3C9 /* TabBarItemViewModifier.swift in Sources */,
 				908CBB962B0A58E300653F66 /* AppMainQuickMenuFetchModel.swift in Sources */,
+				90EFCE6A2B0AE4F4006FE3C9 /* Color.swift in Sources */,
+				90EFCE6F2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift in Sources */,
 				908CBB8C2B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift in Sources */,
 				908CBB5F2B0A58E300653F66 /* AppMainQuickMenuFetchItemEntity.swift in Sources */,
 				908CBB6F2B0A58E300653F66 /* AppGoodsInfoFetchUseCase.swift in Sources */,
