@@ -13,6 +13,10 @@ struct AppDisplayClassInfoFetchItemModel: Identifiable {
     let displayClassImagePath: String
     let displayClassName: String
     let displayClassSequence: Int64
+
+    func makeImageURL() -> URL? {
+        return URL(string: displayClassImagePath)
+    }
 }
 
 extension AppDisplayClassInfoFetchItemModel {

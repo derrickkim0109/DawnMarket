@@ -15,6 +15,10 @@ struct AppMainQuickMenuFetchItemModel: Identifiable {
     let quickMenuMovingScreenPath: String
     let quickMenuName: String
     let quickMenuSequence: Int32
+
+    func makeImageURL() -> URL? {
+        return URL(string: quickMenuImagePath)
+    }
 }
 
 extension AppMainQuickMenuFetchItemModel {

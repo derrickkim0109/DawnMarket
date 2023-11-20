@@ -5,6 +5,8 @@
 //  Created by Derrick kim on 11/19/23.
 //
 
+import Foundation
+
 struct AppGoodsInfoFetchItemEntity {
     let cancelApplicationDate: String
     let cancelOrderNo: String
@@ -36,6 +38,14 @@ struct AppGoodsInfoFetchItemEntity {
     let supplyPrice: Int32
     let taxationYn: String
     let temperatureCode: String
+
+    func makeImagePath() -> String {
+        guard let baseURL = Bundle.main.infoDictionary?["IMAGE_BASE_URL"] as? String else {
+            return ""
+        }
+
+        return baseURL + imagePath
+    }
 }
 
 extension AppGoodsInfoFetchItemEntity {
