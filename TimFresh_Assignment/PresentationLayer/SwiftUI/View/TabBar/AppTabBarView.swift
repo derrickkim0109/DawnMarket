@@ -9,24 +9,26 @@ import SwiftUI
 
 struct AppTabBarView: View {
     @State private var tabSelection: TabBarItemType = .category
-    var appContainer: AppDIContainerInterface
+    var compositionRoot: CompositionRootInterface
 
     var body: some View {
-        TabBarContainerView(selection: $tabSelection) {
-            CategoryView(viewModel: appContainer.categoryViewDependencies())
-            .tabBarItem(tab: .category, selection: $tabSelection)
+        NavigationView {
+            TabBarContainerView(selection: $tabSelection) {
+                CategoryView(categoryDIContainer: compositionRoot.categoryDIContainer)
+                    .tabBarItem(tab: .category, selection: $tabSelection)
 
-            Color.clear
-                .tabBarItem(tab: .favorites, selection: $tabSelection)
+                Color.clear
+                    .tabBarItem(tab: .favorites, selection: $tabSelection)
 
-            Color.clear
-                .tabBarItem(tab: .home, selection: $tabSelection)
+                Color.clear
+                    .tabBarItem(tab: .home, selection: $tabSelection)
 
-            Color.clear
-                .tabBarItem(tab: .cart, selection: $tabSelection)
+                Color.clear
+                    .tabBarItem(tab: .cart, selection: $tabSelection)
 
-            Color.clear
-                .tabBarItem(tab: .myPage, selection: $tabSelection)
+                Color.clear
+                    .tabBarItem(tab: .myPage, selection: $tabSelection)
+            }
         }
     }
 }

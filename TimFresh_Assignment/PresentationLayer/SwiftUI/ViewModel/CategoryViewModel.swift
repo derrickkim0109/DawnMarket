@@ -11,21 +11,34 @@ import Combine
 final class CategoryViewModel: ObservableObject {
     @Published private(set) var fetchedAppDisplayClassList: [AppDisplayClassInfoFetchItemModel] = []
     @Published private(set) var fetchedAppMainQuickMenuList: [AppMainQuickMenuFetchItemModel] = []
+
     @Published var showToast: Bool = false
     @Published var showErrorAlert: Bool = false
 
     var viewModelError: String?
 
+    private let router: CategoryRouter
     private let appDisplayClassFetchUseCase: AppDisplayClassInfoFetchUseCaseInterface
     private let appMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface
+
     private var cancellable: Set<AnyCancellable> = []
 
     init(
+        router: CategoryRouter,
         appDisplayClassFetchUseCase: AppDisplayClassInfoFetchUseCaseInterface,
         appMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface
     ) {
+        self.router = router
         self.appDisplayClassFetchUseCase = appDisplayClassFetchUseCase
         self.appMainQuickMenuFetchUseCase = appMainQuickMenuFetchUseCase
+    }
+
+    func triggerTransition(route: CategoryRouter.PushRoute) {
+        router.triggerScreenTransition(route: route)
+    }
+
+    func nextScreen(item: AppDisplayClassInfoFetchItemModel) -> some View {
+        router.nextTransitionScreen(item: item)
     }
 
     func viewWillAppear() {

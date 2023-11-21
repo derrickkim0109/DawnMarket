@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct RootView: App {
-    private let appDIContainer: AppDIContainerInterface = AppDIContainer()
+    let compositionRoot: CompositionRootInterface
+
+    init() {
+        self.compositionRoot = CompositionRoot()
+    }
 
     var body: some Scene {
         WindowGroup {
-            AppTabBarView(appContainer: appDIContainer)
+            AppTabBarView(compositionRoot: compositionRoot)
         }
     }
 }
