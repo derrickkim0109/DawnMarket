@@ -8,7 +8,7 @@
 import Foundation
 
 struct AppDisplayClassInfoFetchItemModel: Identifiable {
-    public let id = UUID()
+    let id = UUID()
     let displayClassCode: String
     let displayClassImagePath: String
     let displayClassName: String

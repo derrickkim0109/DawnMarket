@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public extension Font {
+extension Font {
     static func pretendard(size fontSize: CGFloat, type: PretendardFontType) -> Font {
         return .custom("\(type.name)", size: fontSize)
     }
@@ -17,7 +17,7 @@ public extension Font {
     }
 }
 
-public extension Font {
+extension Font {
     enum SpoqaHanSansNeoFontType {
         case bold
         case medium

@@ -11,6 +11,7 @@ struct CustomTabBarView: View {
     @State var localSelection: TabBarItemType
     @Binding var selection: TabBarItemType
     @Binding var showToast: Bool
+
     let allTabItemType: [TabBarItemType]
 
     var body: some View {

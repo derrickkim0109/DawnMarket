@@ -5,7 +5,7 @@
 //  Created by Derrick kim on 11/18/23.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 
 final class CategoryViewModel: ObservableObject {
@@ -28,20 +28,20 @@ final class CategoryViewModel: ObservableObject {
         self.appMainQuickMenuFetchUseCase = appMainQuickMenuFetchUseCase
     }
 
-    public func viewWillAppear() {
+    func viewWillAppear() {
         resetProperties()
         fetchAppDisplayClassList()
         fetchAppMainQuickMenuList()
     }
 
-    public func fetchAppDisplayClassList() {
+    func fetchAppDisplayClassList() {
         appDisplayClassFetchUseCase.fetchAppDisplayClassInfoList()
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
                     break
                 case let .failure(error):
-                    self?.setupAppDisplayClassInfoFetchError(error)
+                    self?.setupFetchError(error.rawValue)
                 }
             } receiveValue: { [weak self] entity in
                 let appDisplayClassInfoFetchModel = AppDisplayClassInfoFetchModelMapper.toPresentationModel(entity: entity)
@@ -57,14 +57,14 @@ final class CategoryViewModel: ObservableObject {
             .store(in: &cancellable)
     }
 
-    public func fetchAppMainQuickMenuList() {
+    func fetchAppMainQuickMenuList() {
         appMainQuickMenuFetchUseCase.fetchAppMainQuickMenuList()
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
                     break
                 case let .failure(error):
-                    self?.setupAppMainQuickMenuFetchError(error)
+                    self?.setupFetchError(error.rawValue)
                 }
             } receiveValue: { [weak self] entity in
                 let appMainQuickMenuFetchModelModel = AppMainQuickMenuFetchModelMapper.toPresentationModel(entity: entity)
@@ -84,21 +84,18 @@ final class CategoryViewModel: ObservableObject {
         showToast = true
     }
 
-    public func isEmptyFetchedAppDisplayClassList() -> Bool {
+    func isEmptyFetchedAppDisplayClassList() -> Bool {
         return fetchedAppDisplayClassList.isEmpty
     }
 
-    public func isEmptyFetchedAppMainQuickMenuList() -> Bool {
+    func isEmptyFetchedAppMainQuickMenuList() -> Bool {
         return fetchedAppMainQuickMenuList.isEmpty
     }
+}
 
-    private func setupAppDisplayClassInfoFetchError(_ error: AppDisplayClassInfoFetchError) {
-        self.viewModelError = error.rawValue
-        self.showErrorAlert = true
-    }
-
-    private func setupAppMainQuickMenuFetchError(_ error: AppMainQuickMenuFetchError) {
-        self.viewModelError = error.rawValue
+extension CategoryViewModel {
+    private func setupFetchError(_ error: String) {
+        self.viewModelError = error
         self.showErrorAlert = true
     }
 
@@ -107,5 +104,4 @@ final class CategoryViewModel: ObservableObject {
         self.fetchedAppMainQuickMenuList = []
         self.viewModelError = nil
     }
-
 }

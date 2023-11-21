@@ -8,10 +8,10 @@
 import Foundation
 import Moya
 
-public protocol BaseAPI: TargetType { }
+protocol BaseAPI: TargetType { }
 
 extension BaseAPI {
-    public var baseURL: URL {
+    var baseURL: URL {
         guard let baseURLString = Bundle.main.infoDictionary?["BASE_URL"] as? String,
               let url = URL(string: baseURLString) else {
             fatalError("Failed to create base URL")
@@ -20,7 +20,7 @@ extension BaseAPI {
         return url
     }
 
-    public var headers: [String: String]? {
+    var headers: [String: String]? {
         return ["Content-type": "application/json"]
     }
 }
