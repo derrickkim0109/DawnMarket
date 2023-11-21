@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppMainQuickMenuListView: View {
-    @ObservedObject var viewModel: CategoryViewModel
+    @EnvironmentObject var viewModel: CategoryViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -24,6 +24,7 @@ struct AppMainQuickMenuListView: View {
             LazyVGrid(columns: getGridItemSize()) {
                 ForEach(viewModel.fetchedAppMainQuickMenuList) { item in
                     AppMainQuickMenuCellView(item: item)
+                        .environmentObject(viewModel)
                 }
             }
         }
@@ -42,10 +43,4 @@ struct AppMainQuickMenuListView: View {
 
         return gridItems
     }
-}
-
-#Preview {
-    AppMainQuickMenuListView(
-        viewModel: AppDIContainer().categoryViewDependencies()
-    )
 }

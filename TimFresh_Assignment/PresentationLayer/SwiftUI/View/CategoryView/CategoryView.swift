@@ -8,44 +8,53 @@
 import SwiftUI
 
 struct CategoryView: View {
-    @StateObject var viewModel: CategoryViewModel
+    @StateObject private var router: CategoryRouter
+    @StateObject private var viewModel: CategoryViewModel
+
+    init(categoryDIContainer: CategoryDIContainerInterface) {
+        let router = categoryDIContainer.categoryRouter()
+
+        self._router = .init(wrappedValue: router)
+        self._viewModel = .init(wrappedValue: categoryDIContainer.categoryViewDependencies(categoryRouter: router))
+    }
 
     var body: some View {
-        NavigationStack {
-            ZStack {
-                ScrollView {
-                    VStack {
-                        CategoryHeaderView(viewModel: viewModel)
+        ZStack {
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    CategoryHeaderView()
+                        .environmentObject(viewModel)
+
+                    Spacer()
+
+                    if !viewModel.isEmptyFetchedAppDisplayClassList() {
+                        AppDisplayClassListView()
+                            .environmentObject(viewModel)
+                            .padding(.bottom, 40)
+
+                        Color.dividerViewBackgroundColor
+                            .frame(height: 8)
 
                         Spacer()
-
-                        if !viewModel.isEmptyFetchedAppDisplayClassList() {
-                            AppDisplayClassListView(viewModel: viewModel)
-                                .padding(.bottom, 40)
-
-                            Color.dividerViewBackgroundColor
-                                .frame(height: 8)
-
-                            Spacer()
-                        }
-
-                        if !viewModel.isEmptyFetchedAppMainQuickMenuList() {
-                            AppMainQuickMenuListView(viewModel: viewModel)
-                                .padding(.top, 10)
-
-                            Spacer()
-                        }
                     }
-                    .onAppear {
-                        viewModel.viewWillAppear()
+
+                    if !viewModel.isEmptyFetchedAppMainQuickMenuList() {
+                        AppMainQuickMenuListView()
+                            .environmentObject(viewModel)
+                            .padding(.top, 10)
+
+                        Spacer()
                     }
-                    .showErrorAlert(
-                        isPresented: $viewModel.showErrorAlert,
-                        message: viewModel.viewModelError
-                    )
                 }
+                .onAppear {
+                    viewModel.viewWillAppear()
+                }
+                .showErrorAlert(
+                    isPresented: $viewModel.showErrorAlert,
+                    message: viewModel.viewModelError
+                )
                 .padding(.bottom, 55)
-                
+
                 Spacer()
                     .toast(isPresented: $viewModel.showToast, duration: 2) {
                         Text("개발 예정")

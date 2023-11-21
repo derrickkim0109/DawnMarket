@@ -10,12 +10,13 @@ import Kingfisher
 
 struct AppDisplayClassCellView: View {
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var viewModel: CategoryViewModel
 
     let item : AppDisplayClassInfoFetchItemModel
 
     var body: some View {
         NavigationLink {
-
+            viewModel.nextScreen(item: item)
         } label: {
             appDisplayClassCellInfoView()
         }

@@ -10,15 +10,15 @@ import Kingfisher
 
 struct AppMainQuickMenuCellView: View {
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var viewModel: CategoryViewModel
 
     let item: AppMainQuickMenuFetchItemModel
 
     var body: some View {
-        NavigationLink {
-
-        } label: {
-            appMainQuickMenuInfoView()
-        }
+        appMainQuickMenuInfoView()
+            .onTapGesture {
+                viewModel.showToastByDebounce()
+            }
     }
 
     private func appMainQuickMenuInfoView() -> some View {

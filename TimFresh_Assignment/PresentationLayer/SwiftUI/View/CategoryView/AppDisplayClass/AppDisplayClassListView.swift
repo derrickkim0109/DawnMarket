@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct AppDisplayClassListView: View {
-    @ObservedObject var viewModel: CategoryViewModel
+    @EnvironmentObject var viewModel: CategoryViewModel
 
     var body: some View {
         LazyVGrid(columns: getGridItemSize(), spacing: 10) {
             ForEach(viewModel.fetchedAppDisplayClassList) { item in
                 AppDisplayClassCellView(item: item)
+                    .environmentObject(viewModel)
             }
         }
     }
@@ -30,10 +31,4 @@ struct AppDisplayClassListView: View {
 
         return gridItems
     }
-}
-
-#Preview {
-    AppDisplayClassListView(
-        viewModel: AppDIContainer().categoryViewDependencies()
-    )
 }

@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct CategoryHeaderView: View {
-    @ObservedObject var viewModel: CategoryViewModel
+    @EnvironmentObject var viewModel: CategoryViewModel
 
     var body: some View {
         HStack {
