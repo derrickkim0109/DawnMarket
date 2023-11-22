@@ -8,5 +8,5 @@
 import Foundation
 
 struct AppDisplayClassInfoBySubDisplayClassInfoRequestDTO {
-    let displayClassSequence: Int
+    let displayClassSequence: Int64
 }

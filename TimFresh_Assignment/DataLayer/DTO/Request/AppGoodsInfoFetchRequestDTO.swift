@@ -13,7 +13,7 @@ struct AppGoodsInfoFetchRequestDTO {
         let size: Int
     }
 
-    let displayClassSequence: Int
+    let displayClassSequence: Int64
     let subDisplayClassSequence: Int
     let pageRequest: PageRequest
     let searchValue: String

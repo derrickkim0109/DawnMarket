@@ -10,7 +10,7 @@ import Foundation
 
 protocol AppGoodsInfoFetchUseCaseInterface {
     func fetch(
-        displayClassSequence: Int,
+        displayClassSequence: Int64,
         subDisplayClassSequence: Int,
         page: Int,
         size: Int,
@@ -26,7 +26,7 @@ final class AppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
     }
 
     func fetch(
-        displayClassSequence: Int,
+        displayClassSequence: Int64,
         subDisplayClassSequence: Int,
         page: Int,
         size: Int,
