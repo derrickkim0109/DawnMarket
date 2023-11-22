@@ -29,7 +29,7 @@ struct AppMainQuickMenuCellView: View {
                 }
                 .retry(maxCount: 3, interval: .seconds(5))
                 .resizable()
-                .frame(width: 52, height: 52)
+                .frame(height: 52)
 
             Spacer()
 
@@ -41,8 +41,6 @@ struct AppMainQuickMenuCellView: View {
                     )
                 )
                 .foregroundStyle(Color.appDisplayClassTextColor)
-
-            Spacer()
         }
         .foregroundColor(colorScheme == .dark ? .white : .black)
     }

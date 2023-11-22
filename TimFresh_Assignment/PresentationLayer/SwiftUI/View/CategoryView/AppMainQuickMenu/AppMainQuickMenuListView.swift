@@ -11,7 +11,7 @@ struct AppMainQuickMenuListView: View {
     @EnvironmentObject var viewModel: CategoryViewModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 8) {
             Text("기획전 / 이벤트")
                 .font(
                     .pretendard(
@@ -19,7 +19,6 @@ struct AppMainQuickMenuListView: View {
                         type: .bold
                     )
                 )
-                .padding(.leading, 20)
 
             LazyVGrid(columns: getGridItemSize()) {
                 ForEach(viewModel.fetchedAppMainQuickMenuList) { item in
@@ -28,17 +27,16 @@ struct AppMainQuickMenuListView: View {
                 }
             }
         }
+        .padding([.leading, .trailing], 16)
     }
 
     private func getGridItemSize() -> [GridItem] {
-        let fourDividedWidth = (UIScreen.main.bounds.width - 50) / 5
-
         let gridItems: [GridItem] = [
-            GridItem(.fixed(fourDividedWidth)),
-            GridItem(.fixed(fourDividedWidth)),
-            GridItem(.fixed(fourDividedWidth)),
-            GridItem(.fixed(fourDividedWidth)),
-            GridItem(.fixed(fourDividedWidth))
+            GridItem(.flexible(), spacing: 16),
+            GridItem(.flexible(), spacing: 16),
+            GridItem(.flexible(), spacing: 16),
+            GridItem(.flexible(), spacing: 16),
+            GridItem(.flexible(), spacing: 16)
         ]
 
         return gridItems

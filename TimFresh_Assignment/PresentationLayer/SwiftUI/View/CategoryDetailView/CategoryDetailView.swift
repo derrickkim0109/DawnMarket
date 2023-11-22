@@ -18,15 +18,17 @@ struct CategoryDetailView: View {
     var body: some View {
         ZStack {
             ScrollView(showsIndicators: false) {
-                VStack(spacing: 10) {
+                VStack(spacing: 24) {
                     AppSubDisplayClassListView()
                         .environmentObject(viewModel)
 
-                    CategoryDetailStickyHeaderView()
-                        .environmentObject(viewModel)
+                    VStack(spacing: 18) {
+                        CategoryDetailStickyHeaderView()
+                            .environmentObject(viewModel)
 
-                    AppGoodsListView()
-                        .environmentObject(viewModel)
+                        AppGoodsListView()
+                            .environmentObject(viewModel)
+                    }
                 }
             }
             .navigationBarBackButtonHidden(true)

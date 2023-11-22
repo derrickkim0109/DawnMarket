@@ -22,26 +22,24 @@ struct CategoryView: View {
         ZStack {
             ScrollView(showsIndicators: false) {
                 VStack {
-                    CategoryHeaderView()
-                        .environmentObject(viewModel)
-
-                    Spacer()
-
-                    if !viewModel.isEmptyFetchedAppDisplayClassList() {
-                        AppDisplayClassListView()
+                    VStack(spacing: 20) {
+                        CategoryHeaderView()
                             .environmentObject(viewModel)
-                            .padding(.bottom, 40)
 
-                        Color.dividerViewBackgroundColor
-                            .frame(height: 8)
+                        if !viewModel.isEmptyFetchedAppDisplayClassList() {
+                            AppDisplayClassListView()
+                                .environmentObject(viewModel)
+                                .padding(.bottom, 42)
 
-                        Spacer()
+                            Color.dividerViewBackgroundColor
+                                .frame(height: 8)
+                        }
                     }
 
                     if !viewModel.isEmptyFetchedAppMainQuickMenuList() {
                         AppMainQuickMenuListView()
                             .environmentObject(viewModel)
-                            .padding(.top, 10)
+                            .padding(.top, 20)
 
                         Spacer()
                     }
@@ -56,7 +54,7 @@ struct CategoryView: View {
                 .padding(.bottom, 55)
 
                 Spacer()
-                    .toast(isPresented: $viewModel.showToast, duration: 2) {
+                    .toast(isPresented: $viewModel.showToast, duration: 1) {
                         Text("개발 예정")
                     }
             }

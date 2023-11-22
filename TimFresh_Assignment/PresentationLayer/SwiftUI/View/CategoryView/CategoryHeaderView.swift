@@ -49,7 +49,7 @@ struct CategoryHeaderView: View {
             .frame(height: 24)
             
             Spacer()
-                .frame(width: 20)
+                .frame(width: 16)
         }
     }
 }

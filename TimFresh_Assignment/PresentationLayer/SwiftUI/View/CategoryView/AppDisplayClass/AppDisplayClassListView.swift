@@ -11,7 +11,7 @@ struct AppDisplayClassListView: View {
     @EnvironmentObject var viewModel: CategoryViewModel
 
     var body: some View {
-        LazyVGrid(columns: getGridItemSize(), spacing: 10) {
+        LazyVGrid(columns: getGridItemSize(), spacing: 16) {
             ForEach(viewModel.fetchedAppDisplayClassList) { item in
                 AppDisplayClassCellView(item: item)
                     .environmentObject(viewModel)
@@ -20,13 +20,11 @@ struct AppDisplayClassListView: View {
     }
 
     private func getGridItemSize() -> [GridItem] {
-        let fourDividedWidth = (UIScreen.main.bounds.width - 20) / 4
-
         let gridItems: [GridItem] = [
-          GridItem(.fixed(fourDividedWidth)),
-          GridItem(.fixed(fourDividedWidth)),
-          GridItem(.fixed(fourDividedWidth)),
-          GridItem(.fixed(fourDividedWidth))
+          GridItem(.flexible(), spacing: 13),
+          GridItem(.flexible(), spacing: 13),
+          GridItem(.flexible(), spacing: 13),
+          GridItem(.flexible(), spacing: 13)
         ]
 
         return gridItems
