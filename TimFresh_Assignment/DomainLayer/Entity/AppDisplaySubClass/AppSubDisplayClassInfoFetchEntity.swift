@@ -29,7 +29,7 @@ struct AppSubDisplayClassInfoFetchEntity {
                 modifiedArray.append(
                     makeDefaultValue(
                         by: modifiedArray.first,
-                        subClassName: "냉동야채/특수야채/전처리야채"
+                        subClassName: ""
                     )
                 )
             }
