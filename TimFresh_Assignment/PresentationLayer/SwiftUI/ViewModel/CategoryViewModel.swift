@@ -15,7 +15,7 @@ final class CategoryViewModel: ObservableObject {
     @Published var showToast: Bool = false
     @Published var showErrorAlert: Bool = false
 
-    var viewModelError: String?
+    private(set) var viewModelError: String?
 
     private let router: CategoryRouter
     private let appDisplayClassFetchUseCase: AppDisplayClassInfoFetchUseCaseInterface

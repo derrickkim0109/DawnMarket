@@ -8,10 +8,6 @@
 import SwiftUI
 
 extension View {
-    func showLoadingIndicator(isLoading : Bool) -> some View {
-        self.modifier(LoadingIndicatorModifier(isLoading: isLoading))
-    }
-
     func showErrorAlert(
         isPresented: Binding<Bool>,
         message : String?
