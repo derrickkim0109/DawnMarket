@@ -5,7 +5,10 @@
 //  Created by Derrick kim on 11/18/23.
 //
 
-struct AppSubDisplayClassInfoFetchItemModel {
+import Foundation
+
+struct AppSubDisplayClassInfoFetchItemModel: Identifiable, Equatable {
+    let id = UUID()
     let displayClassCode: String
     let displayClassLevel: String
     let displayClassSequence: Int

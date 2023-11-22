@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct AppGoodsInfoFetchItemModel {
+struct AppGoodsInfoFetchItemModel: Identifiable {
+    let id = UUID()
     let cancelApplicationDate: String
     let cancelOrderNo: String
     let discountPrice: Int32
