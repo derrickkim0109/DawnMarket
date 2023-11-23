@@ -20,17 +20,23 @@ extension Font {
 extension Font {
     enum SpoqaHanSansNeoFontType {
         case bold
+        case light
         case medium
         case regular
+        case thin
 
         var name: String {
             switch self {
             case .bold:
                 return "SpoqaHanSansNeo-Bold"
+            case .light:
+                return "SpoqaHanSansNeo-Light"
             case .medium:
                 return "SpoqaHanSansNeo-Medium"
             case .regular:
                 return "SpoqaHanSansNeo-Regular"
+            case .thin:
+                return "SpoqaHanSansNeo-Thin"
             }
         }
     }
