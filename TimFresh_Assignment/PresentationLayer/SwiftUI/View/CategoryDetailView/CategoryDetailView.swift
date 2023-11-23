@@ -18,17 +18,12 @@ struct CategoryDetailView: View {
     var body: some View {
         ZStack {
             ScrollView(showsIndicators: false) {
-                VStack(spacing: 24) {
+                VStack(spacing: 6) {
                     AppSubDisplayClassListView()
                         .environmentObject(viewModel)
 
-                    VStack(spacing: 18) {
-                        CategoryDetailStickyHeaderView()
-                            .environmentObject(viewModel)
-
-                        AppGoodsListView()
-                            .environmentObject(viewModel)
-                    }
+                    AppGoodsListView()
+                        .environmentObject(viewModel)
                 }
             }
             .navigationBarBackButtonHidden(true)
@@ -64,7 +59,8 @@ struct CategoryDetailView: View {
     private func navigationTitleView() -> some ToolbarContent {
         ToolbarItem(placement: .principal) {
             Text("\(viewModel.getDisplayClassName())")
-                .font(Font.pretendard(size: 15, type: .medium))
+                .font(.pretendard(size: 15, type: .medium))
+                .foregroundStyle(Color.black900)
         }
     }
 
