@@ -31,7 +31,7 @@ struct CategoryView: View {
                                 .environmentObject(viewModel)
                                 .padding(.bottom, 42)
 
-                            Color.dividerViewBackgroundColor
+                            Color.gray300
                                 .frame(height: 8)
                         }
                     }

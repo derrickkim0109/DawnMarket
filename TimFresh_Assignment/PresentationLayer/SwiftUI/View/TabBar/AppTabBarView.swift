@@ -32,39 +32,3 @@ struct AppTabBarView: View {
         }
     }
 }
-
-extension AppTabBarView {
-    private var defaultTabView: some View {
-        TabView(selection: $tabSelection) {
-            Color.brandDarkNavyColor
-                .tabItem {
-                    Image.iconHamburgerImage
-                    Text("카테고리")
-                }
-
-            Color.brandDarkNavyColor
-                .tabItem {
-                    Image.iconStarImage
-                    Text("즐겨찾기")
-                }
-
-            Color.brandDarkNavyColor
-                .tabItem {
-                    Image.iconHomeImage
-                    Text("홈")
-                }
-
-            Color.brandDarkNavyColor
-                .tabItem {
-                    Image.iconCartFillImage
-                    Text("장바구니")
-                }
-
-            Color.brandDarkNavyColor
-                .tabItem {
-                    Image.iconPersonImage
-                    Text("내 정보")
-                }
-        }
-    }
-}

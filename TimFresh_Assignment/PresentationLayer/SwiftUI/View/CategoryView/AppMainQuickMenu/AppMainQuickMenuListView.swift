@@ -12,13 +12,7 @@ struct AppMainQuickMenuListView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("기획전 / 이벤트")
-                .font(
-                    .pretendard(
-                        size: 13,
-                        type: .bold
-                    )
-                )
+            AppMainQuickMenuHeaderView()
 
             LazyVGrid(columns: getGridItemSize()) {
                 ForEach(viewModel.fetchedAppMainQuickMenuList) { item in
@@ -28,6 +22,13 @@ struct AppMainQuickMenuListView: View {
             }
         }
         .padding([.leading, .trailing], 16)
+    }
+
+    @ViewBuilder
+    private func AppMainQuickMenuHeaderView() -> some View {
+        Text("기획전 / 이벤트")
+            .font(.pretendard(size: 13, type: .bold))
+            .foregroundStyle(Color.black900)
     }
 
     private func getGridItemSize() -> [GridItem] {

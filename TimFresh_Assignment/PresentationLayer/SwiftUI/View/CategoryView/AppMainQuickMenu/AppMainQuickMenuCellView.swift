@@ -15,37 +15,39 @@ struct AppMainQuickMenuCellView: View {
     let item: AppMainQuickMenuFetchItemModel
 
     var body: some View {
-        appMainQuickMenuInfoView()
+        AppMainQuickMenuInfoView()
             .onTapGesture {
                 viewModel.showToastByDebounce()
             }
     }
 
-    private func appMainQuickMenuInfoView() -> some View {
+    @ViewBuilder
+    private func AppMainQuickMenuInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
-            KFImage(item.makeImageURL())
-                .placeholder {
-                    ProgressView()
-                }
-                .retry(maxCount: 3, interval: .seconds(5))
-                .resizable()
-                .frame(height: 52)
+            AppMainQuickMenuImageView()
 
             Spacer()
 
-            Text(item.quickMenuName)
-                .font(
-                    .pretendard(
-                        size: 12,
-                        type: .medium
-                    )
-                )
-                .foregroundStyle(Color.appDisplayClassTextColor)
+            AppMainQuickMenuTitleView()
         }
         .foregroundColor(colorScheme == .dark ? .white : .black)
     }
-}
 
-#Preview {
-    AppMainQuickMenuCellView(item: AppMainQuickMenuFetchItemModel.completedMock)
+    @ViewBuilder
+    private func AppMainQuickMenuImageView() -> some View {
+        KFImage(item.makeImageURL())
+            .placeholder {
+                ProgressView()
+            }
+            .retry(maxCount: 3, interval: .seconds(5))
+            .resizable()
+            .frame(height: 52)
+    }
+
+    @ViewBuilder
+    private func AppMainQuickMenuTitleView() -> some View {
+        Text(item.quickMenuName)
+            .font(.pretendard(size: 12, type: .medium))
+            .foregroundStyle(Color.black700)
+    }
 }

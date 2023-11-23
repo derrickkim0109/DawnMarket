@@ -17,12 +17,9 @@ struct CategoryHeaderView: View {
                 .frame(width: 20)
             
             Text("로그인해주세요")
-                .font(
-                    Font.pretendard(
-                        size: 17, type: .bold
-                    )
-                )
-            
+                .font(.pretendard(size: 17, type: .bold))
+                .foregroundStyle(Color.black900)
+
             Spacer()
             
             HStack(spacing: 16) {

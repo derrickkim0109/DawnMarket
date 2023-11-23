@@ -23,7 +23,7 @@ struct ToastView<Content: View>: View {
                     HStack {
                         Spacer()
 
-                        toastView()
+                        ToastContentView()
 
                         Spacer()
                     }
@@ -45,10 +45,10 @@ struct ToastView<Content: View>: View {
     }
 
     @ViewBuilder
-    private func toastView() -> some View {
+    private func ToastContentView() -> some View {
         content()
             .padding()
-            .background(Color.brandDarkNavyColor)
+            .background(Color.blue900)
             .foregroundColor(Color.white)
             .cornerRadius(10)
             .transition(.slide)

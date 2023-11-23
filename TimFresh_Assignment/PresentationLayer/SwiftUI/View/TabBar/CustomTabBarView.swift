@@ -38,18 +38,12 @@ extension CustomTabBarView {
         VStack(alignment: .center) {
             tab.iconImage
                 .renderingMode(.template)
-                .font(.subheadline)
                 .frame(width: 24,height: 24)
 
             Text(tab.title)
-                .font(
-                    Font.spoqaHanSansNeo(
-                        size: 11,
-                        type: .medium
-                    )
-                )
+                .font(.spoqaHanSansNeo(size: 11, type: .medium))
         }
-        .foregroundColor(localSelection == tab ? tab.color : Color.gray)
+        .foregroundColor(localSelection == tab ? tab.color : Color.gray800)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
         .cornerRadius(10)

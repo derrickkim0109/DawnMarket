@@ -18,37 +18,34 @@ struct AppDisplayClassCellView: View {
         NavigationLink {
             viewModel.nextScreen(item: item)
         } label: {
-            appDisplayClassCellInfoView()
+            AppDisplayClassCellInfoView()
         }
     }
 
-    private func appDisplayClassCellInfoView() -> some View {
+    @ViewBuilder
+    private func AppDisplayClassCellInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
-            KFImage(item.makeImageURL())
-                .placeholder {
-                    ProgressView()
-                }
-                .retry(maxCount: 3, interval: .seconds(5))
-                .resizable()
-                .frame(width: 72, height: 70)
+            AppDisplayClassImageView()
 
             Spacer()
 
             Text(item.displayClassName)
-                .font(
-                    .pretendard(
-                        size: 12,
-                        type: .medium
-                    )
-                )
-                .foregroundStyle(Color.appDisplayClassTextColor)
+                .font(.pretendard( size: 12, type: .medium))
+                .foregroundStyle(Color.gray900)
 
             Spacer()
         }
         .foregroundColor(colorScheme == .dark ? .white : .black)
     }
-}
 
-#Preview {
-    AppDisplayClassCellView(item: AppDisplayClassInfoFetchItemModel.completedMock)
+    @ViewBuilder
+    private func AppDisplayClassImageView() -> some View {
+        KFImage(item.makeImageURL())
+            .placeholder {
+                ProgressView()
+            }
+            .retry(maxCount: 3, interval: .seconds(5))
+            .resizable()
+            .frame(width: 72, height: 70)
+    }
 }
