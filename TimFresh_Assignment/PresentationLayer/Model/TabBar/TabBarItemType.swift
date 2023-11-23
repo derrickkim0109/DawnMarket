@@ -47,7 +47,7 @@ enum TabBarItemType: CaseIterable {
     var color: Color {
         switch self {
         default:
-            return Color.brandDarkNavyColor
+            return Color.blue900
         }
     }
 }

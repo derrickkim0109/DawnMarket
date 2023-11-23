@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SearchValueType: String {
+enum SearchValueType: String, CaseIterable {
     case recommended = "추천순"
     case bySalesVolume = "판매량순"
     case lowestPrice = "낮은가격순"
