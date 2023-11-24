@@ -53,7 +53,7 @@ struct AppSubDisplayClassInfoFetchEntity {
         return AppSubDisplayClassInfoFetchItemEntity(
             displayClassCode: item?.displayClassCode ?? "",
             displayClassLevel: item?.displayClassLevel ?? "",
-            displayClassSequence: item?.displayClassSequence ?? 0,
+            displayClassSequence: 0,
             parentsDisplayClassSequence: item?.parentsDisplayClassSequence ?? 0,
             subDisplayClassName: subClassName
         )
