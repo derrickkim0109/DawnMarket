@@ -10,6 +10,10 @@ struct PaginationModel {
     let elementSizeOfPage: Int32
     let totalElements: Int64
     let totalPage: Int32
+
+    func hasNext(perPage : Int) -> Bool {
+        return totalElements > perPage
+    }
 }
 
 extension PaginationModel {

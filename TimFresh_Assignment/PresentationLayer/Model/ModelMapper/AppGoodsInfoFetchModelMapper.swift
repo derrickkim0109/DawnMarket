@@ -45,9 +45,16 @@ struct AppGoodsInfoFetchModelMapper {
             )
         }
 
+        let pagination = PaginationModel(
+            currentPage: entity.pagination.currentPage,
+            elementSizeOfPage: entity.pagination.elementSizeOfPage,
+            totalElements: entity.pagination.totalElements,
+            totalPage: entity.pagination.totalPage
+        )
+
         return AppGoodsInfoFetchModel(
             data: appGoodsInfoFetchModelList,
-            pagination: entity.pagination
+            pagination: pagination
         )
     }
 }

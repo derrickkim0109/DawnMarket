@@ -43,6 +43,32 @@ struct AppGoodsInfoFetchItemModel: Identifiable {
     func makeImageURL() -> URL? {
         return URL(string: imagePath)
     }
+
+    // 판매가격과 할인가격이 같은경우는 할인하지 않는 상품으로 표현합니다.
+    // 판매가격과 할인가격이 다른 경우 할인율을 계산하고, 할인 레이아웃으로 표현합니다.
+    func isDiscounted() -> Bool {
+        return salePrice != discountPrice
+    }
+
+    /// ((판매 가격 - 할인된 가격) / 판매 가격) * 100
+    func getDiscountRatio() -> Int {
+        let discountedPrice = salePrice - discountPrice
+        return Int(Double(discountedPrice) / Double(salePrice) * 100)
+    }
+
+    func getGoodsName() -> String {
+        let name = goodsName
+            .replacingOccurrences(of: "실온_", with: "")
+            .replacingOccurrences(of: "국내산", with: "")
+            .replacingOccurrences(of: "글로벌", with: "")
+            .replacingOccurrences(of: "_", with: " ")
+
+        return name
+    }
+
+    func getGoodsOptionName() -> String {
+        return goodsGroupOptionName == "" ? goodsNrm : goodsGroupOptionName
+    }
 }
 
 extension AppGoodsInfoFetchItemModel {
