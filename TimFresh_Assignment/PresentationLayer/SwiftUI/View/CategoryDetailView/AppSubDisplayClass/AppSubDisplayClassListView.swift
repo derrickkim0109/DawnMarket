@@ -20,6 +20,9 @@ struct AppSubDisplayClassListView: View {
                     }
             }
         }
+        .onAppear {
+            viewModel.fetchAppDisplayBySubClass()
+        }
     }
 
     private func getGridItemSize() -> [GridItem] {
