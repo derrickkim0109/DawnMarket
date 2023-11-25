@@ -28,13 +28,15 @@ struct CategoryDetailView: View {
             }
             .navigationBarBackButtonHidden(true)
             .toolbar {
-                navigationLeadingView()
-                navigationTitleView()
-                navigationTrailingView()
+                NavigationLeadingView()
+                NavigationTitleView()
+                NavigationTrailingView()
             }
-            .onAppear {
-                viewModel.viewWillAppear()
-            }
+            .toolbarBackground(Color.white, for: .navigationBar)
+            .showErrorAlert(
+                isPresented: $viewModel.showErrorAlert,
+                message: viewModel.viewModelError
+            )
 
             VStack {
                 Spacer()
@@ -45,7 +47,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func navigationLeadingView() -> some ToolbarContent {
+    private func NavigationLeadingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button {
                 presentationMode.wrappedValue.dismiss()
@@ -56,7 +58,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func navigationTitleView() -> some ToolbarContent {
+    private func                 NavigationTitleView() -> some ToolbarContent {
         ToolbarItem(placement: .principal) {
             Text("\(viewModel.getDisplayClassName())")
                 .font(.pretendard(size: 15, type: .medium))
@@ -64,7 +66,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func navigationTrailingView() -> some ToolbarContent {
+    private func                 NavigationTrailingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
                 Button {
