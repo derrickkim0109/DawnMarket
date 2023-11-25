@@ -69,13 +69,6 @@ class CategoryDetailViewModel: ObservableObject {
         self.appGoodsInfoFetchUseCase = appGoodsInfoFetchUseCase
     }
 
-    func viewWillAppear() {
-        resetAppSubDisplayClassInfoList()
-        resetAppGoodsInfoList()
-        fetchAppDisplayBySubClass()
-        fetchAppGoodsInfo()
-    }
-
     func fetchAppDisplayBySubClass() {
         appDisplayBySubClassFetchUseCase.fetch(by: displayClassItem.displayClassSequence)
             .sink { [weak self] completion in

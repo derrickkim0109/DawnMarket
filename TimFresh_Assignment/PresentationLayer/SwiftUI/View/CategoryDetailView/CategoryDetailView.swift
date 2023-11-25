@@ -58,7 +58,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func                 NavigationTitleView() -> some ToolbarContent {
+    private func NavigationTitleView() -> some ToolbarContent {
         ToolbarItem(placement: .principal) {
             Text("\(viewModel.getDisplayClassName())")
                 .font(.pretendard(size: 15, type: .medium))
@@ -66,17 +66,17 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func                 NavigationTrailingView() -> some ToolbarContent {
+    private func NavigationTrailingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
                 Button {
-                    viewModel.showToast = true
+                    viewModel.showToastByDebounce()
                 } label: {
                     Image.iconSearchImage
                 }
 
                 Button {
-                    viewModel.showToast = true
+                    viewModel.showToastByDebounce()
                 } label: {
                     Image.iconCartImage
                 }

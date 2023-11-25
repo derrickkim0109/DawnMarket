@@ -52,12 +52,12 @@ struct CategoryView: View {
                     isPresented: $viewModel.showErrorAlert,
                     message: viewModel.viewModelError
                 )
-
-                Spacer()
-                    .toast(isPresented: $viewModel.showToast, duration: 1) {
-                        Text("개발 예정")
-                    }
             }
+
+            Spacer()
+                .toast(isPresented: $viewModel.showToast, duration: 1) {
+                    Text("개발 예정")
+                }
         }
     }
 }

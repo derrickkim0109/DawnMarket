@@ -100,10 +100,15 @@ struct AppGoodsCellView: View {
                     .foregroundStyle(Color.red900)
             }
 
-            Text("\(item.discountPrice)원")
-                .font(.pretendard(size: 16, type: .regular))
-                .foregroundStyle(Color.black900)
+            HStack(spacing: 0) {
+                Text("\(item.discountPrice)")
+                    .font(.pretendard(size: 16, type: .bold))
+                    .foregroundStyle(Color.black900)
 
+                Text("원")
+                    .font(.pretendard(size: 16, type: .regular))
+                    .foregroundStyle(Color.black900)
+            }
             Spacer()
         }
     }
