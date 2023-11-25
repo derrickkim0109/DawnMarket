@@ -17,13 +17,17 @@ struct AppGoodsListView: View {
                     AppGoodsCellView(item: item)
                         .environmentObject(viewModel)
                         .onTapGesture {
-
-                        }
-                        .onAppear {
-                           
+                            viewModel.showToastByDebounce()
                         }
                 }
-                .padding([.leading, .trailing], 16)
+            }
+
+            if viewModel.hasNext() {
+                bottomProgressView()
+                bottomProgressView()
+                    .onAppear {
+                        viewModel.fetchAppGoodsInfo()
+                    }
             }
         }
     }
@@ -44,5 +48,13 @@ struct AppGoodsListView: View {
                     .foregroundColor(.white)
             )
             .environmentObject(viewModel)
+    }
+
+    private func bottomProgressView() -> some View {
+        HStack {
+            Spacer()
+            ProgressView()
+            Spacer()
+        }
     }
 }

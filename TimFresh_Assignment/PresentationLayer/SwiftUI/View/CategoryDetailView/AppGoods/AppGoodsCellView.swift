@@ -40,7 +40,7 @@ struct AppGoodsCellView: View {
 
     private func IconCartButton() -> some View {
         Button {
-
+            viewModel.showToastByDebounce()
         } label: {
             Image.iconCartFillImage
                 .colorMultiply(Color.blue900)

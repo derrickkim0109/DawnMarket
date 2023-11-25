@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct RootView: App {
-    let compositionRoot: CompositionRootInterface
+    @StateObject var launchScreenState = LaunchScreenStateManager()
+    private let compositionRoot: CompositionRootInterface
 
     init() {
         self.compositionRoot = CompositionRoot()
@@ -17,7 +18,13 @@ struct RootView: App {
 
     var body: some Scene {
         WindowGroup {
-            AppTabBarView(compositionRoot: compositionRoot)
+            ZStack {
+                AppTabBarView(compositionRoot: compositionRoot)
+
+                if launchScreenState.state != .finished {
+                    LaunchScreenView()
+                }
+            }.environmentObject(launchScreenState)
         }
     }
 }
