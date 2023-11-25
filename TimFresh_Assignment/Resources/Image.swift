@@ -9,6 +9,7 @@ import SwiftUI
 
 public extension Image {
     static let launchScreenLogo = Image("launchScreenLogo")
+    static let launchScreenMeteor = Image("launchScreenMeteor")
     static let launchScreenBackgroundImage = Image("launchScreenBackgroundImage")
     static let iconBellImage = Image("iconBellImage")
     static let iconSearchImage = Image("iconSearchImage")

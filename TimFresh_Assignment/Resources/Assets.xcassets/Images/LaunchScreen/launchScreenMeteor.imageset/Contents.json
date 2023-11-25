@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "logoBackground_1x.png",
+      "filename" : "meteor_@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "logoBackground_2x.png",
+      "filename" : "meteor_@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "logoBackground_3x.png",
+      "filename" : "meteor_@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
