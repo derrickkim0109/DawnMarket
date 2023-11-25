@@ -13,7 +13,8 @@ extension Color {
     static let black700 = Color("black(33,36,44)")
 
     static let blue900 = Color("blue(2, 18, 69)")
-    static let blue800 = Color("blue(57, 101, 255)")
+    static let blue800 = Color("blue(50, 50, 96)")
+    static let blue700 = Color("blue(57, 101, 255)")
 
     static let gray900 = Color("gray(92,98,112)")
     static let gray800 = Color("gray(112, 118, 131)")
