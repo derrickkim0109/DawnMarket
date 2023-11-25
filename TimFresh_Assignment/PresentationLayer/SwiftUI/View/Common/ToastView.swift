@@ -12,7 +12,7 @@ struct ToastView<Content: View>: View {
     @Binding var isPresented: Bool
     var duration: Double
     var content: () -> Content
-    @State private var cancellable: [AnyCancellable] = []
+    @State private var cancellable = Set<AnyCancellable>()
 
     var body: some View {
         if isPresented {
@@ -33,8 +33,9 @@ struct ToastView<Content: View>: View {
                 .edgesIgnoringSafeArea(.all)
             }
             .onAppear {
-                Timer.publish(every: duration, on: .main, in: .common)
+                Timer.publish(every: 1, on: .main, in: .common)
                     .autoconnect()
+                    .receive(on: DispatchQueue.main)
                     .sink { _ in
                         withAnimation {
                             isPresented = false
@@ -44,7 +45,6 @@ struct ToastView<Content: View>: View {
         }
     }
 
-    @ViewBuilder
     private func ToastContentView() -> some View {
         content()
             .padding()

@@ -22,7 +22,6 @@ struct AppDisplayClassCellView: View {
         }
     }
 
-    @ViewBuilder
     private func AppDisplayClassCellInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
             AppDisplayClassImageView()
@@ -38,7 +37,6 @@ struct AppDisplayClassCellView: View {
         .foregroundColor(colorScheme == .dark ? .white : .black)
     }
 
-    @ViewBuilder
     private func AppDisplayClassImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {

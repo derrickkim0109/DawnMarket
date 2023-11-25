@@ -31,12 +31,11 @@ struct AppGoodsListView: View {
     private func getGridItemSize() -> [GridItem] {
         let gridItems: [GridItem] = [
             GridItem(.flexible(), spacing: 0),
-            GridItem(.flexible(), spacing: 0),
+            GridItem(.flexible(), spacing: 0)
         ]
         return gridItems
     }
 
-    @ViewBuilder
     private func AppGoodsListHeaderView() -> some View {
         AppGoodsListStickyHeaderView()
             .frame(minWidth: 0, maxWidth: .infinity)

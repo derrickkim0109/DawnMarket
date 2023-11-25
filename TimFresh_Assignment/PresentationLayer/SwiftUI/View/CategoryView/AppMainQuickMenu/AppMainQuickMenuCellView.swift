@@ -21,7 +21,6 @@ struct AppMainQuickMenuCellView: View {
             }
     }
 
-    @ViewBuilder
     private func AppMainQuickMenuInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
             AppMainQuickMenuImageView()
@@ -33,7 +32,6 @@ struct AppMainQuickMenuCellView: View {
         .foregroundColor(colorScheme == .dark ? .white : .black)
     }
 
-    @ViewBuilder
     private func AppMainQuickMenuImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {
@@ -44,7 +42,6 @@ struct AppMainQuickMenuCellView: View {
             .frame(height: 52)
     }
 
-    @ViewBuilder
     private func AppMainQuickMenuTitleView() -> some View {
         Text(item.quickMenuName)
             .font(.pretendard(size: 12, type: .medium))

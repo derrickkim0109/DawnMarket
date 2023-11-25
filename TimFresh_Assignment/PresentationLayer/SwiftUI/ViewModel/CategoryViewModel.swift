@@ -9,8 +9,8 @@ import SwiftUI
 import Combine
 
 final class CategoryViewModel: ObservableObject {
-    @Published private(set) var fetchedAppDisplayClassList: [AppDisplayClassInfoFetchItemModel] = []
-    @Published private(set) var fetchedAppMainQuickMenuList: [AppMainQuickMenuFetchItemModel] = []
+    @Published private(set) var fetchedAppDisplayClassList = [AppDisplayClassInfoFetchItemModel]()
+    @Published private(set) var fetchedAppMainQuickMenuList = [AppMainQuickMenuFetchItemModel]()
 
     @Published var showToast: Bool = false
     @Published var showErrorAlert: Bool = false
@@ -21,7 +21,7 @@ final class CategoryViewModel: ObservableObject {
     private let appDisplayClassFetchUseCase: AppDisplayClassInfoFetchUseCaseInterface
     private let appMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface
 
-    private var cancellable: Set<AnyCancellable> = []
+    private var cancellable = Set<AnyCancellable>()
 
     init(
         router: CategoryRouter,

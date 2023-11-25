@@ -24,7 +24,6 @@ struct AppGoodsCellView: View {
         .padding(.bottom, 26)
     }
 
-    @ViewBuilder
     private func AppGoodsImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {
@@ -39,7 +38,6 @@ struct AppGoodsCellView: View {
             }
     }
 
-    @ViewBuilder
     private func IconCartButton() -> some View {
         Button {
 
@@ -56,7 +54,6 @@ struct AppGoodsCellView: View {
         .frame(width: 32, height: 32)
     }
 
-    @ViewBuilder
     private func AppGoodsInfoView() -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -68,18 +65,17 @@ struct AppGoodsCellView: View {
             }
 
             if item.isDiscounted() {
-                SalePriceView()
+                OriginalPriceView()
             }
 
-            SupplyPriceView()
+            SalePriceView()
 
             AppGoodsOptionView()
         }
         .frame(maxWidth: .infinity)
     }
 
-   @ViewBuilder
-    private func SalePriceView() -> some View {
+    private func OriginalPriceView() -> some View {
         HStack(spacing: 0) {
             Text("\(item.salePrice)")
                 .font(.pretendard(size: 13, type: .medium))
@@ -96,8 +92,7 @@ struct AppGoodsCellView: View {
         }
     }
 
-    @ViewBuilder
-    private func SupplyPriceView() -> some View {
+    private func SalePriceView() -> some View {
         HStack(spacing: 2) {
             if item.isDiscounted() {
                 Text("\(item.getDiscountRatio())%")
@@ -105,7 +100,7 @@ struct AppGoodsCellView: View {
                     .foregroundStyle(Color.red900)
             }
 
-            Text("\(item.supplyPrice)원")
+            Text("\(item.discountPrice)원")
                 .font(.pretendard(size: 16, type: .regular))
                 .foregroundStyle(Color.black900)
 
@@ -113,7 +108,6 @@ struct AppGoodsCellView: View {
         }
     }
 
-    @ViewBuilder
     private func AppGoodsOptionView() -> some View {
         HStack(spacing: 8) {
             Text("옵션")
@@ -125,7 +119,7 @@ struct AppGoodsCellView: View {
                         .frame(width: 29, height: 20)
                 )
 
-            Text("\(item.goodsNrm)")
+            Text("\(item.getGoodsOptionName())")
                 .font(.pretendard(size: 12, type: .medium))
                 .foregroundStyle(Color.black700)
         }

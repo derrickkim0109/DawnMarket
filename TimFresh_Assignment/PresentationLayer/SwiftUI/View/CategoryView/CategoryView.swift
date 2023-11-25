@@ -44,6 +44,7 @@ struct CategoryView: View {
                         Spacer()
                     }
                 }
+                .padding(.bottom, 55)
                 .onAppear {
                     viewModel.viewWillAppear()
                 }
@@ -51,7 +52,6 @@ struct CategoryView: View {
                     isPresented: $viewModel.showErrorAlert,
                     message: viewModel.viewModelError
                 )
-                .padding(.bottom, 55)
 
                 Spacer()
                     .toast(isPresented: $viewModel.showToast, duration: 1) {

@@ -7,14 +7,14 @@
 
 struct AppGoodsInfoFetchModel {
     let data: [AppGoodsInfoFetchItemModel]
-    let pagination: PaginationEntity
+    let pagination: PaginationModel
 }
 
 extension AppGoodsInfoFetchModel {
 #if DEBUG
     static let completedMock = AppGoodsInfoFetchModel(
         data: [AppGoodsInfoFetchItemModel.completedMock],
-        pagination: PaginationEntity.completedMock
+        pagination: PaginationModel.completedMock
     )
 #endif
 }

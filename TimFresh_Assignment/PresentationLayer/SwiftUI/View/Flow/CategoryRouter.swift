@@ -39,7 +39,6 @@ extension CategoryRouter {
     enum PushRoute: Hashable {
         case categoryDetail
 
-        @ViewBuilder
         func nextView(
             categoryDIContainer: CategoryDIContainerInterface,
             router: CategoryRouter,

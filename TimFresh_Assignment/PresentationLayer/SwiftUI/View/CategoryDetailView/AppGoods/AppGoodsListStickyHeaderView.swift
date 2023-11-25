@@ -30,7 +30,7 @@ struct AppGoodsListStickyHeaderView: View {
                 ForEach(SearchValueType.allCases, id: \.rawValue) { item in
                     HStack(spacing: 2) {
                         Text("•")
-                            .foregroundStyle(viewModel.selectedSearchValue != item ? Color.gray400 : Color.blue800)
+                            .foregroundStyle(viewModel.selectedSearchValue != item ? Color.gray400 : Color.blue700)
 
                         Text("\(item.rawValue)")
                             .font(.pretendard(size: 13, type: .regular))
@@ -38,9 +38,6 @@ struct AppGoodsListStickyHeaderView: View {
                     }
                     .onTapGesture {
                         viewModel.didSelectSearchValue(item)
-                    }
-                    .onAppear {
-                        viewModel.fetchAppGoodsInfo()
                     }
                 }
             }

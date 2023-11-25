@@ -24,7 +24,6 @@ struct AppMainQuickMenuListView: View {
         .padding([.leading, .trailing], 16)
     }
 
-    @ViewBuilder
     private func AppMainQuickMenuHeaderView() -> some View {
         Text("기획전 / 이벤트")
             .font(.pretendard(size: 13, type: .bold))
