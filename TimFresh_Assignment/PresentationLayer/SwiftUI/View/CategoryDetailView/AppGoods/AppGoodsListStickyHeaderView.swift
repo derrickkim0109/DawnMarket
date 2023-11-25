@@ -13,7 +13,7 @@ struct AppGoodsListStickyHeaderView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 0) {
-                Text("\(viewModel.fetchedAppGoodsInfoList.count)")
+                Text("\(viewModel.pagination?.totalElements ?? 0)")
                     .font(.pretendard(size: 13, type: .extraBold))
                     .foregroundStyle(Color.black900)
 
