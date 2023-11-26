@@ -31,5 +31,12 @@ extension PaginationResponseDTO {
         totalElements: 47,
         totalPage: 5
     )
+
+    static let insufficientMock = PaginationResponseDTO(
+        currentPage: 0,
+        elementSizeOfPage: 0,
+        totalElements: 0,
+        totalPage: 0
+    )
 #endif
 }

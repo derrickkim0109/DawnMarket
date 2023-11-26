@@ -24,5 +24,12 @@ extension PaginationModel {
         totalElements: 47,
         totalPage: 5
     )
+
+    static let insufficientMock = PaginationModel(
+        currentPage: 0,
+        elementSizeOfPage: 0,
+        totalElements: 0,
+        totalPage: 0
+    )
 #endif
 }
