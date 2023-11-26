@@ -14,9 +14,9 @@ struct AppGoodsCellView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            AppGoodsImageView()
+            appGoodsImageView()
 
-            AppGoodsInfoView()
+            appGoodsInfoView()
                 .frame(width: 156)
             Spacer()
         }
@@ -24,7 +24,7 @@ struct AppGoodsCellView: View {
         .padding(.bottom, 26)
     }
 
-    private func AppGoodsImageView() -> some View {
+    private func appGoodsImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {
                 ProgressView()
@@ -33,12 +33,12 @@ struct AppGoodsCellView: View {
             .resizable()
             .frame(width: 156, height: 156)
             .overlay(alignment: .bottomTrailing) {
-                IconCartButton()
+                iconCartButton()
                     .offset(x: -10, y: -10)
             }
     }
 
-    private func IconCartButton() -> some View {
+    private func iconCartButton() -> some View {
         Button {
             viewModel.showToastByDebounce()
         } label: {
@@ -54,7 +54,7 @@ struct AppGoodsCellView: View {
         .frame(width: 32, height: 32)
     }
 
-    private func AppGoodsInfoView() -> some View {
+    private func appGoodsInfoView() -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("\(item.getGoodsName())")
@@ -65,17 +65,18 @@ struct AppGoodsCellView: View {
             }
 
             if item.isDiscounted() {
-                OriginalPriceView()
+                salePriceView()
             }
 
-            SalePriceView()
+            discountPriceView()
 
-            AppGoodsOptionView()
+            appGoodsOptionView()
         }
         .frame(maxWidth: .infinity)
     }
 
-    private func OriginalPriceView() -> some View {
+    /// 판매 가격
+    private func salePriceView() -> some View {
         HStack(spacing: 0) {
             Text("\(item.salePrice)")
                 .font(.pretendard(size: 13, type: .medium))
@@ -92,7 +93,8 @@ struct AppGoodsCellView: View {
         }
     }
 
-    private func SalePriceView() -> some View {
+    /// 할인된 가격
+    private func discountPriceView() -> some View {
         HStack(spacing: 2) {
             if item.isDiscounted() {
                 Text("\(item.getDiscountRatio())%")
@@ -113,7 +115,7 @@ struct AppGoodsCellView: View {
         }
     }
 
-    private func AppGoodsOptionView() -> some View {
+    private func appGoodsOptionView() -> some View {
         HStack(spacing: 8) {
             Text("옵션")
                 .font(.pretendard(size: 12, type: .medium))

@@ -19,14 +19,14 @@ struct AppSubDisplayClassCellView: View {
                 Divider()
                     .frame(width: 1)
 
-                AppSubDisplayClassTitleView()
+                appSubDisplayClassTitleView()
             }
             
             Divider()
         }
     }
 
-    private func AppSubDisplayClassTitleView() -> some View {
+    private func appSubDisplayClassTitleView() -> some View {
         HStack {
             Text("\(item.subDisplayClassName)")
                 .font(.pretendard(size: 14, type: .regular))

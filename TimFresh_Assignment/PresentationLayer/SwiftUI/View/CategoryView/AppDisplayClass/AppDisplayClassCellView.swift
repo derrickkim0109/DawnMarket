@@ -9,7 +9,6 @@ import SwiftUI
 import Kingfisher
 
 struct AppDisplayClassCellView: View {
-    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var viewModel: CategoryViewModel
 
     let item : AppDisplayClassInfoFetchItemModel
@@ -18,13 +17,13 @@ struct AppDisplayClassCellView: View {
         NavigationLink {
             viewModel.nextScreen(item: item)
         } label: {
-            AppDisplayClassCellInfoView()
+            appDisplayClassCellInfoView()
         }
     }
 
-    private func AppDisplayClassCellInfoView() -> some View {
+    private func appDisplayClassCellInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
-            AppDisplayClassImageView()
+            appDisplayClassImageView()
 
             Spacer()
 
@@ -34,10 +33,9 @@ struct AppDisplayClassCellView: View {
 
             Spacer()
         }
-        .foregroundColor(colorScheme == .dark ? .white : .black)
     }
 
-    private func AppDisplayClassImageView() -> some View {
+    private func appDisplayClassImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {
                 ProgressView()

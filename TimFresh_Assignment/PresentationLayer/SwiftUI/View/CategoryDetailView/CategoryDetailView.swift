@@ -28,9 +28,9 @@ struct CategoryDetailView: View {
             }
             .navigationBarBackButtonHidden(true)
             .toolbar {
-                NavigationLeadingView()
-                NavigationTitleView()
-                NavigationTrailingView()
+                navigationLeadingView()
+                navigationTitleView()
+                navigationTrailingView()
             }
             .toolbarBackground(Color.white, for: .navigationBar)
             .showErrorAlert(
@@ -47,7 +47,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func NavigationLeadingView() -> some ToolbarContent {
+    private func navigationLeadingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button {
                 presentationMode.wrappedValue.dismiss()
@@ -58,7 +58,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func NavigationTitleView() -> some ToolbarContent {
+    private func navigationTitleView() -> some ToolbarContent {
         ToolbarItem(placement: .principal) {
             Text("\(viewModel.getDisplayClassName())")
                 .font(.pretendard(size: 15, type: .medium))
@@ -66,7 +66,7 @@ struct CategoryDetailView: View {
         }
     }
 
-    private func NavigationTrailingView() -> some ToolbarContent {
+    private func navigationTrailingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
                 Button {

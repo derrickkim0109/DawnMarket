@@ -48,10 +48,6 @@ struct CategoryView: View {
                 .onAppear {
                     viewModel.viewWillAppear()
                 }
-                .showErrorAlert(
-                    isPresented: $viewModel.showErrorAlert,
-                    message: viewModel.viewModelError
-                )
             }
 
             Spacer()
@@ -59,5 +55,9 @@ struct CategoryView: View {
                     Text("개발 예정")
                 }
         }
+        .showErrorAlert(
+            isPresented: $viewModel.showErrorAlert,
+            message: viewModel.viewModelError
+        )
     }
 }

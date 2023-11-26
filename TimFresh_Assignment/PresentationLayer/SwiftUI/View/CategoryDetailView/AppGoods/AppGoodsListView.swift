@@ -12,7 +12,7 @@ struct AppGoodsListView: View {
 
     var body: some View {
         LazyVGrid(columns: getGridItemSize(), spacing: 0, pinnedViews: [.sectionHeaders]) {
-            Section(header: AppGoodsListHeaderView()) {
+            Section(header: appGoodsListHeaderView()) {
                 ForEach(viewModel.fetchedAppGoodsInfoList) { item in
                     AppGoodsCellView(item: item)
                         .environmentObject(viewModel)
@@ -40,7 +40,7 @@ struct AppGoodsListView: View {
         return gridItems
     }
 
-    private func AppGoodsListHeaderView() -> some View {
+    private func appGoodsListHeaderView() -> some View {
         AppGoodsListStickyHeaderView()
             .frame(minWidth: 0, maxWidth: .infinity)
             .background(

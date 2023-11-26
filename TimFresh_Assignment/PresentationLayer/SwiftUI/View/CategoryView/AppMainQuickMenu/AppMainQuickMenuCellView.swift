@@ -9,30 +9,28 @@ import SwiftUI
 import Kingfisher
 
 struct AppMainQuickMenuCellView: View {
-    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var viewModel: CategoryViewModel
 
     let item: AppMainQuickMenuFetchItemModel
 
     var body: some View {
-        AppMainQuickMenuInfoView()
+        appMainQuickMenuInfoView()
             .onTapGesture {
                 viewModel.showToastByDebounce()
             }
     }
 
-    private func AppMainQuickMenuInfoView() -> some View {
+    private func appMainQuickMenuInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
-            AppMainQuickMenuImageView()
+            appMainQuickMenuImageView()
 
             Spacer()
 
-            AppMainQuickMenuTitleView()
+            appMainQuickMenuTitleView()
         }
-        .foregroundColor(colorScheme == .dark ? .white : .black)
     }
 
-    private func AppMainQuickMenuImageView() -> some View {
+    private func appMainQuickMenuImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {
                 ProgressView()
@@ -42,7 +40,7 @@ struct AppMainQuickMenuCellView: View {
             .frame(height: 52)
     }
 
-    private func AppMainQuickMenuTitleView() -> some View {
+    private func appMainQuickMenuTitleView() -> some View {
         Text(item.quickMenuName)
             .font(.pretendard(size: 12, type: .medium))
             .foregroundStyle(Color.black700)
