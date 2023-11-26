@@ -36,8 +36,15 @@ struct AppMainQuickMenuCellView: View {
                 ProgressView()
             }
             .retry(maxCount: 3, interval: .seconds(5))
+            .onFailure({ error in
+                viewModel.setupFetchError(error.errorDescription ?? "")
+            })
             .resizable()
             .frame(height: 52)
+            .showErrorAlert(
+                isPresented: $viewModel.showErrorAlert,
+                message: viewModel.viewModelError
+            )
     }
 
     private func appMainQuickMenuTitleView() -> some View {

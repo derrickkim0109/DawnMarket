@@ -41,7 +41,14 @@ struct AppDisplayClassCellView: View {
                 ProgressView()
             }
             .retry(maxCount: 3, interval: .seconds(5))
+            .onFailure({ error in
+                viewModel.setupFetchError(error.errorDescription ?? "")
+            })
             .resizable()
             .frame(width: 72, height: 70)
+            .showErrorAlert(
+                isPresented: $viewModel.showErrorAlert,
+                message: viewModel.viewModelError
+            )
     }
 }

@@ -30,8 +30,15 @@ struct AppGoodsCellView: View {
                 ProgressView()
             }
             .retry(maxCount: 3, interval: .seconds(5))
+            .onFailure({ error in
+                viewModel.setupFetchError(error.errorDescription ?? "")
+            })
             .resizable()
             .frame(width: 156, height: 156)
+            .showErrorAlert(
+                isPresented: $viewModel.showErrorAlert,
+                message: viewModel.viewModelError
+            )
             .overlay(alignment: .bottomTrailing) {
                 iconCartButton()
                     .offset(x: -10, y: -10)
