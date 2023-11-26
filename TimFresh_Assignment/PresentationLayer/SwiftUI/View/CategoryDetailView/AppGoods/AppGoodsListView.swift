@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct AppGoodsListView: View {
     @EnvironmentObject var viewModel: CategoryDetailViewModel
+    @State private var isLoading: Bool = false
+    @State private var cancellable = Set<AnyCancellable>()
 
     var body: some View {
         LazyVGrid(columns: getGridItemSize(), spacing: 0, pinnedViews: [.sectionHeaders]) {
@@ -56,5 +59,17 @@ struct AppGoodsListView: View {
             ProgressView()
             Spacer()
         }
+        .frame(height: isLoading ? 0 : 10)
+        .onAppear {
+            Timer.publish(every: 3, on: .main, in: .common)
+                .autoconnect()
+                .receive(on: DispatchQueue.main)
+                .sink { _ in
+                    withAnimation {
+                        isLoading = true
+                    }
+                }.store(in: &cancellable)
+        }
+        .hiddenConditionally(isHidden: isLoading)
     }
 }
