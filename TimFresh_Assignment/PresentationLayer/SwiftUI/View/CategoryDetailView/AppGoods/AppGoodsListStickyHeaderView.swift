@@ -25,7 +25,7 @@ struct AppGoodsListStickyHeaderView: View {
     private func headerTitleView() -> some View {
         HStack(spacing: 0) {
             Text("\(viewModel.pagination?.totalElements ?? 0)")
-                .font(.pretendard(size: 13, type: .extraBold))
+                .font(.pretendard(size: 13, type: .bold))
                 .foregroundStyle(Color.black900)
 
             Text("건의 검색결과")
