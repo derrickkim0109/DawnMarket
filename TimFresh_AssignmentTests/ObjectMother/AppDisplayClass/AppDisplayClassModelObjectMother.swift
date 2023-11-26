@@ -9,14 +9,14 @@
 
 struct AppDisplayClassModelObjectMother {
     static func getAppDisplayClassInfoFetchModelWithCompleteData() -> AppDisplayClassInfoFetchModel {
-        return AppDisplayClassInfoFetchModel(data: getAppSearchItemModelListWithCompleteData(), message: "")
+        return AppDisplayClassInfoFetchModel(data: getAppDisplayClassInfoFetchItemModelListWithCompleteData(), message: "")
     }
 
     static func getAppDisplayClassInfoFetchModelWithEmptyData() -> AppDisplayClassInfoFetchModel {
         return AppDisplayClassInfoFetchModel(data: [], message: "")
     }
 
-    static func getAppSearchItemModelListWithCompleteData(count: Int = 20) -> [AppDisplayClassInfoFetchItemModel] {
+    static func getAppDisplayClassInfoFetchItemModelListWithCompleteData(count: Int = 20) -> [AppDisplayClassInfoFetchItemModel] {
         return (0..<count).map { _ in getAppDisplayClassInfoFetchItemModelWithCompleteData() }
     }
 

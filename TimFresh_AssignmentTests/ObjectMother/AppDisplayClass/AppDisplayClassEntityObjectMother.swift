@@ -9,14 +9,14 @@
 
 struct AppDisplayClassEntityObjectMother {
     static func getAppDisplayClassInfoFetchEntityWithCompleteData() -> AppDisplayClassInfoFetchEntity {
-        return AppDisplayClassInfoFetchEntity(data: getAppSearchItemEntityListWithCompleteData(), message: "")
+        return AppDisplayClassInfoFetchEntity(data: getAppDisplayClassInfoFetchEntityListWithCompleteData(), message: "")
     }
 
     static func getAppDisplayClassInfoFetchEntityWithEmptyData() -> AppDisplayClassInfoFetchEntity {
         return AppDisplayClassInfoFetchEntity(data: [], message: "")
     }
 
-    static func getAppSearchItemEntityListWithCompleteData(count: Int = 20) -> [AppDisplayClassInfoFetchItemEntity] {
+    static func getAppDisplayClassInfoFetchEntityListWithCompleteData(count: Int = 20) -> [AppDisplayClassInfoFetchItemEntity] {
         return (0..<count).map { _ in getAppDisplayClassInfoFetchItemEntityWithCompleteData() }
     }
 
