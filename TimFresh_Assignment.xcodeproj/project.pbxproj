@@ -662,7 +662,7 @@
 		908CBB2D2B0A58E300653F66 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				908CBBA52B0A5E0000653F66 /* SwiftUI */,
+				9097F62A2B12FB020056FF15 /* Scene */,
 				908CBB2E2B0A58E300653F66 /* Model */,
 			);
 			path = PresentationLayer;
@@ -731,15 +731,6 @@
 			path = AppDisplayClassInfo;
 			sourceTree = "<group>";
 		};
-		908CBBA52B0A5E0000653F66 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				908CBBA82B0A5E0000653F66 /* View */,
-				908CBBA62B0A5E0000653F66 /* ViewModel */,
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
 		908CBBA62B0A5E0000653F66 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,7 +743,6 @@
 		908CBBA82B0A5E0000653F66 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				90EFCE9D2B0C8724006FE3C9 /* Flow */,
 				908CBBAB2B0A5E0000653F66 /* Common */,
 				90EFCE622B0AE03F006FE3C9 /* TabBar */,
 				908CBBA92B0A5E0000653F66 /* CategoryView */,
@@ -798,6 +788,16 @@
 				908CBAC02B0A58E200653F66 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		9097F62A2B12FB020056FF15 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				90EFCE9D2B0C8724006FE3C9 /* Flow */,
+				908CBBA82B0A5E0000653F66 /* View */,
+				908CBBA62B0A5E0000653F66 /* ViewModel */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		90D3931E2B0FA2E700558D47 /* SpoqaHanSansNeo */ = {
