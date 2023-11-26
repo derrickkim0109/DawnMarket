@@ -147,23 +147,23 @@ class CategoryDetailViewModel: ObservableObject {
     func showToastByDebounce() {
         showToast = true
     }
+
+    func setupFetchError(_ error: String) {
+        viewModelError = error
+        showErrorAlert = true
+    }
 }
 
 extension CategoryDetailViewModel {
-    private func setupFetchError(_ error: String) {
-        self.viewModelError = error
-        self.showErrorAlert = true
-    }
-
     private func resetAppSubDisplayClassInfoList() {
-        self.fetchedAppSubDisplayClassInfoList = []
-        self.viewModelError = nil
+        fetchedAppSubDisplayClassInfoList = []
+        viewModelError = nil
     }
 
     private func resetAppGoodsInfoList() {
-        self.fetchedAppGoodsInfoList = []
-        self.viewModelError = nil
-        self.appGoodsSize = 20
+        fetchedAppGoodsInfoList = []
+        viewModelError = nil
+        appGoodsSize = 20
     }
 
     private func getAPPSubDisplayClassSequence() -> Int {

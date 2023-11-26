@@ -96,7 +96,7 @@ final class CategoryViewModel: ObservableObject {
     func showToastByDebounce() {
         showToast = true
     }
-
+    
     func isEmptyFetchedAppDisplayClassList() -> Bool {
         return fetchedAppDisplayClassList.isEmpty
     }
@@ -104,17 +104,17 @@ final class CategoryViewModel: ObservableObject {
     func isEmptyFetchedAppMainQuickMenuList() -> Bool {
         return fetchedAppMainQuickMenuList.isEmpty
     }
+    
+    func setupFetchError(_ error: String) {
+        viewModelError = error
+        showErrorAlert = true
+    }
 }
 
 extension CategoryViewModel {
-    private func setupFetchError(_ error: String) {
-        self.viewModelError = error
-        self.showErrorAlert = true
-    }
-
     private func resetProperties() {
-        self.fetchedAppDisplayClassList = []
-        self.fetchedAppMainQuickMenuList = []
-        self.viewModelError = nil
+        fetchedAppDisplayClassList = []
+        fetchedAppMainQuickMenuList = []
+        viewModelError = nil
     }
 }

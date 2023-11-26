@@ -28,7 +28,7 @@ final class CategoryRouter: ObservableObject, FlowRouter {
 
     func nextTransitionScreen(item: AppDisplayClassInfoFetchItemModel) -> some View {
         nextTransitionRoute.nextView(
-            categoryDIContainer: self.categoryDIContainer,
+            categoryDIContainer: categoryDIContainer,
             router: self, 
             displayClassItem: item
         )
