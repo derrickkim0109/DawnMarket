@@ -303,10 +303,9 @@
 		908CBABF2B0A58E200653F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				908CBAC42B0A58E200653F66 /* Fonts */,
+				9097F6292B12E90E0056FF15 /* Assets */,
 				901F4F112B1174C300963F4D /* LaunchScreen */,
 				908CBAC12B0A58E200653F66 /* Preview Content */,
-				9097F6292B12E90E0056FF15 /* Assets */,
 				908CBAFF2B0A58E300653F66 /* TimFresh-Assignment-Info.plist */,
 			);
 			path = Resources;
@@ -782,6 +781,7 @@
 		9097F6292B12E90E0056FF15 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				908CBAC42B0A58E200653F66 /* Fonts */,
 				90EFCE692B0AE4F4006FE3C9 /* Color.swift */,
 				908CBACF2B0A58E200653F66 /* Image.swift */,
 				908CBAD02B0A58E200653F66 /* Font.swift */,
