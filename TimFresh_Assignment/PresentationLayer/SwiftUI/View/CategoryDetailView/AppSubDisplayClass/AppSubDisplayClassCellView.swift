@@ -14,15 +14,15 @@ struct AppSubDisplayClassCellView: View {
     var body: some View {
         VStack(spacing: 0) {
             Divider()
+                .foregroundStyle(Color.gray100)
 
             HStack(spacing: 0) {
                 Divider()
+                    .foregroundStyle(Color.gray100)
                     .frame(width: 1)
 
                 appSubDisplayClassTitleView()
             }
-            
-            Divider()
         }
     }
 

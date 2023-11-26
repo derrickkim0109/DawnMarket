@@ -15,6 +15,7 @@ struct AppGoodsListStickyHeaderView: View {
             headerTitleView()
 
             Divider()
+                .foregroundStyle(Color.gray200)
                 .frame(maxWidth: .infinity)
 
             allSearchCaseView()
@@ -41,13 +42,13 @@ struct AppGoodsListStickyHeaderView: View {
                 HStack(spacing: 2) {
                     Text("•")
                         .foregroundStyle(
-                            viewModel.selectedSearchValue != item ? Color.gray400 : Color.blue700
+                            viewModel.selectedSearchValue != item ? Color.gray300 : Color.blue700
                         )
 
                     Text("\(item.rawValue)")
                         .font(.pretendard(size: 13, type: .regular))
                         .foregroundStyle(
-                            viewModel.selectedSearchValue != item ? Color.gray600 : Color.black900
+                            viewModel.selectedSearchValue != item ? Color.gray500 : Color.black900
                         )
                 }
                 .onTapGesture {

@@ -31,7 +31,7 @@ struct CategoryView: View {
                                 .environmentObject(viewModel)
                                 .padding(.bottom, 42)
 
-                            Color.gray300
+                            Color.gray200
                                 .frame(height: 8)
                         }
                     }

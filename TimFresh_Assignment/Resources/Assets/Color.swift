@@ -19,10 +19,12 @@ extension Color {
     static let gray900 = Color("gray(92,98,112)")
     static let gray800 = Color("gray(112, 118, 131)")
     static let gray700 = Color("gray(115, 123, 140)")
-    static let gray600 = Color("gray(140, 146, 161)")
-    static let gray500 = Color("gray(175, 180, 192)")
-    static let gray400 = Color("gray(202, 207, 219)")
-    static let gray300 = Color("gray(249, 250, 251)")
+    static let gray600 = Color("gray(134, 138, 147)")
+    static let gray500 = Color("gray(140, 146, 161)")
+    static let gray400 = Color("gray(175, 180, 192)")
+    static let gray300 = Color("gray(202, 207, 219)")
+    static let gray200 = Color("gray(249, 250, 251)")
+    static let gray100 = Color("gray(243, 244, 246)")
 
     static let red900 = Color("red(235, 75, 73)")
 }

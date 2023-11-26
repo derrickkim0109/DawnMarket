@@ -40,6 +40,7 @@ struct CategoryHeaderView: View {
     private func navigationTrailingBellImageView() -> some View {
         Image.iconBellImage
             .resizable()
+            .colorMultiply(.gray600)
             .frame(width: 24)
             .overlay {
                 Image.iconNewBadgeImage
@@ -55,6 +56,7 @@ struct CategoryHeaderView: View {
     private func navigationTrailingSettingImageView() -> some View {
         Image.iconSettingImage
             .resizable()
+            .colorMultiply(.gray600)
             .frame(width: 24)
             .onTapGesture {
                 viewModel.showToastByDebounce()

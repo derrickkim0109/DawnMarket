@@ -87,7 +87,7 @@ struct AppGoodsCellView: View {
         HStack(spacing: 0) {
             Text("\(item.salePrice)")
                 .font(.pretendard(size: 13, type: .medium))
-                .foregroundStyle(Color.gray500)
+                .foregroundStyle(Color.gray400)
                 .overlay(alignment: .center) {
                     Divider()
                         .frame(maxWidth: .infinity)
@@ -129,7 +129,7 @@ struct AppGoodsCellView: View {
                 .foregroundStyle(Color.gray700)
                 .background(
                     RoundedRectangle(cornerRadius: 2)
-                        .foregroundStyle(Color.gray300)
+                        .foregroundStyle(Color.gray200)
                         .frame(width: 29, height: 20)
                 )
 

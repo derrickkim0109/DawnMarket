@@ -73,12 +73,18 @@ struct CategoryDetailView: View {
                     viewModel.showToastByDebounce()
                 } label: {
                     Image.iconSearchImage
+                        .resizable()
+                        .colorMultiply(.gray600)
+                        .frame(width: 24, height: 24)
                 }
 
                 Button {
                     viewModel.showToastByDebounce()
                 } label: {
                     Image.iconCartImage
+                        .resizable()
+                        .colorMultiply(.gray600)
+                        .frame(width: 24, height: 24)
                 }
             }
         }

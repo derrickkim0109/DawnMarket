@@ -11,17 +11,23 @@ struct AppSubDisplayClassListView: View {
     @EnvironmentObject var viewModel: CategoryDetailViewModel
 
     var body: some View {
-        LazyVGrid(columns: getGridItemSize(), spacing: 0) {
-            ForEach(viewModel.fetchedAppSubDisplayClassInfoList) { item in
-                AppSubDisplayClassCellView(item: item)
-                    .environmentObject(viewModel)
-                    .onTapGesture {
-                        viewModel.didSelectSubCategory(item)
-                    }
+        VStack(spacing: 0) {
+            LazyVGrid(columns: getGridItemSize(), spacing: 0) {
+                ForEach(viewModel.fetchedAppSubDisplayClassInfoList) { item in
+                    AppSubDisplayClassCellView(item: item)
+                        .environmentObject(viewModel)
+                        .onTapGesture {
+                            viewModel.didSelectSubCategory(item)
+                        }
+                }
             }
-        }
-        .onAppear {
-            viewModel.fetchAppDisplayBySubClass()
+            .onAppear {
+                viewModel.fetchAppDisplayBySubClass()
+            }
+
+            Divider()
+                .frame(maxWidth: .infinity)
+                .foregroundStyle(Color.gray100)
         }
     }
 
