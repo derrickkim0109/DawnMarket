@@ -50,8 +50,8 @@ class CategoryDetailViewModel: ObservableObject {
     var viewModelError: String?
     var pagination: PaginationModel?
 
-    private let appGoodsCurrentPage = 0
-    private var appGoodsSize = 20
+    private var appGoodsCurrentPage = 0
+    private let appGoodsSize = 20
 
     private let appDisplayBySubClassFetchUseCase: AppDisplayBySubClassFetchUseCaseInterface
     private let appGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface
@@ -118,7 +118,7 @@ class CategoryDetailViewModel: ObservableObject {
                 return
             }
 
-            self?.appGoodsSize += 20
+            self?.appGoodsCurrentPage += 1
             self?.pagination = appGoodsInfoFetchModel.pagination
 
             self?.fetchedAppGoodsInfoList.append(
@@ -141,7 +141,7 @@ class CategoryDetailViewModel: ObservableObject {
     }
 
     func hasNext() -> Bool {
-        return pagination?.hasNext(perPage: appGoodsSize) == true
+        return pagination?.hasNext() == true
     }
 
     func showToastByDebounce() {
@@ -163,7 +163,7 @@ extension CategoryDetailViewModel {
     private func resetAppGoodsInfoList() {
         fetchedAppGoodsInfoList = []
         viewModelError = nil
-        appGoodsSize = 20
+        appGoodsCurrentPage = 0
     }
 
     private func getAPPSubDisplayClassSequence() -> Int {

@@ -11,8 +11,8 @@ struct PaginationModel {
     let totalElements: Int64
     let totalPage: Int32
 
-    func hasNext(perPage : Int) -> Bool {
-        return totalElements > perPage
+    func hasNext() -> Bool {
+        return totalPage > currentPage
     }
 }
 
