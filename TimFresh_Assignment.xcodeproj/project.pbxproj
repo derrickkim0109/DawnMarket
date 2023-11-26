@@ -303,14 +303,11 @@
 		908CBABF2B0A58E200653F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				901F4F112B1174C300963F4D /* LaunchScreen */,
-				908CBAFF2B0A58E300653F66 /* TimFresh-Assignment-Info.plist */,
-				90EFCE692B0AE4F4006FE3C9 /* Color.swift */,
-				908CBACF2B0A58E200653F66 /* Image.swift */,
-				908CBAD02B0A58E200653F66 /* Font.swift */,
-				908CBAC02B0A58E200653F66 /* Assets.xcassets */,
-				908CBAC12B0A58E200653F66 /* Preview Content */,
 				908CBAC42B0A58E200653F66 /* Fonts */,
+				901F4F112B1174C300963F4D /* LaunchScreen */,
+				908CBAC12B0A58E200653F66 /* Preview Content */,
+				9097F6292B12E90E0056FF15 /* Assets */,
+				908CBAFF2B0A58E300653F66 /* TimFresh-Assignment-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -351,9 +348,9 @@
 		908CBAD12B0A58E200653F66 /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
-				908CBAD22B0A58E200653F66 /* Repository */,
-				908CBAD82B0A58E200653F66 /* Entity */,
 				908CBAE82B0A58E200653F66 /* UseCase */,
+				908CBAD82B0A58E200653F66 /* Entity */,
+				908CBAD22B0A58E200653F66 /* Repository */,
 			);
 			path = DomainLayer;
 			sourceTree = "<group>";
@@ -469,7 +466,6 @@
 			isa = PBXGroup;
 			children = (
 				908CBAF62B0A58E300653F66 /* UIUtils */,
-				908CBAFB2B0A58E300653F66 /* CommonUtils */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -498,13 +494,6 @@
 				9097F6242B12D9C50056FF15 /* TabBarModifier */,
 			);
 			path = ViewModifiers;
-			sourceTree = "<group>";
-		};
-		908CBAFB2B0A58E300653F66 /* CommonUtils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonUtils;
 			sourceTree = "<group>";
 		};
 		908CBAFD2B0A58E300653F66 /* Application */ = {
@@ -798,6 +787,17 @@
 				9097F6262B12D9C50056FF15 /* TabBarItemPreferenceKey.swift */,
 			);
 			path = TabBarModifier;
+			sourceTree = "<group>";
+		};
+		9097F6292B12E90E0056FF15 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				90EFCE692B0AE4F4006FE3C9 /* Color.swift */,
+				908CBACF2B0A58E200653F66 /* Image.swift */,
+				908CBAD02B0A58E200653F66 /* Font.swift */,
+				908CBAC02B0A58E200653F66 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		90D3931E2B0FA2E700558D47 /* SpoqaHanSansNeo */ = {
