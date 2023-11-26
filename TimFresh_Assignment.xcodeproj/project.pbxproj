@@ -503,16 +503,8 @@
 		908CBAFB2B0A58E300653F66 /* CommonUtils */ = {
 			isa = PBXGroup;
 			children = (
-				908CBAFC2B0A58E300653F66 /* Extension */,
 			);
 			path = CommonUtils;
-			sourceTree = "<group>";
-		};
-		908CBAFC2B0A58E300653F66 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		908CBAFD2B0A58E300653F66 /* Application */ = {
