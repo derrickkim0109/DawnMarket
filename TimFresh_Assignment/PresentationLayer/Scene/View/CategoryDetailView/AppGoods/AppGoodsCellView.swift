@@ -47,7 +47,9 @@ struct AppGoodsCellView: View {
 
     private func iconCartButton() -> some View {
         Button {
-            viewModel.showToastByDebounce()
+            viewModel.showToastByDebounce(
+                "\(item.getGoodsName())이 장바구니에 담겼습니다."
+            )
         } label: {
             Image.iconCartFillImage
                 .colorMultiply(Color.blue900)

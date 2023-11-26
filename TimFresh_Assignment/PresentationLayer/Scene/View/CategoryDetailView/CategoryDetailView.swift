@@ -38,12 +38,11 @@ struct CategoryDetailView: View {
                 message: viewModel.viewModelError
             )
 
-            VStack {
-                Spacer()
-                    .toast(isPresented: $viewModel.showToast, duration: 1) {
-                        Text("개발 예정")
-                    }
-            }
+            Spacer()
+                .toast(isPresented: $viewModel.showToast, duration: 2) {
+                    Text(viewModel.toastMessage)
+                }
+                .offset(y: 40)
         }
     }
 
@@ -70,7 +69,7 @@ struct CategoryDetailView: View {
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
                 Button {
-                    viewModel.showToastByDebounce()
+                    viewModel.showToastByDebounce("개발 예정")
                 } label: {
                     Image.iconSearchImage
                         .resizable()
@@ -79,7 +78,7 @@ struct CategoryDetailView: View {
                 }
 
                 Button {
-                    viewModel.showToastByDebounce()
+                    viewModel.showToastByDebounce("개발 예정")
                 } label: {
                     Image.iconCartImage
                         .resizable()

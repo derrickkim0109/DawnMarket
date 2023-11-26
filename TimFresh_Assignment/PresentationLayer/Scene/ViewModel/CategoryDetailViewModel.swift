@@ -32,6 +32,8 @@ class CategoryDetailViewModel: ObservableObject {
     @Published private(set) var fetchedAppGoodsInfoList = [AppGoodsInfoFetchItemModel]()
     @Published var showErrorAlert: Bool = false
     @Published var showToast: Bool = false
+    
+    private(set) var toastMessage: String = "개발 예정"
 
     @Published private(set) var selectedSubCategory: AppSubDisplayClassInfoFetchItemModel? {
         didSet {
@@ -144,8 +146,9 @@ class CategoryDetailViewModel: ObservableObject {
         return pagination?.hasNext() == true
     }
 
-    func showToastByDebounce() {
+    func showToastByDebounce(_ message: String) {
         showToast = true
+        toastMessage = message
     }
 
     func setupFetchError(_ error: String) {
