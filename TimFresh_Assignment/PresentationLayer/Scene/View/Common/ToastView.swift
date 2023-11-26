@@ -12,7 +12,7 @@ struct ToastView<Content: View>: View {
     @Binding var isPresented: Bool
     var duration: Double
     var content: () -> Content
-    @State private var cancellable = Set<AnyCancellable>()
+    @State private var cancellable: AnyCancellable?
 
     var body: some View {
         if isPresented {
@@ -23,7 +23,7 @@ struct ToastView<Content: View>: View {
                     HStack {
                         Spacer()
 
-                        ToastContentView()
+                        toastContentView()
 
                         Spacer()
                     }
@@ -33,25 +33,29 @@ struct ToastView<Content: View>: View {
                 .edgesIgnoringSafeArea(.all)
             }
             .onAppear {
-                Timer.publish(every: 1, on: .main, in: .common)
+                cancellable?.cancel()
+
+                cancellable = Timer.publish(every: duration, on: .main, in: .common)
                     .autoconnect()
-                    .receive(on: DispatchQueue.main)
                     .sink { _ in
                         withAnimation {
                             isPresented = false
                         }
-                    }.store(in: &cancellable)
+                    }
+            }
+            .onDisappear {
+                cancellable?.cancel()
             }
         }
     }
 
-    private func ToastContentView() -> some View {
+    private func toastContentView() -> some View {
         content()
             .padding()
             .background(Color.blue900)
             .foregroundColor(Color.white)
             .cornerRadius(10)
-            .transition(.slide)
-            .animation(.easeInOut, value: 100)
+            .transition(.opacity)
+            .animation(.smooth, value: 100)
     }
 }

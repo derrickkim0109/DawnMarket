@@ -27,10 +27,12 @@ struct TabBarContainerView<Content: View>: View {
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .overlay {
-                    Spacer()
-                        .toast(isPresented: $showToast, duration: 1) {
-                            Text("개발 예정")
-                        }
+                    VStack {
+                        Spacer()
+                            .toast(isPresented: $showToast, duration: 1) {
+                                Text("개발 예정")
+                            }
+                    }
                 }
 
             VStack(spacing: 0) {

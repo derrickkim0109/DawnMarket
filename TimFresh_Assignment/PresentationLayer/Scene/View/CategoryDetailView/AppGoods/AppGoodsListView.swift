@@ -20,7 +20,7 @@ struct AppGoodsListView: View {
                     AppGoodsCellView(item: item)
                         .environmentObject(viewModel)
                         .onTapGesture {
-                            viewModel.showToastByDebounce()
+                            viewModel.showToastByDebounce("개발 예정")
                         }
                 }
             }
