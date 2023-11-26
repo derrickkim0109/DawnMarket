@@ -51,7 +51,7 @@ struct CustomTabBarView: View {
         selection = tab
         
         if tab != .category {
-            showToast.toggle()
+            showToast = true
         }
     }
 }

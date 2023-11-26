@@ -89,6 +89,8 @@
 		908CBBA02B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB422B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift */; };
 		908CBBAE2B0A5E0000653F66 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBBA72B0A5E0000653F66 /* CategoryViewModel.swift */; };
 		908CBBAF2B0A5E0000653F66 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBBAA2B0A5E0000653F66 /* CategoryView.swift */; };
+		9097F6272B12D9C50056FF15 /* TabBarItemViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6252B12D9C50056FF15 /* TabBarItemViewModifier.swift */; };
+		9097F6282B12D9C50056FF15 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6262B12D9C50056FF15 /* TabBarItemPreferenceKey.swift */; };
 		909BC9772B077C6300D9E322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9762B077C6300D9E322 /* Kingfisher */; };
 		909BC97A2B077C7B00D9E322 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9792B077C7B00D9E322 /* CombineMoya */; };
 		909BC97C2B077C7B00D9E322 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97B2B077C7B00D9E322 /* Moya */; };
@@ -103,8 +105,6 @@
 		90EFCE682B0AE3EE006FE3C9 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */; };
 		90EFCE6A2B0AE4F4006FE3C9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE692B0AE4F4006FE3C9 /* Color.swift */; };
 		90EFCE6C2B0AE654006FE3C9 /* TabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE6B2B0AE654006FE3C9 /* TabBarContainerView.swift */; };
-		90EFCE6F2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE6E2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift */; };
-		90EFCE712B0AE714006FE3C9 /* TabBarItemViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE702B0AE714006FE3C9 /* TabBarItemViewModifier.swift */; };
 		90EFCE732B0AE7BA006FE3C9 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE722B0AE7BA006FE3C9 /* AppTabBarView.swift */; };
 		90EFCE752B0AF8B1006FE3C9 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE742B0AF8B1006FE3C9 /* CategoryHeaderView.swift */; };
 		90EFCE792B0B0805006FE3C9 /* AppDisplayClassCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCE782B0B0805006FE3C9 /* AppDisplayClassCellView.swift */; };
@@ -212,6 +212,8 @@
 		908CBB422B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchItemModel.swift; sourceTree = "<group>"; };
 		908CBBA72B0A5E0000653F66 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		908CBBAA2B0A5E0000653F66 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		9097F6252B12D9C50056FF15 /* TabBarItemViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemViewModifier.swift; sourceTree = "<group>"; };
+		9097F6262B12D9C50056FF15 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
 		90D3931F2B0FA2FE00558D47 /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpoqaHanSansNeo-Bold.otf"; path = "../../../../../../../../../Downloads/SpoqaHanSansNeo_all/SpoqaHanSansNeo_OTF_original/SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
 		90D393202B0FA2FE00558D47 /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpoqaHanSansNeo-Regular.otf"; path = "../../../../../../../../../Downloads/SpoqaHanSansNeo_all/SpoqaHanSansNeo_OTF_original/SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
 		90D393212B0FA2FE00558D47 /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpoqaHanSansNeo-Medium.otf"; path = "../../../../../../../../../Downloads/SpoqaHanSansNeo_all/SpoqaHanSansNeo_OTF_original/SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
@@ -221,8 +223,6 @@
 		90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		90EFCE692B0AE4F4006FE3C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		90EFCE6B2B0AE654006FE3C9 /* TabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContainerView.swift; sourceTree = "<group>"; };
-		90EFCE6E2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
-		90EFCE702B0AE714006FE3C9 /* TabBarItemViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemViewModifier.swift; sourceTree = "<group>"; };
 		90EFCE722B0AE7BA006FE3C9 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		90EFCE742B0AF8B1006FE3C9 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		90EFCE782B0B0805006FE3C9 /* AppDisplayClassCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassCellView.swift; sourceTree = "<group>"; };
@@ -495,7 +495,7 @@
 		908CBAF92B0A58E300653F66 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				90EFCE702B0AE714006FE3C9 /* TabBarItemViewModifier.swift */,
+				9097F6242B12D9C50056FF15 /* TabBarModifier */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -799,6 +799,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		9097F6242B12D9C50056FF15 /* TabBarModifier */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6252B12D9C50056FF15 /* TabBarItemViewModifier.swift */,
+				9097F6262B12D9C50056FF15 /* TabBarItemPreferenceKey.swift */,
+			);
+			path = TabBarModifier;
+			sourceTree = "<group>";
+		};
 		90D3931E2B0FA2E700558D47 /* SpoqaHanSansNeo */ = {
 			isa = PBXGroup;
 			children = (
@@ -825,7 +834,6 @@
 			isa = PBXGroup;
 			children = (
 				90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */,
-				90EFCE6E2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -1070,19 +1078,19 @@
 				90EFCE792B0B0805006FE3C9 /* AppDisplayClassCellView.swift in Sources */,
 				908CBB682B0A58E300653F66 /* PaginationEntity.swift in Sources */,
 				908CBB912B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift in Sources */,
+				9097F6282B12D9C50056FF15 /* TabBarItemPreferenceKey.swift in Sources */,
 				908CBB812B0A58E300653F66 /* AppGoodsInfoResponseDTO.swift in Sources */,
 				908CBB8A2B0A58E300653F66 /* AppGoodsInfoAPIService.swift in Sources */,
 				908CBB582B0A58E300653F66 /* Image.swift in Sources */,
-				90EFCE712B0AE714006FE3C9 /* TabBarItemViewModifier.swift in Sources */,
 				908CBB962B0A58E300653F66 /* AppMainQuickMenuFetchModel.swift in Sources */,
 				90EFCE6A2B0AE4F4006FE3C9 /* Color.swift in Sources */,
-				90EFCE6F2B0AE6B2006FE3C9 /* TabBarItemPreferenceKey.swift in Sources */,
 				908CBB8C2B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift in Sources */,
 				908CBB5F2B0A58E300653F66 /* AppMainQuickMenuFetchItemEntity.swift in Sources */,
 				90EFCEA92B0CE664006FE3C9 /* AppGoodsListView.swift in Sources */,
 				908CBB6F2B0A58E300653F66 /* AppGoodsInfoFetchUseCase.swift in Sources */,
 				90EFCE9C2B0C84BF006FE3C9 /* CategoryDIContainer.swift in Sources */,
 				90EFCE962B0C8035006FE3C9 /* FlowRouter.swift in Sources */,
+				9097F6272B12D9C50056FF15 /* TabBarItemViewModifier.swift in Sources */,
 				908CBB932B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift in Sources */,
 				908CBB632B0A58E300653F66 /* AppDisplayClassInfoFetchEntity.swift in Sources */,
 				908CBB982B0A58E300653F66 /* AppSubDisplayClassInfoFetchModel.swift in Sources */,

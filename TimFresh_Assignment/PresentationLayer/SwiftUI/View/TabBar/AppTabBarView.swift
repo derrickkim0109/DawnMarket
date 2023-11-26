@@ -12,7 +12,7 @@ struct AppTabBarView: View {
     var compositionRoot: CompositionRootInterface
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             TabBarContainerView(selection: $tabSelection) {
                 CategoryView(categoryDIContainer: compositionRoot.categoryDIContainer)
                     .tabBarItem(tab: .category, selection: $tabSelection)

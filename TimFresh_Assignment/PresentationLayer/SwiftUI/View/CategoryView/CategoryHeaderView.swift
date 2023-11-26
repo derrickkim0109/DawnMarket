@@ -48,6 +48,7 @@ struct CategoryHeaderView: View {
                     .offset(x: 7, y: -5)
             }
             .onTapGesture {
+                viewModel.showToastByDebounce()
             }
     }
 
@@ -56,6 +57,7 @@ struct CategoryHeaderView: View {
             .resizable()
             .frame(width: 24)
             .onTapGesture {
+                viewModel.showToastByDebounce()
             }
     }
 }
