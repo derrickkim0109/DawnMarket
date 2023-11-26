@@ -38,11 +38,13 @@ struct CategoryDetailView: View {
                 message: viewModel.viewModelError
             )
 
-            Spacer()
-                .toast(isPresented: $viewModel.showToast, duration: 2) {
-                    Text(viewModel.toastMessage)
-                }
-                .offset(y: 40)
+            VStack {
+                Spacer()
+                    .toast(isPresented: $viewModel.showToast, duration: 2) {
+                        Text(viewModel.toastMessage)
+                    }
+                    .offset(y: 40)
+            }
         }
     }
 
