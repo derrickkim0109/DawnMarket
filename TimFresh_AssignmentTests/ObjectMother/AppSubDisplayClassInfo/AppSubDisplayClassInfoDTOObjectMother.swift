@@ -15,9 +15,9 @@ struct AppSubDisplayClassInfoDTOObjectMother {
         )
     }
 
-    static func getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithEmptyData() -> SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO {
+    static func getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithInsufficientData() -> SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO {
         return SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO(
-            data: getAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithEmptyData(),
+            data: getAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithInsufficientData(),
             message: ""
         )
     }
@@ -29,10 +29,10 @@ struct AppSubDisplayClassInfoDTOObjectMother {
         )
     }
 
-    static func getAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithEmptyData() -> AppDisplayClassInfoBySubDisplayClassInfoResponseDTO {
+    static func getAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithInsufficientData() -> AppDisplayClassInfoBySubDisplayClassInfoResponseDTO {
         return AppDisplayClassInfoBySubDisplayClassInfoResponseDTO(
             displayClassName: "농축수산물",
-            appSubDisplayClassInfoList: []
+            appSubDisplayClassInfoList: [getAppSubDisplayClassInfoResponseDTOWithInsufficientData()]
         )
     }
 
@@ -42,5 +42,9 @@ struct AppSubDisplayClassInfoDTOObjectMother {
 
     static func getAppSubDisplayClassInfoResponseDTOWithCompleteData() -> AppSubDisplayClassInfoResponseDTO {
         return AppSubDisplayClassInfoResponseDTO.completedMock
+    }
+
+    static func getAppSubDisplayClassInfoResponseDTOWithInsufficientData() -> AppSubDisplayClassInfoResponseDTO {
+        return AppSubDisplayClassInfoResponseDTO.insufficientMock
     }
 }

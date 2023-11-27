@@ -42,5 +42,13 @@ extension AppSubDisplayClassInfoResponseDTO {
         parentsDisplayClassSequence: 51,
         subDisplayClassName: "채소과일"
     )
+
+    static let insufficientMock = AppSubDisplayClassInfoResponseDTO(
+        displayClassCode: "",
+        displayClassLevel: "",
+        displayClassSequence: 0,
+        parentsDisplayClassSequence: 0,
+        subDisplayClassName: ""
+    )
 #endif
 }
