@@ -15,9 +15,9 @@ struct AppGoodsInfoDTOObjectMother {
         )
     }
 
-    static func getPageResponseAppGoodsInfoResponseDTOWithEmptyData() -> PageResponseAppGoodsInfoResponseDTO {
+    static func getPageResponseAppGoodsInfoResponseDTOWithInsufficientData() -> PageResponseAppGoodsInfoResponseDTO {
         return PageResponseAppGoodsInfoResponseDTO(
-            data: [],
+            data: [getAppGoodsInfoResponseDTOWithInsufficientData()],
             pagination: getPaginationResponseDTOWithInsufficientData()
         )
     }
@@ -29,6 +29,10 @@ struct AppGoodsInfoDTOObjectMother {
 
     static func getAppGoodsInfoResponseDTOWithCompleteData() -> AppGoodsInfoResponseDTO {
         return AppGoodsInfoResponseDTO.completedMock
+    }
+
+    static func getAppGoodsInfoResponseDTOWithInsufficientData() -> AppGoodsInfoResponseDTO {
+        return AppGoodsInfoResponseDTO.insufficientMock
     }
 
     static func getPaginationResponseDTOWithCompleteData() -> PaginationResponseDTO {

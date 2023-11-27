@@ -73,7 +73,7 @@
 		908CBBAF2B0A5E0000653F66 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBBAA2B0A5E0000653F66 /* CategoryView.swift */; };
 		9097F6272B12D9C50056FF15 /* TabBarItemViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6252B12D9C50056FF15 /* TabBarItemViewModifier.swift */; };
 		9097F6282B12D9C50056FF15 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6262B12D9C50056FF15 /* TabBarItemPreferenceKey.swift */; };
-		9097F6322B12FC590056FF15 /* TimFresh_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6312B12FC590056FF15 /* TimFresh_AssignmentTests.swift */; };
+		9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6312B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift */; };
 		9097F66D2B137BD90056FF15 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F66C2B137BD90056FF15 /* Scenario.swift */; };
 		9097F6732B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6722B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift */; };
 		9097F6752B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6742B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift */; };
@@ -96,6 +96,9 @@
 		9097F6B12B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */; };
 		9097F6B22B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */; };
 		9097F6B32B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */; };
+		9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6B42B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift */; };
+		9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6B62B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift */; };
+		9097F6B92B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6B82B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift */; };
 		909BC9772B077C6300D9E322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9762B077C6300D9E322 /* Kingfisher */; };
 		909BC97A2B077C7B00D9E322 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9792B077C7B00D9E322 /* CombineMoya */; };
 		909BC97C2B077C7B00D9E322 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97B2B077C7B00D9E322 /* Moya */; };
@@ -207,7 +210,7 @@
 		9097F6252B12D9C50056FF15 /* TabBarItemViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemViewModifier.swift; sourceTree = "<group>"; };
 		9097F6262B12D9C50056FF15 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
 		9097F62F2B12FC590056FF15 /* TimFresh_AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimFresh_AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9097F6312B12FC590056FF15 /* TimFresh_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimFresh_AssignmentTests.swift; sourceTree = "<group>"; };
+		9097F6312B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDTOTests.swift; sourceTree = "<group>"; };
 		9097F66C2B137BD90056FF15 /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
 		9097F6722B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassEntityObjectMother.swift; sourceTree = "<group>"; };
 		9097F6742B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassModelObjectMother.swift; sourceTree = "<group>"; };
@@ -230,6 +233,9 @@
 		9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryDataSource.swift; sourceTree = "<group>"; };
 		9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDataSource.swift; sourceTree = "<group>"; };
 		9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoAPIService.swift; sourceTree = "<group>"; };
+		9097F6B42B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuDTOTests.swift; sourceTree = "<group>"; };
+		9097F6B62B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassDTOTests.swift; sourceTree = "<group>"; };
+		9097F6B82B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoDTOTests.swift; sourceTree = "<group>"; };
 		90EFCE632B0AE04A006FE3C9 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		90EFCE692B0AE4F4006FE3C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -751,7 +757,7 @@
 			children = (
 				9097F66C2B137BD90056FF15 /* Scenario.swift */,
 				9097F66B2B137BB40056FF15 /* ObjectMother */,
-				9097F6312B12FC590056FF15 /* TimFresh_AssignmentTests.swift */,
+				9097F68E2B1405840056FF15 /* DTOTests */,
 			);
 			path = TimFresh_AssignmentTests;
 			sourceTree = "<group>";
@@ -805,6 +811,17 @@
 				9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */,
 			);
 			path = AppGoodsInfo;
+			sourceTree = "<group>";
+		};
+		9097F68E2B1405840056FF15 /* DTOTests */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6312B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift */,
+				9097F6B42B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift */,
+				9097F6B62B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift */,
+				9097F6B82B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift */,
+			);
+			path = DTOTests;
 			sourceTree = "<group>";
 		};
 		9097F69D2B14BC9E0056FF15 /* Network */ = {
@@ -1152,7 +1169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9097F6322B12FC590056FF15 /* TimFresh_AssignmentTests.swift in Sources */,
+				9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */,
+				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
+				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppSubDisplayClassInfoModelObjectMother.swift in Sources */,
 				9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */,
 				9097F6752B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift in Sources */,
@@ -1165,6 +1184,7 @@
 				9097F67B2B137CB20056FF15 /* AppSubDisplayClassInfoEntityObjectMother.swift in Sources */,
 				9097F6812B137D000056FF15 /* AppMainQuickMenuEntityObjectMother.swift in Sources */,
 				9097F6872B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift in Sources */,
+				9097F6B92B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift in Sources */,
 				9097F66D2B137BD90056FF15 /* Scenario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
