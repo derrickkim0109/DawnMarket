@@ -9,11 +9,17 @@
 
 struct AppMainQuickMenuDTOObjectMother {
     static func getListResultAppMainQuickMenuResponseDTOWithCompleteData() -> ListResultAppMainQuickMenuResponseDTO {
-        return ListResultAppMainQuickMenuResponseDTO(data: getAppMainQuickMenuResponseDTOListWithCompleteData(), message: "")
+        return ListResultAppMainQuickMenuResponseDTO(
+            data: getAppMainQuickMenuResponseDTOListWithCompleteData(),
+            message: ""
+        )
     }
 
-    static func getListResultAppMainQuickMenuResponseDTOWithEmptyData() -> ListResultAppMainQuickMenuResponseDTO {
-        return ListResultAppMainQuickMenuResponseDTO(data: [], message: "")
+    static func getListResultAppMainQuickMenuResponseDTOWithInsufficientData() -> ListResultAppMainQuickMenuResponseDTO {
+        return ListResultAppMainQuickMenuResponseDTO(
+            data: [getAppMainQuickMenuResponseDTOWithInsufficientData()],
+            message: ""
+        )
     }
 
     static func getAppMainQuickMenuResponseDTOListWithCompleteData(count: Int = 10) -> [AppMainQuickMenuResponseDTO] {
@@ -22,5 +28,9 @@ struct AppMainQuickMenuDTOObjectMother {
 
     static func getAppMainQuickMenuResponseDTOWithCompleteData() -> AppMainQuickMenuResponseDTO {
         return AppMainQuickMenuResponseDTO.completedMock
+    }
+
+    static func getAppMainQuickMenuResponseDTOWithInsufficientData() -> AppMainQuickMenuResponseDTO {
+        return AppMainQuickMenuResponseDTO.insufficientMock
     }
 }

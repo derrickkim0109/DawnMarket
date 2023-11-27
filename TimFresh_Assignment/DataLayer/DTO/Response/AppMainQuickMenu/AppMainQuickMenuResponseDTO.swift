@@ -46,5 +46,14 @@ extension AppMainQuickMenuResponseDTO {
         quickMenuName: "농산물",
         quickMenuSequence: 9
     )
+
+    static let insufficientMock = AppMainQuickMenuResponseDTO(
+        quickMenuConceptScreenIdentifier: "",
+        quickMenuConceptScreenName: "",
+        quickMenuImagePath: "",
+        quickMenuMovingScreenPath: "",
+        quickMenuName: "",
+        quickMenuSequence: 0
+    )
     #endif
 }
