@@ -8,9 +8,9 @@
 import Foundation
 import Moya
 
-protocol BaseAPI: TargetType { }
+protocol BaseAPIService: TargetType { }
 
-extension BaseAPI {
+extension BaseAPIService {
     var baseURL: URL {
         guard let baseURLString = Bundle.main.infoDictionary?["BASE_URL"] as? String,
               let url = URL(string: baseURLString) else {

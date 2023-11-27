@@ -12,7 +12,7 @@ enum AppDisplayBySubClassAPIService {
     case fetch(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO)
 }
 
-extension AppDisplayBySubClassAPIService: BaseAPI {
+extension AppDisplayBySubClassAPIService: BaseAPIService {
     var path: String {
         switch self {
         case .fetch(let requestDTO):

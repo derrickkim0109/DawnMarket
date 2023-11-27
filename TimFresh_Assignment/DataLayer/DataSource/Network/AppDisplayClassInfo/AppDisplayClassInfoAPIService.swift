@@ -12,7 +12,7 @@ enum AppDisplayClassInfoAPIService {
     case fetch
 }
 
-extension AppDisplayClassInfoAPIService: BaseAPI {
+extension AppDisplayClassInfoAPIService: BaseAPIService {
     var path: String {
         switch self {
         case .fetch:

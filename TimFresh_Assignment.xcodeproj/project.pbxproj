@@ -50,15 +50,6 @@
 		908CBB822B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB152B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift */; };
 		908CBB832B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB172B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift */; };
 		908CBB842B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB182B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift */; };
-		908CBB852B0A58E300653F66 /* AppDisplayBySubClassFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB1C2B0A58E300653F66 /* AppDisplayBySubClassFetchDataSource.swift */; };
-		908CBB862B0A58E300653F66 /* AppDisplayBySubClassAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB1D2B0A58E300653F66 /* AppDisplayBySubClassAPIService.swift */; };
-		908CBB872B0A58E300653F66 /* AppMainQuickMenuFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB1F2B0A58E300653F66 /* AppMainQuickMenuFetchDataSource.swift */; };
-		908CBB882B0A58E300653F66 /* AppMainQuickMenuAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB202B0A58E300653F66 /* AppMainQuickMenuAPIService.swift */; };
-		908CBB892B0A58E300653F66 /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB212B0A58E300653F66 /* BaseAPIService.swift */; };
-		908CBB8A2B0A58E300653F66 /* AppGoodsInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB232B0A58E300653F66 /* AppGoodsInfoAPIService.swift */; };
-		908CBB8B2B0A58E300653F66 /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB242B0A58E300653F66 /* AppGoodsInfoFetchRepositoryDataSource.swift */; };
-		908CBB8C2B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB262B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift */; };
-		908CBB8D2B0A58E300653F66 /* AppDisplayClassInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB272B0A58E300653F66 /* AppDisplayClassInfoAPIService.swift */; };
 		908CBB8E2B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */; };
 		908CBB8F2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */; };
 		908CBB902B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */; };
@@ -96,6 +87,15 @@
 		9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6842B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift */; };
 		9097F6872B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6862B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift */; };
 		9097F6892B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */; };
+		9097F6AB2B14BC9F0056FF15 /* AppDisplayBySubClassFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */; };
+		9097F6AC2B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */; };
+		9097F6AD2B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A22B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift */; };
+		9097F6AE2B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */; };
+		9097F6AF2B14BC9F0056FF15 /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A42B14BC9F0056FF15 /* BaseAPIService.swift */; };
+		9097F6B02B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */; };
+		9097F6B12B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */; };
+		9097F6B22B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */; };
+		9097F6B32B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */; };
 		909BC9772B077C6300D9E322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9762B077C6300D9E322 /* Kingfisher */; };
 		909BC97A2B077C7B00D9E322 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9792B077C7B00D9E322 /* CombineMoya */; };
 		909BC97C2B077C7B00D9E322 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97B2B077C7B00D9E322 /* Moya */; };
@@ -183,15 +183,6 @@
 		908CBB152B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageResponseAppGoodsInfoResponseDTO.swift; sourceTree = "<group>"; };
 		908CBB172B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift; sourceTree = "<group>"; };
 		908CBB182B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRequestDTO.swift; sourceTree = "<group>"; };
-		908CBB1C2B0A58E300653F66 /* AppDisplayBySubClassFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchDataSource.swift; sourceTree = "<group>"; };
-		908CBB1D2B0A58E300653F66 /* AppDisplayBySubClassAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassAPIService.swift; sourceTree = "<group>"; };
-		908CBB1F2B0A58E300653F66 /* AppMainQuickMenuFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchDataSource.swift; sourceTree = "<group>"; };
-		908CBB202B0A58E300653F66 /* AppMainQuickMenuAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuAPIService.swift; sourceTree = "<group>"; };
-		908CBB212B0A58E300653F66 /* BaseAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
-		908CBB232B0A58E300653F66 /* AppGoodsInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoAPIService.swift; sourceTree = "<group>"; };
-		908CBB242B0A58E300653F66 /* AppGoodsInfoFetchRepositoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryDataSource.swift; sourceTree = "<group>"; };
-		908CBB262B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDataSource.swift; sourceTree = "<group>"; };
-		908CBB272B0A58E300653F66 /* AppDisplayClassInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoAPIService.swift; sourceTree = "<group>"; };
 		908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchRepository.swift; sourceTree = "<group>"; };
 		908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchRepository.swift; sourceTree = "<group>"; };
 		908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepository.swift; sourceTree = "<group>"; };
@@ -230,6 +221,15 @@
 		9097F6842B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoModelObjectMother.swift; sourceTree = "<group>"; };
 		9097F6862B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoEntityObjectMother.swift; sourceTree = "<group>"; };
 		9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoDTOObjectMother.swift; sourceTree = "<group>"; };
+		9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchDataSource.swift; sourceTree = "<group>"; };
+		9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassAPIService.swift; sourceTree = "<group>"; };
+		9097F6A22B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchDataSource.swift; sourceTree = "<group>"; };
+		9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuAPIService.swift; sourceTree = "<group>"; };
+		9097F6A42B14BC9F0056FF15 /* BaseAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
+		9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoAPIService.swift; sourceTree = "<group>"; };
+		9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryDataSource.swift; sourceTree = "<group>"; };
+		9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDataSource.swift; sourceTree = "<group>"; };
+		9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoAPIService.swift; sourceTree = "<group>"; };
 		90EFCE632B0AE04A006FE3C9 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		90EFCE692B0AE4F4006FE3C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -589,57 +589,9 @@
 			isa = PBXGroup;
 			children = (
 				908CBB282B0A58E300653F66 /* Repository */,
-				908CBB1A2B0A58E300653F66 /* Network */,
+				9097F69D2B14BC9E0056FF15 /* Network */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		908CBB1A2B0A58E300653F66 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB212B0A58E300653F66 /* BaseAPIService.swift */,
-				908CBB252B0A58E300653F66 /* AppDisplayClassInfo */,
-				908CBB1E2B0A58E300653F66 /* AppMainQuickMenu */,
-				908CBB1B2B0A58E300653F66 /* AppDisplayBySubClass */,
-				908CBB222B0A58E300653F66 /* AppGoodsInfo */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		908CBB1B2B0A58E300653F66 /* AppDisplayBySubClass */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB1C2B0A58E300653F66 /* AppDisplayBySubClassFetchDataSource.swift */,
-				908CBB1D2B0A58E300653F66 /* AppDisplayBySubClassAPIService.swift */,
-			);
-			path = AppDisplayBySubClass;
-			sourceTree = "<group>";
-		};
-		908CBB1E2B0A58E300653F66 /* AppMainQuickMenu */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB1F2B0A58E300653F66 /* AppMainQuickMenuFetchDataSource.swift */,
-				908CBB202B0A58E300653F66 /* AppMainQuickMenuAPIService.swift */,
-			);
-			path = AppMainQuickMenu;
-			sourceTree = "<group>";
-		};
-		908CBB222B0A58E300653F66 /* AppGoodsInfo */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB242B0A58E300653F66 /* AppGoodsInfoFetchRepositoryDataSource.swift */,
-				908CBB232B0A58E300653F66 /* AppGoodsInfoAPIService.swift */,
-			);
-			path = AppGoodsInfo;
-			sourceTree = "<group>";
-		};
-		908CBB252B0A58E300653F66 /* AppDisplayClassInfo */ = {
-			isa = PBXGroup;
-			children = (
-				908CBB262B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift */,
-				908CBB272B0A58E300653F66 /* AppDisplayClassInfoAPIService.swift */,
-			);
-			path = AppDisplayClassInfo;
 			sourceTree = "<group>";
 		};
 		908CBB282B0A58E300653F66 /* Repository */ = {
@@ -855,6 +807,54 @@
 			path = AppGoodsInfo;
 			sourceTree = "<group>";
 		};
+		9097F69D2B14BC9E0056FF15 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6A42B14BC9F0056FF15 /* BaseAPIService.swift */,
+				9097F69E2B14BC9E0056FF15 /* AppDisplayBySubClass */,
+				9097F6A12B14BC9F0056FF15 /* AppMainQuickMenu */,
+				9097F6A52B14BC9F0056FF15 /* AppGoodsInfo */,
+				9097F6A82B14BC9F0056FF15 /* AppDisplayClassInfo */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9097F69E2B14BC9E0056FF15 /* AppDisplayBySubClass */ = {
+			isa = PBXGroup;
+			children = (
+				9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */,
+				9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */,
+			);
+			path = AppDisplayBySubClass;
+			sourceTree = "<group>";
+		};
+		9097F6A12B14BC9F0056FF15 /* AppMainQuickMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6A22B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift */,
+				9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */,
+			);
+			path = AppMainQuickMenu;
+			sourceTree = "<group>";
+		};
+		9097F6A52B14BC9F0056FF15 /* AppGoodsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */,
+				9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */,
+			);
+			path = AppGoodsInfo;
+			sourceTree = "<group>";
+		};
+		9097F6A82B14BC9F0056FF15 /* AppDisplayClassInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */,
+				9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */,
+			);
+			path = AppDisplayClassInfo;
+			sourceTree = "<group>";
+		};
 		90EFCE622B0AE03F006FE3C9 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1048,8 +1048,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				908CBB852B0A58E300653F66 /* AppDisplayBySubClassFetchDataSource.swift in Sources */,
 				908CBB6D2B0A58E300653F66 /* AppMainQuickMenuFetchUseCase.swift in Sources */,
+				9097F6AD2B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift in Sources */,
+				9097F6B32B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift in Sources */,
 				908CBB6C2B0A58E300653F66 /* AppMainQuickMenuFetchError.swift in Sources */,
 				908CBBAF2B0A5E0000653F66 /* CategoryView.swift in Sources */,
 				90EFCE9A2B0C8461006FE3C9 /* CompositionRoot.swift in Sources */,
@@ -1063,7 +1064,6 @@
 				908CBB752B0A58E300653F66 /* RootView.swift in Sources */,
 				908CBB7D2B0A58E300653F66 /* AppMainQuickMenuResponseDTO.swift in Sources */,
 				908CBB6A2B0A58E300653F66 /* AppDisplayBySubClassFetchUseCase.swift in Sources */,
-				908CBB882B0A58E300653F66 /* AppMainQuickMenuAPIService.swift in Sources */,
 				908CBB952B0A58E300653F66 /* AppGoodsInfoFetchModelMapper.swift in Sources */,
 				90EFCE812B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift in Sources */,
 				908CBB5D2B0A58E300653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift in Sources */,
@@ -1074,11 +1074,12 @@
 				908CBB9A2B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModel.swift in Sources */,
 				908CBB5C2B0A58E300653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift in Sources */,
 				908CBB642B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchEntity.swift in Sources */,
-				908CBB892B0A58E300653F66 /* BaseAPIService.swift in Sources */,
+				9097F6AB2B14BC9F0056FF15 /* AppDisplayBySubClassFetchDataSource.swift in Sources */,
 				90EFCEA62B0CE606006FE3C9 /* AppGoodsListStickyHeaderView.swift in Sources */,
 				90EFCE7B2B0B0AE7006FE3C9 /* AppDisplayClassListView.swift in Sources */,
 				90EFCE932B0C7FF4006FE3C9 /* CategoryRouter.swift in Sources */,
-				908CBB8D2B0A58E300653F66 /* AppDisplayClassInfoAPIService.swift in Sources */,
+				9097F6AF2B14BC9F0056FF15 /* BaseAPIService.swift in Sources */,
+				9097F6AC2B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift in Sources */,
 				90EFCEA12B0CE4BD006FE3C9 /* AppSubDisplayClassListView.swift in Sources */,
 				908CBB7E2B0A58E300653F66 /* ListResultAppDisplayClassInfoResponseDTO.swift in Sources */,
 				908CBB942B0A58E300653F66 /* AppMainQuickMenuFetchModelMapper.swift in Sources */,
@@ -1087,7 +1088,6 @@
 				908CBB782B0A58E300653F66 /* SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO.swift in Sources */,
 				908CBB7A2B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoResponseDTO.swift in Sources */,
 				908CBB592B0A58E300653F66 /* Font.swift in Sources */,
-				908CBB872B0A58E300653F66 /* AppMainQuickMenuFetchDataSource.swift in Sources */,
 				908CBB832B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift in Sources */,
 				908CBB6B2B0A58E300653F66 /* AppDisplayBySubClassFetchError.swift in Sources */,
 				908CBB8F2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift in Sources */,
@@ -1099,13 +1099,12 @@
 				908CBB992B0A58E300653F66 /* AppSubDisplayClassInfoFetchItemModel.swift in Sources */,
 				90EFCE7F2B0B21D3006FE3C9 /* AppMainQuickMenuListView.swift in Sources */,
 				908CBB7F2B0A58E300653F66 /* AppDisplayClassInfoResponseDTO.swift in Sources */,
+				9097F6B22B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift in Sources */,
 				90EFCE682B0AE3EE006FE3C9 /* TabBarItemType.swift in Sources */,
 				908CBB722B0A58E300653F66 /* View.swift in Sources */,
 				908CBB922B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift in Sources */,
 				908CBB9F2B0A58E300653F66 /* AppDisplayClassInfoFetchModel.swift in Sources */,
 				90EFCE9F2B0CD718006FE3C9 /* UINavigationController.swift in Sources */,
-				908CBB862B0A58E300653F66 /* AppDisplayBySubClassAPIService.swift in Sources */,
-				908CBB8B2B0A58E300653F66 /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
 				908CBB902B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift in Sources */,
 				908CBBAE2B0A5E0000653F66 /* CategoryViewModel.swift in Sources */,
 				908CBBA02B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift in Sources */,
@@ -1115,6 +1114,7 @@
 				908CBB652B0A58E300653F66 /* AppSubDisplayClassInfoFetchItemEntity.swift in Sources */,
 				908CBB9C2B0A58E300653F66 /* SearchValueType.swift in Sources */,
 				90EFCE982B0C80C8006FE3C9 /* CategoryDIContainerInterface.swift in Sources */,
+				9097F6B12B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
 				908CBB8E2B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift in Sources */,
 				908CBB9D2B0A58E300653F66 /* AppGoodsInfoFetchModel.swift in Sources */,
 				908CBB6E2B0A58E300653F66 /* AppGoodsInfoFetchError.swift in Sources */,
@@ -1128,14 +1128,13 @@
 				908CBB692B0A58E300653F66 /* AppGoodsInfoFetchEntity.swift in Sources */,
 				90EFCE792B0B0805006FE3C9 /* AppDisplayClassCellView.swift in Sources */,
 				908CBB682B0A58E300653F66 /* PaginationEntity.swift in Sources */,
+				9097F6AE2B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift in Sources */,
 				908CBB912B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift in Sources */,
 				9097F6282B12D9C50056FF15 /* TabBarItemPreferenceKey.swift in Sources */,
 				908CBB812B0A58E300653F66 /* AppGoodsInfoResponseDTO.swift in Sources */,
-				908CBB8A2B0A58E300653F66 /* AppGoodsInfoAPIService.swift in Sources */,
 				908CBB582B0A58E300653F66 /* Image.swift in Sources */,
 				908CBB962B0A58E300653F66 /* AppMainQuickMenuFetchModel.swift in Sources */,
 				90EFCE6A2B0AE4F4006FE3C9 /* Color.swift in Sources */,
-				908CBB8C2B0A58E300653F66 /* AppDisplayClassInfoDataSource.swift in Sources */,
 				908CBB5F2B0A58E300653F66 /* AppMainQuickMenuFetchItemEntity.swift in Sources */,
 				90EFCEA92B0CE664006FE3C9 /* AppGoodsListView.swift in Sources */,
 				908CBB6F2B0A58E300653F66 /* AppGoodsInfoFetchUseCase.swift in Sources */,
@@ -1145,6 +1144,7 @@
 				908CBB932B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift in Sources */,
 				908CBB632B0A58E300653F66 /* AppDisplayClassInfoFetchEntity.swift in Sources */,
 				908CBB982B0A58E300653F66 /* AppSubDisplayClassInfoFetchModel.swift in Sources */,
+				9097F6B02B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

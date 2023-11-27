@@ -12,7 +12,7 @@ enum AppGoodsInfoAPIService {
     case fetch(requestDTO: AppGoodsInfoFetchRequestDTO)
 }
 
-extension AppGoodsInfoAPIService: BaseAPI {
+extension AppGoodsInfoAPIService: BaseAPIService {
     var path: String {
         switch self {
         case .fetch(let requestDTO):

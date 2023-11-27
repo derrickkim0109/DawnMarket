@@ -12,7 +12,7 @@ enum AppMainQuickMenuAPIService {
     case fetch
 }
 
-extension AppMainQuickMenuAPIService: BaseAPI {
+extension AppMainQuickMenuAPIService: BaseAPIService {
     var path: String {
         switch self {
         case .fetch:
