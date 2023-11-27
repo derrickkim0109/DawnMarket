@@ -16,7 +16,7 @@ struct AppDisplayClassEntityObjectMother {
         return AppDisplayClassInfoFetchEntity(data: [], message: "")
     }
 
-    static func getAppDisplayClassInfoFetchEntityListWithCompleteData(count: Int = 20) -> [AppDisplayClassInfoFetchItemEntity] {
+    static func getAppDisplayClassInfoFetchEntityListWithCompleteData(count: Int = 10) -> [AppDisplayClassInfoFetchItemEntity] {
         return (0..<count).map { _ in getAppDisplayClassInfoFetchItemEntityWithCompleteData() }
     }
 

@@ -15,8 +15,11 @@ struct AppDisplayClassDTOObjectMother {
         )
     }
 
-    static func getListResultAppDisplayClassInfoResponseDTOWithEmptyData() -> ListResultAppDisplayClassInfoResponseDTO {
-        return ListResultAppDisplayClassInfoResponseDTO(data: [], message: "")
+    static func getListResultAppDisplayClassInfoResponseDTOWithInsufficientData() -> ListResultAppDisplayClassInfoResponseDTO {
+        return ListResultAppDisplayClassInfoResponseDTO(
+            data: [getAppDisplayClassInfoResponseDTOWithInsufficientData()],
+            message: ""
+        )
     }
 
     static func getAppDisplayClassInfoResponseDTOListWithCompleteData(count: Int = 10) -> [AppDisplayClassInfoResponseDTO] {
@@ -25,5 +28,9 @@ struct AppDisplayClassDTOObjectMother {
 
     static func getAppDisplayClassInfoResponseDTOWithCompleteData() -> AppDisplayClassInfoResponseDTO {
         return AppDisplayClassInfoResponseDTO.completedMock
+    }
+
+    static func getAppDisplayClassInfoResponseDTOWithInsufficientData() -> AppDisplayClassInfoResponseDTO {
+        return AppDisplayClassInfoResponseDTO.insufficientMock
     }
 }

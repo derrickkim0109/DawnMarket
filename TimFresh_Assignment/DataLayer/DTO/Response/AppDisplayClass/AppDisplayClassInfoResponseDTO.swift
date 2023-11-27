@@ -38,5 +38,12 @@ extension AppDisplayClassInfoResponseDTO {
         displayClassName: "농축수산물",
         displayClassSequence: 51
     )
+
+    static let insufficientMock = AppDisplayClassInfoResponseDTO(
+        displayClassCode: "",
+        displayClassImagePath: "",
+        displayClassName: "",
+        displayClassSequence: 0
+    )
     #endif
 }
