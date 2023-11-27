@@ -99,13 +99,15 @@ class CategoryDetailViewModel: ObservableObject {
     }
 
     func fetchAppGoodsInfo() {
-        appGoodsInfoFetchUseCase.fetch(
+        let requestValue = AppGoodsInfoFetchRequestValue(
             displayClassSequence: displayClassItem.displayClassSequence,
             subDisplayClassSequence: selectedSubCategory?.displayClassSequence ?? 0,
             page: appGoodsCurrentPage,
             size: appGoodsSize,
             searchValue: selectedSearchValue.rawValue
         )
+
+        appGoodsInfoFetchUseCase.fetch(request: requestValue)
         .sink { [weak self] completion in
             switch completion {
             case .finished:

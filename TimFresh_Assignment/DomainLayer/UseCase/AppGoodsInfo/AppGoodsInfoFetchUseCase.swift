@@ -9,13 +9,7 @@ import Combine
 import Foundation
 
 protocol AppGoodsInfoFetchUseCaseInterface {
-    func fetch(
-        displayClassSequence: Int64,
-        subDisplayClassSequence: Int,
-        page: Int,
-        size: Int,
-        searchValue: String
-    ) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError>
+    func fetch(request: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError>
 }
 
 final class AppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
@@ -25,22 +19,16 @@ final class AppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
         self.repository = repository
     }
 
-    func fetch(
-        displayClassSequence: Int64,
-        subDisplayClassSequence: Int,
-        page: Int,
-        size: Int,
-        searchValue: String
-    ) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
+    func fetch(request: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
         let pageRequest = AppGoodsInfoFetchRequestDTO.PageRequest(
-            page: page,
-            size: size
+            page: request.page,
+            size: request.size
         )
         let requestDTO = AppGoodsInfoFetchRequestDTO(
-            displayClassSequence: displayClassSequence,
-            subDisplayClassSequence: subDisplayClassSequence,
+            displayClassSequence: request.displayClassSequence,
+            subDisplayClassSequence: request.subDisplayClassSequence,
             pageRequest: pageRequest,
-            searchValue: searchValue
+            searchValue: request.searchValue
         )
 
         return repository.fetch(requestDTO: requestDTO)
