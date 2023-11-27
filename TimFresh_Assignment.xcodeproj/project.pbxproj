@@ -104,6 +104,10 @@
 		9097F6BD2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6BC2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift */; };
 		9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6BE2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift */; };
 		9097F6C12B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C02B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift */; };
+		9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C22B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift */; };
+		9097F6C52B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C42B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift */; };
+		9097F6C72B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C62B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift */; };
+		9097F6C92B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C82B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift */; };
 		909BC9772B077C6300D9E322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9762B077C6300D9E322 /* Kingfisher */; };
 		909BC97A2B077C7B00D9E322 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC9792B077C7B00D9E322 /* CombineMoya */; };
 		909BC97C2B077C7B00D9E322 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 909BC97B2B077C7B00D9E322 /* Moya */; };
@@ -246,6 +250,10 @@
 		9097F6BC2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppMainQuickMenuFetchDataSource.swift; sourceTree = "<group>"; };
 		9097F6BE2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayBySubClassFetchDataSource.swift; sourceTree = "<group>"; };
 		9097F6C02B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppGoodsInfoFetchRepositoryDataSource.swift; sourceTree = "<group>"; };
+		9097F6C22B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayClassInfoFetchRepository.swift; sourceTree = "<group>"; };
+		9097F6C42B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppMainQuickMenuFetchRepository.swift; sourceTree = "<group>"; };
+		9097F6C62B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayBySubClassFetchRepository.swift; sourceTree = "<group>"; };
+		9097F6C82B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppGoodsInfoFetchRepository.swift; sourceTree = "<group>"; };
 		90EFCE632B0AE04A006FE3C9 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		90EFCE672B0AE3EE006FE3C9 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		90EFCE692B0AE4F4006FE3C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -614,8 +622,8 @@
 			isa = PBXGroup;
 			children = (
 				908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift */,
-				908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */,
 				908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */,
+				908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */,
 				908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */,
 			);
 			path = Repository;
@@ -778,7 +786,7 @@
 			children = (
 				9097F66E2B137C060056FF15 /* AppDisplayClass */,
 				9097F6702B137C170056FF15 /* AppMainQuickMenu */,
-				9097F66F2B137C100056FF15 /* AppSubDisplayClassInfo */,
+				9097F66F2B137C100056FF15 /* AppDisplayClassInfoBySubDisplayClass */,
 				9097F6712B137C1E0056FF15 /* AppGoodsInfo */,
 			);
 			path = ObjectMother;
@@ -794,14 +802,14 @@
 			path = AppDisplayClass;
 			sourceTree = "<group>";
 		};
-		9097F66F2B137C100056FF15 /* AppSubDisplayClassInfo */ = {
+		9097F66F2B137C100056FF15 /* AppDisplayClassInfoBySubDisplayClass */ = {
 			isa = PBXGroup;
 			children = (
 				9097F6782B137CAA0056FF15 /* AppSubDisplayClassInfoModelObjectMother.swift */,
 				9097F67A2B137CB20056FF15 /* AppSubDisplayClassInfoEntityObjectMother.swift */,
 				9097F67C2B137CBA0056FF15 /* AppSubDisplayClassInfoDTOObjectMother.swift */,
 			);
-			path = AppSubDisplayClassInfo;
+			path = AppDisplayClassInfoBySubDisplayClass;
 			sourceTree = "<group>";
 		};
 		9097F6702B137C170056FF15 /* AppMainQuickMenu */ = {
@@ -855,6 +863,17 @@
 				9097F6C02B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		9097F6932B140A830056FF15 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6C22B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift */,
+				9097F6C42B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift */,
+				9097F6C62B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift */,
+				9097F6C82B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		9097F69D2B14BC9E0056FF15 /* Network */ = {
@@ -1202,15 +1221,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9097F6C92B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift in Sources */,
 				9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */,
 				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
 				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
 				9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */,
+				9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppSubDisplayClassInfoModelObjectMother.swift in Sources */,
 				9097F69A2B14BA500056FF15 /* TestAPIService.swift in Sources */,
 				9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */,
 				9097F6752B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift in Sources */,
 				9097F6892B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift in Sources */,
+				9097F6C52B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift in Sources */,
+				9097F6C72B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift in Sources */,
 				9097F67F2B137CEE0056FF15 /* AppMainQuickMenuModelObjectMother.swift in Sources */,
 				9097F6C12B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
 				9097F67D2B137CBA0056FF15 /* AppSubDisplayClassInfoDTOObjectMother.swift in Sources */,
