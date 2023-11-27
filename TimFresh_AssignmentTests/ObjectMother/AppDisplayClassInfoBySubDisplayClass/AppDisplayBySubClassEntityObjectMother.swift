@@ -1,5 +1,5 @@
 //
-//  AppSubDisplayClassInfoEntityObjectMother.swift
+//  AppDisplayBySubClassEntityObjectMother.swift
 //  TimFresh_AssignmentTests
 //
 //  Created by Derrick kim on 11/26/23.

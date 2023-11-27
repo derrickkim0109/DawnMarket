@@ -1,5 +1,5 @@
 //
-//  AppSubDisplayClassInfoDTOObjectMother.swift
+//  AppDisplayBySubClassDTOObjectMother.swift
 //  TimFresh_AssignmentTests
 //
 //  Created by Derrick kim on 11/26/23.
@@ -7,7 +7,7 @@
 
 @testable import TimFresh_Assignment
 
-struct AppSubDisplayClassInfoDTOObjectMother {
+struct AppDisplayBySubClassDTOObjectMother {
     static func getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData() -> SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO {
         return SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO(
             data: getAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData(),

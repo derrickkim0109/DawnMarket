@@ -13,7 +13,7 @@ import Moya
 final class MockAppDisplayBySubClassFetchDataSource: AppDisplayBySubClassFetchDataSourceInterface {
     var scenario: Scenario = .success
 
-    var appDisplayBySubDisplayResponseDTO = AppSubDisplayClassInfoDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData()
+    var appDisplayBySubDisplayResponseDTO = AppDisplayBySubClassDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData()
     var networkError = MoyaError.statusCode(.init(statusCode: 400, data: Data()))
 
     func fetch(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO) -> AnyPublisher<SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO, MoyaError> {

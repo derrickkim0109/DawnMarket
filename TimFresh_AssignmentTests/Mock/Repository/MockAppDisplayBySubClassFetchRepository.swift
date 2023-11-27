@@ -12,7 +12,7 @@ import Combine
 
 final class MockAppDisplayBySubClassFetchRepository: AppDisplayBySubClassFetchRepositoryInterface {
     var scenario: Scenario = .success
-    var entity: AppDisplayClassInfoBySubDisplayClassFetchEntity = AppDisplayBySubClassEntityObjectMother.getAppSubDisplayClassInfoFetchEntityWithCompleteData()
+    var entity: AppDisplayClassInfoBySubDisplayClassFetchEntity = AppDisplayBySubClassEntityObjectMother.getAppDisplayClassInfoBySubDisplayClassFetchEntityWithCompleteData()
 
     func fetch(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, MoyaError> {
         switch scenario {

@@ -7,7 +7,7 @@
 
 @testable import TimFresh_Assignment
 
-struct AppSubDisplayClassInfoModelObjectMother {
+struct AppDisplayBySubClassModelObjectMother {
     static func getAppDisplayClassInfoBySubDisplayClassFetchModelWithCompleteData() -> AppDisplayClassInfoBySubDisplayClassFetchModel {
         return AppDisplayClassInfoBySubDisplayClassFetchModel(
             data: getAppSubDisplayClassInfoFetchModelWithCompleteData(),

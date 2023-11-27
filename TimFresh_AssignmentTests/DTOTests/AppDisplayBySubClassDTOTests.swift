@@ -14,8 +14,8 @@ final class AppDisplayBySubClassDTOTests: XCTestCase {
 
     override func setUpWithError() throws {
         super.setUp()
-        completeDataDTO = AppSubDisplayClassInfoDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData()
-        insufficientDataDTO = AppSubDisplayClassInfoDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithInsufficientData()
+        completeDataDTO = AppDisplayBySubClassDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData()
+        insufficientDataDTO = AppDisplayBySubClassDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithInsufficientData()
     }
 
     override func tearDownWithError() throws {
