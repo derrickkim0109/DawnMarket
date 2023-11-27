@@ -8,6 +8,20 @@
 @testable import TimFresh_Assignment
 
 struct AppSubDisplayClassInfoModelObjectMother {
+    static func getAppDisplayClassInfoBySubDisplayClassFetchModelWithCompleteData() -> AppDisplayClassInfoBySubDisplayClassFetchModel {
+        return AppDisplayClassInfoBySubDisplayClassFetchModel(
+            data: getAppSubDisplayClassInfoFetchModelWithCompleteData(),
+            message: ""
+        )
+    }
+
+    static func getAppDisplayClassInfoBySubDisplayClassFetchModelWithInsufficientData() -> AppDisplayClassInfoBySubDisplayClassFetchModel {
+        return AppDisplayClassInfoBySubDisplayClassFetchModel(
+            data: getAppSubDisplayClassInfoFetchModelWithInsufficientData(),
+            message: ""
+        )
+    }
+
     static func getAppSubDisplayClassInfoFetchModelWithCompleteData() -> AppSubDisplayClassInfoFetchModel {
         return AppSubDisplayClassInfoFetchModel(
             displayClassName: "농축수산물",
@@ -15,7 +29,7 @@ struct AppSubDisplayClassInfoModelObjectMother {
         )
     }
 
-    static func getAppSubDisplayClassInfoFetchModelWithEmptyData() -> AppSubDisplayClassInfoFetchModel {
+    static func getAppSubDisplayClassInfoFetchModelWithInsufficientData() -> AppSubDisplayClassInfoFetchModel {
         return AppSubDisplayClassInfoFetchModel(
             displayClassName: "농축수산물",
             appSubDisplayClassInfoList: []
