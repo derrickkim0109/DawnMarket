@@ -407,6 +407,23 @@
 			path = SpoqaHanSansNeo;
 			sourceTree = "<group>";
 		};
+		9060ECBE2B161801000B3CF4 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9097F68E2B1405840056FF15 /* DTOTests */,
+				9097F68D2B14057D0056FF15 /* DataSourceTests */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		9060ECBF2B161816000B3CF4 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9097F68C2B1405750056FF15 /* RepositoryTests */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
 		908CBABE2B0A58E200653F66 /* TimFresh_Assignment */ = {
 			isa = PBXGroup;
 			children = (
@@ -853,11 +870,8 @@
 				9097F66C2B137BD90056FF15 /* Scenario.swift */,
 				9097F66B2B137BB40056FF15 /* ObjectMother */,
 				9097F68F2B14058C0056FF15 /* Mock */,
-				9097F68E2B1405840056FF15 /* DTOTests */,
-				9097F68D2B14057D0056FF15 /* DataSourceTests */,
-				9097F68C2B1405750056FF15 /* RepositoryTests */,
-				9097F68B2B1405700056FF15 /* UseCaseTests */,
-				9097F68A2B14055C0056FF15 /* ViewModelTests */,
+				9060ECBE2B161801000B3CF4 /* DataLayer */,
+				9060ECBF2B161816000B3CF4 /* DomainLayer */,
 			);
 			path = TimFresh_AssignmentTests;
 			sourceTree = "<group>";
