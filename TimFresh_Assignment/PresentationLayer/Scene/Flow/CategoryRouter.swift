@@ -17,7 +17,7 @@ final class CategoryRouter: ObservableObject, FlowRouter {
 
     @Published var navigationPath: NavigationPath = .init()
 
-    var nextTransitionRoute: PushRoute = .categoryDetail
+    var nextTransitionRoute: PushRoute?
 
     private let categoryDIContainer: CategoryDIContainerInterface
 
@@ -26,30 +26,28 @@ final class CategoryRouter: ObservableObject, FlowRouter {
         nextTransitionRoute = route
     }
 
-    func nextTransitionScreen(item: AppDisplayClassInfoFetchItemModel) -> some View {
-        nextTransitionRoute.nextView(
+    func nextTransitionScreen() -> some View {
+        nextTransitionRoute?.nextView(
             categoryDIContainer: categoryDIContainer,
-            router: self, 
-            displayClassItem: item
+            router: self
         )
     }
 }
 
 extension CategoryRouter {
     enum PushRoute: Hashable {
-        case categoryDetail
+        case categoryDetail(AppDisplayClassInfoFetchItemModel)
 
         func nextView(
             categoryDIContainer: CategoryDIContainerInterface,
-            router: CategoryRouter,
-            displayClassItem: AppDisplayClassInfoFetchItemModel
+            router: CategoryRouter
         ) -> some View {
             switch self {
-            case .categoryDetail:
+            case .categoryDetail(let item):
                 CategoryDetailView(
                     viewModel: categoryDIContainer.categoryDetailViewDependencies(
                         categoryRouter: router,
-                        displayClassItem: displayClassItem
+                        displayClassItem: item
                     )
                 )
             }

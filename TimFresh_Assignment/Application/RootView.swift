@@ -10,16 +10,16 @@ import SwiftUI
 @main
 struct RootView: App {
     @StateObject var launchScreenState = LaunchScreenStateManager()
-    private let compositionRoot: CompositionRootInterface
+    let categoryDIContainer: CategoryDIContainerInterface
 
     init() {
-        self.compositionRoot = CompositionRoot()
+        self.categoryDIContainer = CategoryDIContainer()
     }
 
     var body: some Scene {
         WindowGroup {
             ZStack {
-                AppTabBarView(compositionRoot: compositionRoot)
+                AppTabBarView(categoryDIContainer: categoryDIContainer)
 
                 if launchScreenState.state != .finished {
                     LaunchScreenView()

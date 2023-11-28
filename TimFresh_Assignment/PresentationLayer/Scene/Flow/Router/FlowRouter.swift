@@ -11,16 +11,15 @@ import SwiftUI
 protocol FlowRouter: Hashable {
     associatedtype PushRoute: Hashable
     associatedtype NextScreen: View
-    associatedtype Model: Identifiable
 
     var id: UUID { get }
 
     var navigationPath: NavigationPath { get set }
 
-    var nextTransitionRoute: PushRoute { get }
+    var nextTransitionRoute: PushRoute? { get }
 
     func triggerScreenTransition(route: PushRoute)
-    func nextTransitionScreen(item: Model) -> NextScreen
+    func nextTransitionScreen() -> NextScreen
 }
 
 extension FlowRouter {

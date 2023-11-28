@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppDisplayClassInfoFetchItemModel: Identifiable {
+struct AppDisplayClassInfoFetchItemModel: Identifiable, Hashable {
     let id = UUID()
     let displayClassCode: String
     let displayClassImagePath: String
@@ -28,4 +28,11 @@ extension AppDisplayClassInfoFetchItemModel {
         displayClassSequence: 51
     )
 #endif
+    static func == (lhs: AppDisplayClassInfoFetchItemModel, rhs: AppDisplayClassInfoFetchItemModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
