@@ -20,7 +20,7 @@ final class AppDisplayClassInfoFetchUseCase: AppDisplayClassInfoFetchUseCaseInte
     }
 
     func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> {
-        return repository.fetchAppDisplayClassInfoList()
+        return repository.fetch()
             .mapAppDisplayClassInfoListFetchError()
     }
 }

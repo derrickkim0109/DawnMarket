@@ -15,7 +15,7 @@ final class AppDisplayClassInfoFetchRepository : AppDisplayClassInfoFetchReposit
         self.dataSource = dataSource
     }
 
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError> {
+    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError> {
         return dataSource.fetchAppDisplayClassInfoList()
             .map { responseDTO in
                 let entity = responseDTO.toEntity()

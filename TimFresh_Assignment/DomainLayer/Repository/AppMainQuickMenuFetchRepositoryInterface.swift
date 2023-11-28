@@ -9,5 +9,5 @@ import Combine
 import Moya
 
 protocol AppMainQuickMenuFetchRepositoryInterface {
-    func fetchAppMainQuickMenuList() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError>
+    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError>
 }

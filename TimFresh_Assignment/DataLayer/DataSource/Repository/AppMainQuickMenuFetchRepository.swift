@@ -15,7 +15,7 @@ final class AppMainQuickMenuFetchRepository : AppMainQuickMenuFetchRepositoryInt
         self.dataSource = dataSource
     }
 
-    func fetchAppMainQuickMenuList() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError> {
+    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError> {
         return dataSource.fetchAppMainQuickMenuList()
             .map { responseDTO in
                 let entity = responseDTO.toEntity()

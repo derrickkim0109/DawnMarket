@@ -50,12 +50,10 @@ extension ToastView {
             .foregroundColor(Color.white)
             .cornerRadius(10)
             .transition(.opacity)
-            .animation(.smooth, value: 100)
+            .animation(.linear, value: 100)
     }
 
     private func startTimer() {
-        cancellable?.cancel()
-        
         cancellable = Timer.publish(every: duration, on: .main, in: .common)
             .autoconnect()
             .sink { _ in

@@ -14,7 +14,7 @@ final class MockAppMainQuickMenuFetchRepository: AppMainQuickMenuFetchRepository
     var scenario: Scenario = .success
     var entity: AppMainQuickMenuFetchEntity = AppMainQuickMenuEntityObjectMother.getAppMainQuickMenuFetchEntityWithCompleteData()
 
-    func fetchAppMainQuickMenuList() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError> {
+    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError> {
         switch scenario {
         case .success:
             return Just(entity)

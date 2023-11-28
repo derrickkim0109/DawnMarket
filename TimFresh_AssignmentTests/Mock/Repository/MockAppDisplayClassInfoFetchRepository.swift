@@ -14,7 +14,7 @@ final class MockAppDisplayClassInfoFetchRepository: AppDisplayClassInfoFetchRepo
     var scenario: Scenario = .success
     var entity: AppDisplayClassInfoFetchEntity = AppDisplayClassEntityObjectMother.getAppDisplayClassInfoFetchEntityWithCompleteData()
 
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError> {
+    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError> {
         switch scenario {
         case .success:
             return Just(entity)

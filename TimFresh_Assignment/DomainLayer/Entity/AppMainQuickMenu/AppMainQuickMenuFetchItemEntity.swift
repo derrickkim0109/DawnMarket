@@ -14,14 +14,6 @@ struct AppMainQuickMenuFetchItemEntity {
     let quickMenuMovingScreenPath: String
     let quickMenuName: String
     let quickMenuSequence: Int32
-
-    func makeImagePath() -> String {
-        guard let baseURL = Bundle.main.infoDictionary?["IMAGE_BASE_URL"] as? String else {
-            return ""
-        }
-
-        return baseURL + quickMenuImagePath
-    }
 }
 
 extension AppMainQuickMenuFetchItemEntity {

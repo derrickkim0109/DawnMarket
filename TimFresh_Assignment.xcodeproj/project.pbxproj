@@ -159,6 +159,7 @@
 		90EFCEA62B0CE606006FE3C9 /* AppGoodsListStickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCEA52B0CE606006FE3C9 /* AppGoodsListStickyHeaderView.swift */; };
 		90EFCEA92B0CE664006FE3C9 /* AppGoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCEA82B0CE664006FE3C9 /* AppGoodsListView.swift */; };
 		90EFCEAB2B0CE684006FE3C9 /* AppGoodsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFCEAA2B0CE684006FE3C9 /* AppGoodsCellView.swift */; };
+		90FCF4C92B16AA9900BBA1AB /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4C82B16AA9900BBA1AB /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,6 +323,7 @@
 		90EFCEA52B0CE606006FE3C9 /* AppGoodsListStickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsListStickyHeaderView.swift; sourceTree = "<group>"; };
 		90EFCEA82B0CE664006FE3C9 /* AppGoodsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsListView.swift; sourceTree = "<group>"; };
 		90EFCEAA2B0CE684006FE3C9 /* AppGoodsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsCellView.swift; sourceTree = "<group>"; };
+		90FCF4C82B16AA9900BBA1AB /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -576,6 +578,7 @@
 		908CBAF52B0A58E300653F66 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				90FCF4CA2B16AC4100BBA1AB /* Common */,
 				908CBAF62B0A58E300653F66 /* UIUtils */,
 			);
 			path = Utils;
@@ -611,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				908CBB002B0A58E300653F66 /* RootView.swift */,
+				90FCF4C82B16AA9900BBA1AB /* AppConfiguration.swift */,
 				908CBB012B0A58E300653F66 /* DIContainer */,
 			);
 			path = Application;
@@ -1157,6 +1161,22 @@
 			path = AppGoods;
 			sourceTree = "<group>";
 		};
+		90FCF4CA2B16AC4100BBA1AB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				90FCF4CB2B16AC4A00BBA1AB /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		90FCF4CB2B16AC4A00BBA1AB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				90FCF4CC2B16AC5B00BBA1AB /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1373,6 +1393,7 @@
 				908CBB932B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift in Sources */,
 				908CBB632B0A58E300653F66 /* AppDisplayClassInfoFetchEntity.swift in Sources */,
 				908CBB982B0A58E300653F66 /* AppSubDisplayClassInfoFetchModel.swift in Sources */,
+				90FCF4C92B16AA9900BBA1AB /* AppConfiguration.swift in Sources */,
 				9097F6B02B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1486,7 +1507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1601,7 +1622,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

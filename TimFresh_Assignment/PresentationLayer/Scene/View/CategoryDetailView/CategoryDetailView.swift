@@ -32,7 +32,6 @@ struct CategoryDetailView: View {
                 navigationTitleView()
                 navigationTrailingView()
             }
-            .toolbarBackground(Color.white, for: .navigationBar)
             .showErrorAlert(
                 isPresented: $viewModel.showErrorAlert,
                 message: viewModel.viewModelError

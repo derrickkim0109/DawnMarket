@@ -12,14 +12,6 @@ struct AppDisplayClassInfoFetchItemEntity {
     let displayClassImagePath: String
     let displayClassName: String
     let displayClassSequence: Int64
-
-    func makeImagePath() -> String {
-        guard let baseURL = Bundle.main.infoDictionary?["IMAGE_BASE_URL"] as? String else {
-            return ""
-        }
-
-        return baseURL + displayClassImagePath
-    }
 }
 
 extension AppDisplayClassInfoFetchItemEntity {

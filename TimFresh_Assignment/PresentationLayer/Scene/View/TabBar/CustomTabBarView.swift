@@ -27,7 +27,7 @@ struct CustomTabBarView: View {
         .background(
             Color.white.ignoresSafeArea(edges: .bottom)
         )
-        .onChange(of: selection, { oldValue, newValue in
+        .onChange(of: selection, perform: { newValue in
             localSelection = newValue
         })
     }

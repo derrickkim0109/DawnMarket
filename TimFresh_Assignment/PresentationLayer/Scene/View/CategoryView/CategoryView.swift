@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct CategoryView: View {
-    @StateObject private var router: CategoryRouter
     @StateObject private var viewModel: CategoryViewModel
 
-    init(
-        router: CategoryRouter,
-        viewModel: CategoryViewModel
-    ) {
-        self._router = .init(wrappedValue: router)
+    init(viewModel: CategoryViewModel) {
         self._viewModel = .init(wrappedValue: viewModel)
     }
 

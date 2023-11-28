@@ -36,7 +36,7 @@ final class AppMainQuickMenuFetchRepositoryTests: XCTestCase {
         let expectation = XCTestExpectation(description: "퀵 메뉴 조회 성공")
 
         // when
-        repository.fetchAppMainQuickMenuList()
+        repository.fetch()
             .sink { completion in
                 switch completion {
                 case let .failure(error):
@@ -61,7 +61,7 @@ final class AppMainQuickMenuFetchRepositoryTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Server Error로 인한 API 실패")
 
         // when
-        repository.fetchAppMainQuickMenuList()
+        repository.fetch()
             .sink { completion in
                 switch completion {
                 case .failure:
@@ -86,7 +86,7 @@ final class AppMainQuickMenuFetchRepositoryTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Bad Request로 인한 API 실패")
 
         // when
-        repository.fetchAppMainQuickMenuList()
+        repository.fetch()
             .sink { completion in
                 switch completion {
                 case .failure:

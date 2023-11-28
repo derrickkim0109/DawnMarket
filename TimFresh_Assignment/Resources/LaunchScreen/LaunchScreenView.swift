@@ -62,7 +62,7 @@ struct LaunchScreenView: View {
                 startAnimation = true
             }
         case .finished:
-            break
+            launchScreenState.dismiss()
         }
     }
 }

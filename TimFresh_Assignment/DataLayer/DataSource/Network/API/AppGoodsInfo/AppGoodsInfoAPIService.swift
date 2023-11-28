@@ -17,7 +17,6 @@ extension AppGoodsInfoAPIService: BaseAPIService {
         switch self {
         case .fetch(let requestDTO):
             let path = "app/disp-clas-infos/disp-clas/\(requestDTO.displayClassSequence)/sub-disp-clas/\(requestDTO.subDisplayClassSequence)/goods-infos"
-
             return path
         }
     }

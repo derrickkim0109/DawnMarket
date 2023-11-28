@@ -9,5 +9,5 @@ import Combine
 import Moya
 
 protocol AppDisplayClassInfoFetchRepositoryInterface {
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError>
+    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError>
 }

@@ -15,7 +15,6 @@ struct AppTabBarView: View {
         NavigationStack {
             TabBarContainerView(selection: $tabSelection) {
                 CategoryView(
-                    router: categoryDIContainer.categoryRouter(),
                     viewModel: categoryDIContainer.categoryViewDependencies(
                         categoryRouter: categoryDIContainer.categoryRouter()
                     )
