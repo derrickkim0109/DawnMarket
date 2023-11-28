@@ -7,7 +7,6 @@
 
 import XCTest
 import Combine
-import Moya
 @testable import TimFresh_Assignment
 
 final class AppMainQuickMenuFetchDataSourceTests: XCTestCase {
