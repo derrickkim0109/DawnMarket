@@ -810,6 +810,7 @@
 		9097F6292B12E90E0056FF15 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				9060EC892B1600F2000B3CF4 /* Fonts */,
 				90EFCE692B0AE4F4006FE3C9 /* Color.swift */,
 				908CBACF2B0A58E200653F66 /* Image.swift */,
 				908CBAD02B0A58E200653F66 /* Font.swift */,
