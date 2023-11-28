@@ -19,6 +19,10 @@
 		9060EC9B2B1600F2000B3CF4 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9060EC912B1600F2000B3CF4 /* Pretendard-Thin.otf */; };
 		9060EC9C2B1600F2000B3CF4 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9060EC922B1600F2000B3CF4 /* Pretendard-ExtraLight.otf */; };
 		9060EC9D2B1600F2000B3CF4 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9060EC932B1600F2000B3CF4 /* Pretendard-SemiBold.otf */; };
+		9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA42B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift */; };
+		9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA62B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift */; };
+		9060ECA92B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA82B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift */; };
+		9060ECAB2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECAA2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift */; };
 		908CBB4C2B0A58E300653F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC02B0A58E200653F66 /* Assets.xcassets */; };
 		908CBB4D2B0A58E300653F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */; };
 		908CBB582B0A58E300653F66 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBACF2B0A58E200653F66 /* Image.swift */; };
@@ -96,6 +100,7 @@
 		9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6842B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift */; };
 		9097F6872B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6862B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift */; };
 		9097F6892B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */; };
+		9097F6982B14BA1C0056FF15 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6972B14BA1C0056FF15 /* NetworkServiceTests.swift */; };
 		9097F69A2B14BA500056FF15 /* TestAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6992B14BA500056FF15 /* TestAPIService.swift */; };
 		9097F6AB2B14BC9F0056FF15 /* AppDisplayBySubClassFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */; };
 		9097F6AC2B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */; };
@@ -176,6 +181,10 @@
 		9060EC912B1600F2000B3CF4 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		9060EC922B1600F2000B3CF4 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		9060EC932B1600F2000B3CF4 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		9060ECA42B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchDataSourceTests.swift; sourceTree = "<group>"; };
+		9060ECA62B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDataSourceTests.swift; sourceTree = "<group>"; };
+		9060ECA82B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchDataSourceTests.swift; sourceTree = "<group>"; };
+		9060ECAA2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryDataSourceTests.swift; sourceTree = "<group>"; };
 		908CBAC02B0A58E200653F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		908CBACF2B0A58E200653F66 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -255,6 +264,7 @@
 		9097F6842B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoModelObjectMother.swift; sourceTree = "<group>"; };
 		9097F6862B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoEntityObjectMother.swift; sourceTree = "<group>"; };
 		9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoDTOObjectMother.swift; sourceTree = "<group>"; };
+		9097F6972B14BA1C0056FF15 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		9097F6992B14BA500056FF15 /* TestAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIService.swift; sourceTree = "<group>"; };
 		9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchDataSource.swift; sourceTree = "<group>"; };
 		9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassAPIService.swift; sourceTree = "<group>"; };
@@ -836,6 +846,10 @@
 				9097F66B2B137BB40056FF15 /* ObjectMother */,
 				9097F68F2B14058C0056FF15 /* Mock */,
 				9097F68E2B1405840056FF15 /* DTOTests */,
+				9097F68D2B14057D0056FF15 /* DataSourceTests */,
+				9097F68C2B1405750056FF15 /* RepositoryTests */,
+				9097F68B2B1405700056FF15 /* UseCaseTests */,
+				9097F68A2B14055C0056FF15 /* ViewModelTests */,
 			);
 			path = TimFresh_AssignmentTests;
 			sourceTree = "<group>";
@@ -889,6 +903,39 @@
 				9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */,
 			);
 			path = AppGoodsInfo;
+			sourceTree = "<group>";
+		};
+		9097F68A2B14055C0056FF15 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		9097F68B2B1405700056FF15 /* UseCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCaseTests;
+			sourceTree = "<group>";
+		};
+		9097F68C2B1405750056FF15 /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		9097F68D2B14057D0056FF15 /* DataSourceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9097F6972B14BA1C0056FF15 /* NetworkServiceTests.swift */,
+				9060ECA62B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift */,
+				9060ECA42B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift */,
+				9060ECA82B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift */,
+				9060ECAA2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift */,
+			);
+			path = DataSourceTests;
 			sourceTree = "<group>";
 		};
 		9097F68E2B1405840056FF15 /* DTOTests */ = {
@@ -1313,10 +1360,14 @@
 				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
 				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
 				9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */,
+				9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */,
 				9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */,
 				9097F6CD2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift in Sources */,
+				9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppDisplayBySubClassModelObjectMother.swift in Sources */,
 				9097F69A2B14BA500056FF15 /* TestAPIService.swift in Sources */,
+				9060ECA92B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift in Sources */,
+				9097F6982B14BA1C0056FF15 /* NetworkServiceTests.swift in Sources */,
 				9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */,
 				9097F6752B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift in Sources */,
 				9097F6CF2B14D0560056FF15 /* MockAppDisplayBySubClassFetchUseCase.swift in Sources */,
@@ -1331,6 +1382,7 @@
 				9097F6772B137C760056FF15 /* AppDisplayClassDTOObjectMother.swift in Sources */,
 				9097F67B2B137CB20056FF15 /* AppDisplayBySubClassEntityObjectMother.swift in Sources */,
 				9097F6BD2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift in Sources */,
+				9060ECAB2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift in Sources */,
 				9097F6CB2B14CFCC0056FF15 /* MockAppDisplayClassInfoFetchUseCase.swift in Sources */,
 				9097F6812B137D000056FF15 /* AppMainQuickMenuEntityObjectMother.swift in Sources */,
 				9097F6BB2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift in Sources */,
