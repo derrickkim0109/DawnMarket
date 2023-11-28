@@ -23,7 +23,9 @@ struct AppMainQuickMenuListView: View {
         }
         .padding([.leading, .trailing], 16)
     }
+}
 
+extension AppMainQuickMenuListView {
     private func appMainQuickMenuHeaderView() -> some View {
         Text("기획전 / 이벤트")
             .font(.pretendard(size: 13, type: .bold))

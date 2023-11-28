@@ -47,7 +47,9 @@ struct CategoryDetailView: View {
             }
         }
     }
+}
 
+extension CategoryDetailView {
     private func navigationLeadingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button {
@@ -90,4 +92,5 @@ struct CategoryDetailView: View {
             }
         }
     }
+
 }

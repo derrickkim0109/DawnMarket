@@ -11,11 +11,12 @@ struct CategoryView: View {
     @StateObject private var router: CategoryRouter
     @StateObject private var viewModel: CategoryViewModel
 
-    init(categoryDIContainer: CategoryDIContainerInterface) {
-        let router = categoryDIContainer.categoryRouter()
-
+    init(
+        router: CategoryRouter,
+        viewModel: CategoryViewModel
+    ) {
         self._router = .init(wrappedValue: router)
-        self._viewModel = .init(wrappedValue: categoryDIContainer.categoryViewDependencies(categoryRouter: router))
+        self._viewModel = .init(wrappedValue: viewModel)
     }
 
     var body: some View {

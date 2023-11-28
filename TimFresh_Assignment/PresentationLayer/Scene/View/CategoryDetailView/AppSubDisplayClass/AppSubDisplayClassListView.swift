@@ -22,7 +22,7 @@ struct AppSubDisplayClassListView: View {
                 }
             }
             .onAppear {
-                viewModel.fetchAppDisplayBySubClass()
+                viewModel.loadAppDisplayBySubClass()
             }
 
             Divider()
@@ -30,7 +30,9 @@ struct AppSubDisplayClassListView: View {
                 .foregroundStyle(Color.gray100)
         }
     }
+}
 
+extension AppSubDisplayClassListView {
     private func getGridItemSize() -> [GridItem] {
         let gridItems: [GridItem] = [
             GridItem(.flexible(), spacing: 0),

@@ -31,7 +31,9 @@ struct CustomTabBarView: View {
             localSelection = newValue
         })
     }
+}
 
+extension CustomTabBarView {
     private func tabBarView(tab: TabBarItemType) -> some View {
         VStack(alignment: .center) {
             tab.iconImage
@@ -49,7 +51,7 @@ struct CustomTabBarView: View {
 
     private func switchToTab(tab: TabBarItemType) {
         selection = tab
-        
+
         if tab != .category {
             showToast = true
         }

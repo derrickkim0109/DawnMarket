@@ -19,7 +19,9 @@ struct AppMainQuickMenuCellView: View {
                 viewModel.showToastByDebounce()
             }
     }
+}
 
+extension AppMainQuickMenuCellView {
     private func appMainQuickMenuInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
             appMainQuickMenuImageView()

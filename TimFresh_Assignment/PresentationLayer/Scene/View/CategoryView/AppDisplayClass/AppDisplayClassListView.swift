@@ -18,7 +18,9 @@ struct AppDisplayClassListView: View {
             }
         }
     }
+}
 
+extension AppDisplayClassListView {
     private func getGridItemSize() -> [GridItem] {
         let gridItems: [GridItem] = [
           GridItem(.flexible(), spacing: 13),

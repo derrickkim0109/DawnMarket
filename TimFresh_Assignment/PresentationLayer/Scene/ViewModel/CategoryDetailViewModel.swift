@@ -71,7 +71,43 @@ class CategoryDetailViewModel: ObservableObject {
         self.appGoodsInfoFetchUseCase = appGoodsInfoFetchUseCase
     }
 
-    func fetchAppDisplayBySubClass() {
+    func loadAppDisplayBySubClass() {
+        fetchAppDisplayBySubClass()
+    }
+
+    func loadAppGoodsInfo() {
+        fetchAppGoodsInfo()
+    }
+
+    func getDisplayClassName() -> String {
+        return displayClassItem.displayClassName
+    }
+
+    func didSelectSubCategory(_ item: AppSubDisplayClassInfoFetchItemModel) {
+        selectedSubCategory = item
+    }
+
+    func didSelectSearchValue(_ type: SearchValueType) {
+        selectedSearchValue = type
+    }
+
+    func hasNext() -> Bool {
+        return pagination?.hasNext() == true
+    }
+
+    func showToastByDebounce(_ message: String) {
+        showToast = true
+        toastMessage = message
+    }
+
+    func setupFetchError(_ error: String) {
+        viewModelError = error
+        showErrorAlert = true
+    }
+}
+
+extension CategoryDetailViewModel {
+    private func fetchAppDisplayBySubClass() {
         appDisplayBySubClassFetchUseCase.fetch(by: displayClassItem.displayClassSequence)
             .sink { [weak self] completion in
                 switch completion {
@@ -98,7 +134,7 @@ class CategoryDetailViewModel: ObservableObject {
             .store(in: &cancellable)
     }
 
-    func fetchAppGoodsInfo() {
+    private func fetchAppGoodsInfo() {
         let requestValue = AppGoodsInfoFetchRequestValue(
             displayClassSequence: displayClassItem.displayClassSequence,
             subDisplayClassSequence: selectedSubCategory?.displayClassSequence ?? 0,
@@ -132,34 +168,6 @@ class CategoryDetailViewModel: ObservableObject {
         .store(in: &cancellable)
     }
 
-    func getDisplayClassName() -> String {
-        return displayClassItem.displayClassName
-    }
-
-    func didSelectSubCategory(_ item: AppSubDisplayClassInfoFetchItemModel) {
-        selectedSubCategory = item
-    }
-
-    func didSelectSearchValue(_ type: SearchValueType) {
-        selectedSearchValue = type
-    }
-
-    func hasNext() -> Bool {
-        return pagination?.hasNext() == true
-    }
-
-    func showToastByDebounce(_ message: String) {
-        showToast = true
-        toastMessage = message
-    }
-
-    func setupFetchError(_ error: String) {
-        viewModelError = error
-        showErrorAlert = true
-    }
-}
-
-extension CategoryDetailViewModel {
     private func resetAppSubDisplayClassInfoList() {
         fetchedAppSubDisplayClassInfoList = []
         viewModelError = nil

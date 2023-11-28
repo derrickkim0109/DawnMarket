@@ -29,12 +29,14 @@ struct AppGoodsListView: View {
                 bottomProgressView()
                 bottomProgressView()
                     .onAppear {
-                        viewModel.fetchAppGoodsInfo()
+                        viewModel.loadAppGoodsInfo()
                     }
             }
         }
     }
+}
 
+extension AppGoodsListView {
     private func getGridItemSize() -> [GridItem] {
         let gridItems: [GridItem] = [
             GridItem(.flexible(), spacing: 0),

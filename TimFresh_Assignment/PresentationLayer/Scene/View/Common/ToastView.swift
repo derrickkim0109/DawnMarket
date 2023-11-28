@@ -33,22 +33,16 @@ struct ToastView<Content: View>: View {
                 .edgesIgnoringSafeArea(.all)
             }
             .onAppear {
-                cancellable?.cancel()
-
-                cancellable = Timer.publish(every: duration, on: .main, in: .common)
-                    .autoconnect()
-                    .sink { _ in
-                        withAnimation {
-                            isPresented = false
-                        }
-                    }
+                startTimer()
             }
             .onDisappear {
                 cancellable?.cancel()
             }
         }
     }
+}
 
+extension ToastView {
     private func toastContentView() -> some View {
         content()
             .padding()
@@ -57,5 +51,17 @@ struct ToastView<Content: View>: View {
             .cornerRadius(10)
             .transition(.opacity)
             .animation(.smooth, value: 100)
+    }
+
+    private func startTimer() {
+        cancellable?.cancel()
+        
+        cancellable = Timer.publish(every: duration, on: .main, in: .common)
+            .autoconnect()
+            .sink { _ in
+                withAnimation {
+                    isPresented = false
+                }
+            }
     }
 }

@@ -22,7 +22,9 @@ struct AppGoodsListStickyHeaderView: View {
         }
         .padding([.top, .bottom], 18)
     }
+}
 
+extension AppGoodsListStickyHeaderView {
     private func headerTitleView() -> some View {
         HStack(spacing: 0) {
             Text("\(viewModel.pagination?.totalElements ?? 0)")

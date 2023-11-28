@@ -33,12 +33,9 @@ final class CategoryViewModel: ObservableObject {
         self.appMainQuickMenuFetchUseCase = appMainQuickMenuFetchUseCase
     }
 
-    func triggerTransition(route: CategoryRouter.PushRoute) {
-        router.triggerScreenTransition(route: route)
-    }
-
-    func nextScreen(item: AppDisplayClassInfoFetchItemModel) -> some View {
-        router.nextTransitionScreen(item: item)
+    func nextScreen(_ item: AppDisplayClassInfoFetchItemModel) -> some View {
+        triggerTransition(route: .categoryDetail(item))
+        return router.nextTransitionScreen()
     }
 
     func viewWillAppear() {
@@ -47,7 +44,30 @@ final class CategoryViewModel: ObservableObject {
         fetchAppMainQuickMenuList()
     }
 
-    func fetchAppDisplayClassList() {
+    func showToastByDebounce() {
+        showToast = true
+    }
+    
+    func isEmptyFetchedAppDisplayClassList() -> Bool {
+        return fetchedAppDisplayClassList.isEmpty
+    }
+
+    func isEmptyFetchedAppMainQuickMenuList() -> Bool {
+        return fetchedAppMainQuickMenuList.isEmpty
+    }
+    
+    func setupFetchError(_ error: String) {
+        viewModelError = error
+        showErrorAlert = true
+    }
+}
+
+extension CategoryViewModel {
+    private func triggerTransition(route: CategoryRouter.PushRoute) {
+        router.triggerScreenTransition(route: route)
+    }
+    
+    private func fetchAppDisplayClassList() {
         appDisplayClassFetchUseCase.fetchAppDisplayClassInfoList()
             .sink { [weak self] completion in
                 switch completion {
@@ -70,7 +90,7 @@ final class CategoryViewModel: ObservableObject {
             .store(in: &cancellable)
     }
 
-    func fetchAppMainQuickMenuList() {
+    private func fetchAppMainQuickMenuList() {
         appMainQuickMenuFetchUseCase.fetchAppMainQuickMenuList()
             .sink { [weak self] completion in
                 switch completion {
@@ -93,25 +113,6 @@ final class CategoryViewModel: ObservableObject {
             .store(in: &cancellable)
     }
 
-    func showToastByDebounce() {
-        showToast = true
-    }
-    
-    func isEmptyFetchedAppDisplayClassList() -> Bool {
-        return fetchedAppDisplayClassList.isEmpty
-    }
-
-    func isEmptyFetchedAppMainQuickMenuList() -> Bool {
-        return fetchedAppMainQuickMenuList.isEmpty
-    }
-    
-    func setupFetchError(_ error: String) {
-        viewModelError = error
-        showErrorAlert = true
-    }
-}
-
-extension CategoryViewModel {
     private func resetProperties() {
         fetchedAppDisplayClassList = []
         fetchedAppMainQuickMenuList = []

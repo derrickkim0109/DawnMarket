@@ -11,16 +11,18 @@ import Kingfisher
 struct AppDisplayClassCellView: View {
     @EnvironmentObject var viewModel: CategoryViewModel
 
-    let item : AppDisplayClassInfoFetchItemModel
+    let item: AppDisplayClassInfoFetchItemModel
 
     var body: some View {
         NavigationLink {
-            viewModel.nextScreen(item: item)
+            viewModel.nextScreen(item)
         } label: {
             appDisplayClassCellInfoView()
         }
     }
+}
 
+extension AppDisplayClassCellView {
     private func appDisplayClassCellInfoView() -> some View {
         VStack(alignment: .center, spacing: 0) {
             appDisplayClassImageView()

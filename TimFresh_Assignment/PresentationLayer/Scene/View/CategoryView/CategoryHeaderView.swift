@@ -15,22 +15,24 @@ struct CategoryHeaderView: View {
         HStack {
             Spacer()
                 .frame(width: 20)
-            
+
             headerTitleView()
 
             Spacer()
-            
+
             HStack(spacing: 16) {
                 navigationTrailingBellImageView()
                 navigationTrailingSettingImageView()
             }
             .frame(height: 24)
-            
+
             Spacer()
                 .frame(width: 16)
         }
     }
+}
 
+extension CategoryHeaderView {
     private func headerTitleView() -> some View {
         Text("로그인해주세요")
             .font(.pretendard(size: 17, type: .bold))

@@ -23,7 +23,9 @@ struct AppGoodsCellView: View {
         .frame(maxWidth: .infinity)
         .padding(.bottom, 26)
     }
+}
 
+extension AppGoodsCellView {
     private func appGoodsImageView() -> some View {
         KFImage(item.makeImageURL())
             .placeholder {

@@ -25,7 +25,9 @@ struct AppSubDisplayClassCellView: View {
             }
         }
     }
+}
 
+extension AppSubDisplayClassCellView {
     private func appSubDisplayClassTitleView() -> some View {
         HStack {
             Text("\(item.subDisplayClassName)")
