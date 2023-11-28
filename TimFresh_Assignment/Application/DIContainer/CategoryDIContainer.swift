@@ -66,7 +66,7 @@ extension CategoryDIContainer {
         return useCase
     }
 
-    // MARK: categoryViewDependencies
+    // MARK: categoryDetailViewDependencies
     private func appDisplayBySubClassFetchDependencies() -> AppDisplayBySubClassFetchUseCaseInterface {
         let networkProvider = MoyaProvider<AppDisplayBySubClassAPIService>()
         let dataSource: AppDisplayBySubClassFetchDataSourceInterface = AppDisplayBySubClassFetchDataSource(
