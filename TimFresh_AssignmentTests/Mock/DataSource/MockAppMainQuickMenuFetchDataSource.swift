@@ -14,7 +14,7 @@ final class MockAppMainQuickMenuFetchDataSource: AppMainQuickMenuFetchDataSource
     var scenario: Scenario = .success
 
     var appMainQuickMenuResponseDTO = AppMainQuickMenuDTOObjectMother.getListResultAppMainQuickMenuResponseDTOWithCompleteData()
-    var networkError = MoyaError.statusCode(.init(statusCode: 400, data: Data()))
+    var networkError = MoyaError.statusCode(.init(statusCode: 500, data: Data()))
     
     func fetchAppMainQuickMenuList() -> AnyPublisher<ListResultAppMainQuickMenuResponseDTO, MoyaError> {
         switch scenario {

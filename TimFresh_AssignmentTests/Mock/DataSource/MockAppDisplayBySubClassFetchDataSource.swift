@@ -14,7 +14,7 @@ final class MockAppDisplayBySubClassFetchDataSource: AppDisplayBySubClassFetchDa
     var scenario: Scenario = .success
 
     var appDisplayBySubDisplayResponseDTO = AppDisplayBySubClassDTOObjectMother.getSingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTOWithCompleteData()
-    var networkError = MoyaError.statusCode(.init(statusCode: 400, data: Data()))
+    var networkError = MoyaError.statusCode(.init(statusCode: 500, data: Data()))
 
     func fetch(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO) -> AnyPublisher<SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO, MoyaError> {
         switch scenario {

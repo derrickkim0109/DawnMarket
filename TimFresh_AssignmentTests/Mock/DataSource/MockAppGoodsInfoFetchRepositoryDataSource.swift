@@ -14,7 +14,7 @@ final class MockAppGoodsInfoFetchRepositoryDataSource: AppGoodsInfoFetchReposito
     var scenario: Scenario = .success
 
     var appGoodsInfoResponseDTO = AppGoodsInfoDTOObjectMother.getPageResponseAppGoodsInfoResponseDTOWithCompleteData()
-    var networkError = MoyaError.statusCode(.init(statusCode: 400, data: Data()))
+    var networkError = MoyaError.statusCode(.init(statusCode: 500, data: Data()))
 
     func fetch(requestDTO: AppGoodsInfoFetchRequestDTO) -> AnyPublisher<PageResponseAppGoodsInfoResponseDTO, MoyaError> {
         switch scenario {
