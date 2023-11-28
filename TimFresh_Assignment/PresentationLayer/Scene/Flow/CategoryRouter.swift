@@ -36,6 +36,7 @@ final class CategoryRouter: ObservableObject, FlowRouter {
 
 extension CategoryRouter {
     enum PushRoute: Hashable {
+        case unknown
         case categoryDetail(AppDisplayClassInfoFetchItemModel)
 
         func nextView(
@@ -44,12 +45,15 @@ extension CategoryRouter {
         ) -> some View {
             switch self {
             case .categoryDetail(let item):
-                CategoryDetailView(
+                return CategoryDetailView(
                     viewModel: categoryDIContainer.categoryDetailViewDependencies(
                         categoryRouter: router,
                         displayClassItem: item
                     )
                 )
+
+            case .unknown:
+                fatalError("no set next transition screen.")
             }
         }
     }

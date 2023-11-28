@@ -12,8 +12,8 @@ protocol BaseAPIService: TargetType { }
 
 extension BaseAPIService {
     var baseURL: URL {
-        guard let baseURLString = Bundle.main.infoDictionary?["BASE_URL"] as? String,
-              let url = URL(string: baseURLString) else {
+        let appConfiguration = AppConfiguration()
+        guard let url = URL(string: appConfiguration.apiBaseURL) else {
             fatalError("Failed to create base URL")
         }
 

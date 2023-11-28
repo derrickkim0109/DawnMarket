@@ -9,7 +9,7 @@ struct AppDisplayClassInfoFetchModelMapper {
     static func toPresentationModel(entity: AppDisplayClassInfoFetchEntity) -> AppDisplayClassInfoFetchModel {
 
         let appDisplayClassInfoModelList = entity.data.map {
-            let imagePath = $0.makeImagePath()
+            let imagePath = $0.displayClassImagePath.makeImageURLString()
 
             return AppDisplayClassInfoFetchItemModel(
                 displayClassCode: $0.displayClassCode,
