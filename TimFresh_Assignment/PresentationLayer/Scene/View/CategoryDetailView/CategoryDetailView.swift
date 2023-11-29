@@ -13,6 +13,7 @@ struct CategoryDetailView: View {
 
     init(viewModel: CategoryDetailViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        setupNavigationBar()
     }
 
     var body: some View {
@@ -47,6 +48,16 @@ struct CategoryDetailView: View {
 }
 
 extension CategoryDetailView {
+    private func setupNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor.systemBackground
+        appearance.shadowColor = .clear
+
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     private func navigationLeadingView() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button {
