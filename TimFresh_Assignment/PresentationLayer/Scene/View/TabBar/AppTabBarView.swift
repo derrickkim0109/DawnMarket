@@ -12,7 +12,7 @@ struct AppTabBarView: View {
     var categoryDIContainer: CategoryDIContainerInterface
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             TabBarContainerView(selection: $tabSelection) {
                 CategoryView(
                     viewModel: categoryDIContainer.categoryViewDependencies(

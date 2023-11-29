@@ -15,22 +15,22 @@ final class CategoryRouter: ObservableObject, FlowRouter {
         self.categoryDIContainer = categoryDIContainer
     }
 
-    @Published var navigationPath: NavigationPath = .init()
-
-    var nextTransitionRoute: PushRoute?
+    @Published var navigationPath: NavigationCoordinator = .init()
+    var nextTransitionRoute: PushRoute = .unknown
 
     private let categoryDIContainer: CategoryDIContainerInterface
 
     func triggerScreenTransition(route: PushRoute) {
-        navigationPath.append(route)
         nextTransitionRoute = route
     }
 
     func nextTransitionScreen() -> some View {
-        nextTransitionRoute?.nextView(
+        let view = nextTransitionRoute.nextView(
             categoryDIContainer: categoryDIContainer,
             router: self
         )
+        navigationPath.append(view)
+        return view
     }
 }
 

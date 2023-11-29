@@ -14,9 +14,8 @@ protocol FlowRouter: Hashable {
 
     var id: UUID { get }
 
-    var navigationPath: NavigationPath { get set }
-
-    var nextTransitionRoute: PushRoute? { get }
+    var navigationPath: NavigationCoordinator { get set }
+    var nextTransitionRoute: PushRoute { get }
 
     func triggerScreenTransition(route: PushRoute)
     func nextTransitionScreen() -> NextScreen
