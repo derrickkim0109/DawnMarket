@@ -23,9 +23,6 @@ struct AppSubDisplayClassListView: View {
                     }
                 }
             }
-            .onAppear {
-                viewModel.loadAppDisplayBySubClass()
-            }
 
             Divider()
                 .frame(maxWidth: .infinity)

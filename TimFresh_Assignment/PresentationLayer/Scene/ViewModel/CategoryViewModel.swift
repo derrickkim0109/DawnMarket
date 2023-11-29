@@ -38,6 +38,10 @@ final class CategoryViewModel: ObservableObject {
         return router.nextTransitionScreen()
     }
 
+    func dismiss() {
+        router.dismiss()
+    }
+
     func viewWillAppear() {
         resetProperties()
         fetchAppDisplayClassList()

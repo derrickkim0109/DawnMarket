@@ -33,7 +33,8 @@ extension AppSubDisplayClassCellView {
             Text("\(item.subDisplayClassName)")
                 .font(.pretendard(size: 14, type: .regular))
                 .foregroundStyle(
-                    viewModel.selectedSubCategory != item ? Color.gray700 : Color.black900)
+                    viewModel.selectedSubCategory != item ? Color.gray700 : Color.black900
+                )
                 .multilineTextAlignment(.leading)
                 .frame(
                     minWidth: 120,

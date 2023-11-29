@@ -11,7 +11,7 @@ import UIKit
 
 final class CategoryDetailViewModelWithRouter: CategoryDetailViewModel {
     private var router: CategoryRouter
-
+    
     init(
         router: CategoryRouter,
         displayClassItem: AppDisplayClassInfoFetchItemModel,
@@ -69,7 +69,6 @@ class CategoryDetailViewModel: ObservableObject {
         self.appDisplayBySubClassFetchUseCase = appDisplayBySubClassFetchUseCase
         self.appGoodsInfoFetchUseCase = appGoodsInfoFetchUseCase
     }
-    
     func loadAppDisplayBySubClass() {
         fetchAppDisplayBySubClass()
     }
@@ -178,7 +177,6 @@ extension CategoryDetailViewModel {
         fetchedAppGoodsInfoList = []
         viewModelError = nil
         appGoodsCurrentPage = 0
-        cancellable.removeAll()
     }
     
     private func getAPPSubDisplayClassSequence() -> Int {

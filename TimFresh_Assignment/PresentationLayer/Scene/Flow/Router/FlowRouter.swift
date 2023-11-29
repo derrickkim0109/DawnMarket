@@ -19,6 +19,7 @@ protocol FlowRouter: Hashable {
 
     func triggerScreenTransition(route: PushRoute)
     func nextTransitionScreen() -> NextScreen
+    func dismiss() 
 }
 
 extension FlowRouter {

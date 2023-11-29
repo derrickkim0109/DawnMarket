@@ -32,6 +32,10 @@ final class CategoryRouter: ObservableObject, FlowRouter {
         navigationPath.append(view)
         return view
     }
+
+    func dismiss() {
+        navigationPath.remove()
+    }
 }
 
 extension CategoryRouter {

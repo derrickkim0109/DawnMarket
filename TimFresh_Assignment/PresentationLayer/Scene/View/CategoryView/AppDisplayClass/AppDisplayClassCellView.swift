@@ -16,6 +16,9 @@ struct AppDisplayClassCellView: View {
     var body: some View {
         NavigationLink {
             viewModel.nextScreen(item)
+                .onDisappear {
+                    viewModel.dismiss()
+                }
         } label: {
             appDisplayClassCellInfoView()
         }
