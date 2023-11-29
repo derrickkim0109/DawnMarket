@@ -28,6 +28,10 @@
 		9060ECB12B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */; };
 		9060ECB32B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */; };
 		9060ECB52B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */; };
+		9060ECB72B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB62B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift */; };
+		9060ECB92B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB82B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift */; };
+		9060ECBB2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECBA2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift */; };
+		9060ECBD2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECBC2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift */; };
 		908CBB4C2B0A58E300653F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC02B0A58E200653F66 /* Assets.xcassets */; };
 		908CBB4D2B0A58E300653F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */; };
 		908CBB582B0A58E300653F66 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBACF2B0A58E200653F66 /* Image.swift */; };
@@ -202,6 +206,10 @@
 		9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchRepositoryTests.swift; sourceTree = "<group>"; };
 		9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchRepositoryTests.swift; sourceTree = "<group>"; };
 		9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryTests.swift; sourceTree = "<group>"; };
+		9060ECB62B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		9060ECB82B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		9060ECBA2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		9060ECBC2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
 		908CBAC02B0A58E200653F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		908CBACF2B0A58E200653F66 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -440,9 +448,34 @@
 		9060ECBF2B161816000B3CF4 /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9097F68B2B1405700056FF15 /* UseCaseTests */,
+				9060ECC22B16183E000B3CF4 /* EntityTests */,
 				9097F68C2B1405750056FF15 /* RepositoryTests */,
 			);
 			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		9060ECC02B16181D000B3CF4 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9060ECC12B161825000B3CF4 /* ModelTests */,
+				9097F68A2B14055C0056FF15 /* ViewModelTests */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		9060ECC12B161825000B3CF4 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		9060ECC22B16183E000B3CF4 /* EntityTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EntityTests;
 			sourceTree = "<group>";
 		};
 		908CBABE2B0A58E200653F66 /* TimFresh_Assignment */ = {
@@ -895,6 +928,7 @@
 				9097F68F2B14058C0056FF15 /* Mock */,
 				9060ECBE2B161801000B3CF4 /* DataLayer */,
 				9060ECBF2B161816000B3CF4 /* DomainLayer */,
+				9060ECC02B16181D000B3CF4 /* PresentationLayer */,
 			);
 			path = TimFresh_AssignmentTests;
 			sourceTree = "<group>";
@@ -948,6 +982,24 @@
 				9097F6882B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift */,
 			);
 			path = AppGoodsInfo;
+			sourceTree = "<group>";
+		};
+		9097F68A2B14055C0056FF15 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		9097F68B2B1405700056FF15 /* UseCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				9060ECB62B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift */,
+				9060ECB82B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift */,
+				9060ECBA2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift */,
+				9060ECBC2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift */,
+			);
+			path = UseCaseTests;
 			sourceTree = "<group>";
 		};
 		9097F68C2B1405750056FF15 /* RepositoryTests */ = {
@@ -1033,6 +1085,10 @@
 			isa = PBXGroup;
 			children = (
 				9097F6D72B14E4870056FF15 /* API */,
+				9097F6A82B14BC9F0056FF15 /* AppDisplayClassInfo */,
+				9097F6A12B14BC9F0056FF15 /* AppMainQuickMenu */,
+				9097F6A52B14BC9F0056FF15 /* AppGoodsInfo */,
+				9097F69E2B14BC9E0056FF15 /* AppDisplayBySubClass */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1040,6 +1096,7 @@
 		9097F69E2B14BC9E0056FF15 /* AppDisplayBySubClass */ = {
 			isa = PBXGroup;
 			children = (
+				9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */,
 				9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */,
 			);
 			path = AppDisplayBySubClass;
@@ -1048,6 +1105,7 @@
 		9097F6A12B14BC9F0056FF15 /* AppMainQuickMenu */ = {
 			isa = PBXGroup;
 			children = (
+				9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */,
 				9097F6A22B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift */,
 			);
 			path = AppMainQuickMenu;
@@ -1056,6 +1114,7 @@
 		9097F6A52B14BC9F0056FF15 /* AppGoodsInfo */ = {
 			isa = PBXGroup;
 			children = (
+				9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */,
 				9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */,
 			);
 			path = AppGoodsInfo;
@@ -1064,6 +1123,7 @@
 		9097F6A82B14BC9F0056FF15 /* AppDisplayClassInfo */ = {
 			isa = PBXGroup;
 			children = (
+				9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */,
 				9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */,
 			);
 			path = AppDisplayClassInfo;
@@ -1073,10 +1133,6 @@
 			isa = PBXGroup;
 			children = (
 				9097F6A42B14BC9F0056FF15 /* BaseAPIService.swift */,
-				9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */,
-				9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */,
-				9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */,
-				9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
