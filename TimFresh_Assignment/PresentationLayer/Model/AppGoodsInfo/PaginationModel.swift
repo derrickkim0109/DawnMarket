@@ -12,7 +12,7 @@ struct PaginationModel {
     let totalPage: Int32
 
     func hasNext() -> Bool {
-        return totalPage > currentPage
+        return totalPage > currentPage && totalPage > 2
     }
 }
 
