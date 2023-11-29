@@ -22,6 +22,11 @@ struct AppSubDisplayClassCellView: View {
                     .frame(width: 1)
 
                 appSubDisplayClassTitleView()
+
+                Spacer()
+            }
+            .onTapGesture {
+                viewModel.didSelectSubCategory(item)
             }
         }
     }
@@ -33,11 +38,11 @@ extension AppSubDisplayClassCellView {
             Text("\(item.subDisplayClassName)")
                 .font(.pretendard(size: 14, type: .regular))
                 .foregroundStyle(
-                    viewModel.selectedSubCategory != item ? Color.gray700 : Color.black900
+                    viewModel.selectedSubCategorySequence == item.displayClassSequence ? Color.black900 : Color.gray700
                 )
                 .multilineTextAlignment(.leading)
                 .frame(
-                    minWidth: 120,
+                    maxWidth: .infinity,
                     alignment: .leading
                 )
         }
@@ -48,4 +53,12 @@ extension AppSubDisplayClassCellView {
             alignment: .top
         )
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: .completedMock)
+    viewModel.viewWillAppear()
+
+    return AppSubDisplayClassCellView(viewModel: viewModel, item: .completedMock)
 }

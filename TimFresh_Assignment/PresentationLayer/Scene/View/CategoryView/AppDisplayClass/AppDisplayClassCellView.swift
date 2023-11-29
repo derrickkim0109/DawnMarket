@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct AppDisplayClassCellView: View {
-    @EnvironmentObject var viewModel: CategoryViewModel
+    @ObservedObject var viewModel: CategoryViewModel
 
     let item: AppDisplayClassInfoFetchItemModel
 
@@ -30,13 +30,9 @@ extension AppDisplayClassCellView {
         VStack(alignment: .center, spacing: 0) {
             appDisplayClassImageView()
 
-            Spacer()
-
             Text(item.displayClassName)
                 .font(.pretendard( size: 12, type: .medium))
                 .foregroundStyle(Color.gray900)
-
-            Spacer()
         }
     }
 
@@ -56,4 +52,12 @@ extension AppDisplayClassCellView {
                 message: viewModel.viewModelError
             )
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryViewDependencies(categoryRouter: container.categoryRouter())
+    viewModel.viewWillAppear()
+
+    return AppDisplayClassCellView(viewModel: viewModel, item: .completedMock)
 }

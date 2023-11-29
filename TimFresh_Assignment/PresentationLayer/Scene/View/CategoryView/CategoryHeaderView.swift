@@ -65,3 +65,10 @@ extension CategoryHeaderView {
             }
     }
 }
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryViewDependencies(categoryRouter: container.categoryRouter())
+
+    return CategoryHeaderView(viewModel: viewModel)
+}

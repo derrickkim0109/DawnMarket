@@ -18,9 +18,6 @@ struct AppSubDisplayClassListView: View {
                         viewModel: viewModel,
                         item: item
                     )
-                    .onTapGesture {
-                        viewModel.didSelectSubCategory(item)
-                    }
                 }
             }
 
@@ -40,4 +37,12 @@ extension AppSubDisplayClassListView {
         ]
         return gridItems
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: .completedMock)
+    viewModel.viewWillAppear()
+    
+    return AppSubDisplayClassListView(viewModel: viewModel)
 }

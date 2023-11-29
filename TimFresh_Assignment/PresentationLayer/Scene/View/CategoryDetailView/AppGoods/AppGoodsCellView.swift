@@ -143,3 +143,11 @@ extension AppGoodsCellView {
         }
     }
 }
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: .completedMock)
+    viewModel.viewWillAppear()
+
+    return AppGoodsCellView(viewModel: viewModel, item: .completedMock)
+}

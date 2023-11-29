@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct AppMainQuickMenuCellView: View {
-    @EnvironmentObject var viewModel: CategoryViewModel
+    @ObservedObject var viewModel: CategoryViewModel
 
     let item: AppMainQuickMenuFetchItemModel
 
@@ -23,11 +23,8 @@ struct AppMainQuickMenuCellView: View {
 
 extension AppMainQuickMenuCellView {
     private func appMainQuickMenuInfoView() -> some View {
-        VStack(alignment: .center, spacing: 0) {
+        VStack(spacing: 5) {
             appMainQuickMenuImageView()
-
-            Spacer()
-
             appMainQuickMenuTitleView()
         }
     }
@@ -42,7 +39,7 @@ extension AppMainQuickMenuCellView {
                 viewModel.setupFetchError(error.errorDescription ?? "")
             })
             .resizable()
-            .frame(height: 52)
+            .frame(width: 52, height: 52)
             .showErrorAlert(
                 isPresented: $viewModel.showErrorAlert,
                 message: viewModel.viewModelError
@@ -54,4 +51,11 @@ extension AppMainQuickMenuCellView {
             .font(.pretendard(size: 12, type: .medium))
             .foregroundStyle(Color.black700)
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryViewDependencies(categoryRouter: container.categoryRouter())
+
+    return AppMainQuickMenuCellView(viewModel: viewModel, item: .completedMock)
 }

@@ -31,6 +31,7 @@ struct AppGoodsListView: View {
                 bottomProgressView()
                 bottomProgressView()
                     .onAppear {
+                        print("AppGoodsListView bottomProgressView Appear")
                         viewModel.loadAppGoodsInfo()
                     }
             }
@@ -75,4 +76,12 @@ extension AppGoodsListView {
         }
         .hiddenConditionally(isHidden: isLoading)
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: .completedMock)
+    viewModel.viewWillAppear()
+
+    return AppGoodsListView(viewModel: viewModel)
 }

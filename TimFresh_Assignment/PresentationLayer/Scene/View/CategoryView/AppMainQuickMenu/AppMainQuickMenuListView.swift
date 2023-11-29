@@ -16,8 +16,11 @@ struct AppMainQuickMenuListView: View {
 
             LazyVGrid(columns: getGridItemSize()) {
                 ForEach(viewModel.fetchedAppMainQuickMenuList) { item in
-                    AppMainQuickMenuCellView(item: item)
-                        .environmentObject(viewModel)
+                    AppMainQuickMenuCellView(
+                        viewModel: viewModel,
+                        item: item
+                    )
+                    .padding([.top, .bottom], 5)
                 }
             }
         }
@@ -43,4 +46,12 @@ extension AppMainQuickMenuListView {
 
         return gridItems
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryViewDependencies(categoryRouter: container.categoryRouter())
+    viewModel.viewWillAppear()
+
+    return AppMainQuickMenuListView(viewModel: viewModel)
 }

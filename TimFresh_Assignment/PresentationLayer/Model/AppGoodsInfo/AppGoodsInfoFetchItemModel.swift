@@ -95,7 +95,7 @@ extension AppGoodsInfoFetchItemModel {
         goodsOptionUseYn: "",
         goodsState: "판매중",
         goodsSupplementImageSequence: 3863,
-        imagePath: "goods-info/PG000104/PAA00046/1a6fc5ab-f10b-4b7c-80b1-1ba32196c5e2.jpg",
+        imagePath: "goods-info/PG000104/PAA00046/1a6fc5ab-f10b-4b7c-80b1-1ba32196c5e2.jpg".makeImageURLString(),
         maxBuyQuantity: 999,
         minBuyQuantity: 1,
         minorBuyYn: "Y",

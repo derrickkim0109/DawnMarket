@@ -22,6 +22,7 @@ struct CategoryView: View {
                         CategoryHeaderView(viewModel: viewModel)
 
                         if !viewModel.isEmptyFetchedAppDisplayClassList() {
+                            
                             AppDisplayClassListView(viewModel: viewModel)
                                 .padding(.bottom, 42)
 
@@ -54,4 +55,11 @@ struct CategoryView: View {
             message: viewModel.viewModelError
         )
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryViewDependencies(categoryRouter: container.categoryRouter())
+
+    return CategoryView(viewModel: viewModel)
 }

@@ -61,3 +61,11 @@ extension AppGoodsListStickyHeaderView {
         .padding(.leading, 16)
     }
 }
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: .completedMock)
+    viewModel.viewWillAppear()
+
+    return AppGoodsListStickyHeaderView(viewModel: viewModel)
+}

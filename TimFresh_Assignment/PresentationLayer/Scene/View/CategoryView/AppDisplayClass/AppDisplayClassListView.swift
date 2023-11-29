@@ -13,8 +13,10 @@ struct AppDisplayClassListView: View {
     var body: some View {
         LazyVGrid(columns: getGridItemSize(), spacing: 16) {
             ForEach(viewModel.fetchedAppDisplayClassList) { item in
-                AppDisplayClassCellView(item: item)
-                    .environmentObject(viewModel)
+                AppDisplayClassCellView(
+                    viewModel: viewModel,
+                    item: item
+                )
             }
         }
     }
@@ -31,4 +33,12 @@ extension AppDisplayClassListView {
 
         return gridItems
     }
+}
+
+#Preview {
+    let container = CategoryDIContainer()
+    let viewModel = container.categoryViewDependencies(categoryRouter: container.categoryRouter())
+    viewModel.viewWillAppear()
+    
+    return AppDisplayClassListView(viewModel: viewModel)
 }
