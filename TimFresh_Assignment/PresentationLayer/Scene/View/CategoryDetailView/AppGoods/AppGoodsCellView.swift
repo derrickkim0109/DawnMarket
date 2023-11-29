@@ -14,8 +14,6 @@ struct AppGoodsCellView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Spacer()
-
             appGoodsImageView()
 
             appGoodsInfoView()

@@ -36,8 +36,16 @@ class CategoryDetailViewModel: ObservableObject {
     
     private(set) var toastMessage: String = "개발 예정"
     
-    @Published private(set) var selectedSubCategorySequence: Int = 0
-    @Published private(set) var selectedSearchValue: SearchValueType = .recommended
+    @Published private(set) var selectedSubCategorySequence: Int = 0 {
+        didSet {
+            resetAppGoodsInfoList()
+        }
+    }
+    @Published private(set) var selectedSearchValue: SearchValueType = .recommended {
+        didSet {
+            resetAppGoodsInfoList()
+        }
+    }
 
     var viewModelError: String?
     var pagination: PaginationModel?
@@ -75,19 +83,18 @@ class CategoryDetailViewModel: ObservableObject {
     }
     
     func didSelectSubCategory(_ item: AppSubDisplayClassInfoFetchItemModel) {
-        selectedSubCategorySequence = item.displayClassSequence
         resetAppGoodsInfoList()
+        selectedSubCategorySequence = item.displayClassSequence
         fetchAppGoodsInfo()
     }
     
     func didSelectSearchValue(_ type: SearchValueType) {
         selectedSearchValue = type
-        resetAppGoodsInfoList()
         fetchAppGoodsInfo()
     }
     
     func hasNext() -> Bool {
-        return pagination?.hasNext() == true
+        return pagination?.hasNext(items: fetchedAppGoodsInfoList.count) == true
     }
     
     func showToastByDebounce(_ message: String) {
