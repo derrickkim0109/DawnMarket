@@ -44,6 +44,9 @@ struct CategoryDetailView: View {
                     .offset(y: 40)
             }
         }
+        .onAppear {
+            viewModel.viewWillAppear()
+        }
     }
 }
 
@@ -100,5 +103,10 @@ extension CategoryDetailView {
             }
         }
     }
+}
 
+#Preview {
+    let container = CategoryDIContainer()
+
+    return CategoryDetailView(viewModel: container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: AppDisplayClassInfoFetchItemModel.completedMock))
 }

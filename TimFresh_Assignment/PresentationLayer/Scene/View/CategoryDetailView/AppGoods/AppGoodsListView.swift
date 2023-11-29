@@ -31,7 +31,6 @@ struct AppGoodsListView: View {
                 bottomProgressView()
                 bottomProgressView()
                     .onAppear {
-                        print("AppGoodsListView bottomProgressView Appear")
                         viewModel.loadAppGoodsInfo()
                     }
             }

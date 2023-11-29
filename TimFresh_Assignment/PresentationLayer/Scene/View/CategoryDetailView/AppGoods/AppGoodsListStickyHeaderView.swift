@@ -16,10 +16,14 @@ struct AppGoodsListStickyHeaderView: View {
 
             Divider()
                 .foregroundStyle(Color.gray200)
-                .frame(maxWidth: .infinity)
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: 1
+                )
 
             allSearchCaseView()
         }
+        .frame(maxHeight: 50)
         .padding([.top, .bottom], 18)
     }
 }
@@ -28,11 +32,21 @@ extension AppGoodsListStickyHeaderView {
     private func headerTitleView() -> some View {
         HStack(spacing: 0) {
             Text("\(viewModel.pagination?.totalElements ?? 0)")
-                .font(.pretendard(size: 13, type: .bold))
+                .font(
+                    .pretendard(
+                        size: 13,
+                        type: .bold
+                    )
+                )
                 .foregroundStyle(Color.black900)
 
             Text("건의 검색결과")
-                .font(.pretendard(size: 13, type: .regular))
+                .font(
+                    .pretendard(
+                        size: 13,
+                        type: .regular
+                    )
+                )
                 .foregroundStyle(Color.black800)
         }
         .padding(.leading, 16)
@@ -48,7 +62,12 @@ extension AppGoodsListStickyHeaderView {
                         )
 
                     Text("\(item.rawValue)")
-                        .font(.pretendard(size: 13, type: .regular))
+                        .font(
+                            .pretendard(
+                                size: 13,
+                                type: .regular
+                            )
+                        )
                         .foregroundStyle(
                             viewModel.selectedSearchValue != item ? Color.gray500 : Color.black900
                         )

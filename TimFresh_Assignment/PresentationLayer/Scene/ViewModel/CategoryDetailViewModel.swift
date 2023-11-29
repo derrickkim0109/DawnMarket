@@ -30,30 +30,21 @@ final class CategoryDetailViewModelWithRouter: CategoryDetailViewModel {
 class CategoryDetailViewModel: ObservableObject {
     @Published private(set) var fetchedAppSubDisplayClassInfoList = [AppSubDisplayClassInfoFetchItemModel]()
     @Published private(set) var fetchedAppGoodsInfoList = [AppGoodsInfoFetchItemModel]()
+    
     @Published var showErrorAlert: Bool = false
     @Published var showToast: Bool = false
     
     private(set) var toastMessage: String = "개발 예정"
     
-    @Published private(set) var selectedSubCategory: AppSubDisplayClassInfoFetchItemModel? {
-        didSet {
-            fetchAppGoodsInfo()
-        }
-    }
-    
-    @Published private(set) var selectedSearchValue: SearchValueType = .recommended {
-        didSet {
-            fetchAppGoodsInfo()
-        }
-    }
-    
+    @Published private(set) var selectedSubCategorySequence: Int = 0
+    @Published private(set) var selectedSearchValue: SearchValueType = .recommended
+
     var viewModelError: String?
     var pagination: PaginationModel?
     
     private var appGoodsCurrentPage = 0
     private let appGoodsSize = 20
-    private var isSelected = false
-    
+
     private let appDisplayBySubClassFetchUseCase: AppDisplayBySubClassFetchUseCaseInterface
     private let appGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface
     private let displayClassItem: AppDisplayClassInfoFetchItemModel
@@ -69,8 +60,10 @@ class CategoryDetailViewModel: ObservableObject {
         self.appDisplayBySubClassFetchUseCase = appDisplayBySubClassFetchUseCase
         self.appGoodsInfoFetchUseCase = appGoodsInfoFetchUseCase
     }
-    func loadAppDisplayBySubClass() {
+
+    func viewWillAppear() {
         fetchAppDisplayBySubClass()
+        loadAppGoodsInfo()
     }
     
     func loadAppGoodsInfo() {
@@ -82,13 +75,15 @@ class CategoryDetailViewModel: ObservableObject {
     }
     
     func didSelectSubCategory(_ item: AppSubDisplayClassInfoFetchItemModel) {
+        selectedSubCategorySequence = item.displayClassSequence
         resetAppGoodsInfoList()
-        selectedSubCategory = item
+        fetchAppGoodsInfo()
     }
     
     func didSelectSearchValue(_ type: SearchValueType) {
-        resetAppGoodsInfoList()
         selectedSearchValue = type
+        resetAppGoodsInfoList()
+        fetchAppGoodsInfo()
     }
     
     func hasNext() -> Bool {
@@ -128,8 +123,6 @@ extension CategoryDetailViewModel {
                 self?.fetchedAppSubDisplayClassInfoList.append(
                     contentsOf: appSubDisplayClassInfoList
                 )
-                
-                self?.selectedSubCategory = appSubDisplayClassInfoList.first
             }
             .store(in: &cancellable)
     }
@@ -137,49 +130,40 @@ extension CategoryDetailViewModel {
     private func fetchAppGoodsInfo() {
         let requestValue = AppGoodsInfoFetchRequestValue(
             displayClassSequence: displayClassItem.displayClassSequence,
-            subDisplayClassSequence: selectedSubCategory?.displayClassSequence ?? 0,
+            subDisplayClassSequence: selectedSubCategorySequence,
             page: appGoodsCurrentPage,
             size: appGoodsSize,
             searchValue: selectedSearchValue.rawValue
         )
         
         appGoodsInfoFetchUseCase.fetch(request: requestValue)
-        .sink { [weak self] completion in
-            switch completion {
-            case .finished:
-                break
-            case let .failure(error):
-                self?.setupFetchError(error.rawValue)
+            .sink { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case let .failure(error):
+                    self?.setupFetchError(error.rawValue)
+                }
+            } receiveValue: { [weak self] entity in
+                let appGoodsInfoFetchModel = AppGoodsInfoFetchModelMapper.toPresentationModel(entity: entity)
+                
+                guard !appGoodsInfoFetchModel.data.isEmpty else {
+                    return
+                }
+                
+                self?.appGoodsCurrentPage += 1
+                self?.pagination = appGoodsInfoFetchModel.pagination
+                
+                self?.fetchedAppGoodsInfoList.append(
+                    contentsOf: appGoodsInfoFetchModel.data
+                )
             }
-        } receiveValue: { [weak self] entity in
-            let appGoodsInfoFetchModel = AppGoodsInfoFetchModelMapper.toPresentationModel(entity: entity)
-
-            guard !appGoodsInfoFetchModel.data.isEmpty else {
-                return
-            }
-
-            self?.appGoodsCurrentPage += 1
-            self?.pagination = appGoodsInfoFetchModel.pagination
-
-            self?.fetchedAppGoodsInfoList.append(
-                contentsOf: appGoodsInfoFetchModel.data
-            )
-        }
-        .store(in: &cancellable)
-    }
-
-    private func resetAppSubDisplayClassInfoList() {
-        fetchedAppSubDisplayClassInfoList = []
-        viewModelError = nil
+            .store(in: &cancellable)
     }
     
     private func resetAppGoodsInfoList() {
         fetchedAppGoodsInfoList = []
         viewModelError = nil
         appGoodsCurrentPage = 0
-    }
-    
-    private func getAPPSubDisplayClassSequence() -> Int {
-        return selectedSubCategory?.parentsDisplayClassSequence ?? 0
     }
 }
