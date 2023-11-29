@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppSubDisplayClassCellView: View {
-    @EnvironmentObject var viewModel: CategoryDetailViewModel
+    @ObservedObject var viewModel: CategoryDetailViewModel
     let item: AppSubDisplayClassInfoFetchItemModel
 
     var body: some View {

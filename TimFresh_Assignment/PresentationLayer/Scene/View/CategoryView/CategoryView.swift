@@ -19,12 +19,10 @@ struct CategoryView: View {
             ScrollView(showsIndicators: false) {
                 VStack {
                     VStack(spacing: 20) {
-                        CategoryHeaderView()
-                            .environmentObject(viewModel)
+                        CategoryHeaderView(viewModel: viewModel)
 
                         if !viewModel.isEmptyFetchedAppDisplayClassList() {
-                            AppDisplayClassListView()
-                                .environmentObject(viewModel)
+                            AppDisplayClassListView(viewModel: viewModel)
                                 .padding(.bottom, 42)
 
                             Color.gray200
@@ -33,8 +31,7 @@ struct CategoryView: View {
                     }
 
                     if !viewModel.isEmptyFetchedAppMainQuickMenuList() {
-                        AppMainQuickMenuListView()
-                            .environmentObject(viewModel)
+                        AppMainQuickMenuListView(viewModel: viewModel)
                             .padding(.top, 20)
 
                         Spacer()

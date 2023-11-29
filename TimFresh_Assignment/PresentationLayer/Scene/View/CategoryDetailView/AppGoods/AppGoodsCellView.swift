@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct AppGoodsCellView: View {
-    @EnvironmentObject var viewModel: CategoryDetailViewModel
+    @ObservedObject var viewModel: CategoryDetailViewModel
     let item: AppGoodsInfoFetchItemModel
 
     var body: some View {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppMainQuickMenuListView: View {
-    @EnvironmentObject var viewModel: CategoryViewModel
+    @ObservedObject var viewModel: CategoryViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {

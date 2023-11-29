@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppDisplayClassListView: View {
-    @EnvironmentObject var viewModel: CategoryViewModel
+    @ObservedObject var viewModel: CategoryViewModel
 
     var body: some View {
         LazyVGrid(columns: getGridItemSize(), spacing: 16) {

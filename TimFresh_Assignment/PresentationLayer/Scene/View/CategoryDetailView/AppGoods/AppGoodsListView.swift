@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct AppGoodsListView: View {
-    @EnvironmentObject var viewModel: CategoryDetailViewModel
+    @ObservedObject var viewModel: CategoryDetailViewModel
     @State private var isLoading: Bool = false
     @State private var cancellable = Set<AnyCancellable>()
 
@@ -17,11 +17,13 @@ struct AppGoodsListView: View {
         LazyVGrid(columns: getGridItemSize(), spacing: 0, pinnedViews: [.sectionHeaders]) {
             Section(header: appGoodsListHeaderView()) {
                 ForEach(viewModel.fetchedAppGoodsInfoList) { item in
-                    AppGoodsCellView(item: item)
-                        .environmentObject(viewModel)
-                        .onTapGesture {
-                            viewModel.showToastByDebounce("개발 예정")
-                        }
+                    AppGoodsCellView(
+                        viewModel: viewModel,
+                        item: item
+                    )
+                    .onTapGesture {
+                        viewModel.showToastByDebounce("개발 예정")
+                    }
                 }
             }
 
@@ -46,13 +48,12 @@ extension AppGoodsListView {
     }
 
     private func appGoodsListHeaderView() -> some View {
-        AppGoodsListStickyHeaderView()
+        AppGoodsListStickyHeaderView(viewModel: viewModel)
             .frame(minWidth: 0, maxWidth: .infinity)
             .background(
                 Rectangle()
                     .foregroundColor(.white)
             )
-            .environmentObject(viewModel)
     }
 
     private func bottomProgressView() -> some View {

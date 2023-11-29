@@ -19,11 +19,9 @@ struct CategoryDetailView: View {
         ZStack {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 6) {
-                    AppSubDisplayClassListView()
-                        .environmentObject(viewModel)
+                    AppSubDisplayClassListView(viewModel: viewModel)
 
-                    AppGoodsListView()
-                        .environmentObject(viewModel)
+                    AppGoodsListView(viewModel: viewModel)
                 }
             }
             .navigationBarBackButtonHidden(true)
