@@ -988,8 +988,6 @@
 			isa = PBXGroup;
 			children = (
 				90FCF4D02B16B4C800BBA1AB /* Model */,
-				90FCF4CF2B16B4C500BBA1AB /* Entity */,
-				90FCF4CE2B16B4C000BBA1AB /* DTO */,
 				9097F6922B140A7D0056FF15 /* DataSource */,
 				9097F6932B140A830056FF15 /* Repository */,
 				9097F6942B140A8B0056FF15 /* UseCase */,
@@ -1043,7 +1041,6 @@
 			isa = PBXGroup;
 			children = (
 				9097F69F2B14BC9E0056FF15 /* AppDisplayBySubClassFetchDataSource.swift */,
-				9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */,
 			);
 			path = AppDisplayBySubClass;
 			sourceTree = "<group>";
@@ -1052,7 +1049,6 @@
 			isa = PBXGroup;
 			children = (
 				9097F6A22B14BC9F0056FF15 /* AppMainQuickMenuFetchDataSource.swift */,
-				9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */,
 			);
 			path = AppMainQuickMenu;
 			sourceTree = "<group>";
@@ -1060,7 +1056,6 @@
 		9097F6A52B14BC9F0056FF15 /* AppGoodsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */,
 				9097F6A72B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift */,
 			);
 			path = AppGoodsInfo;
@@ -1070,7 +1065,6 @@
 			isa = PBXGroup;
 			children = (
 				9097F6A92B14BC9F0056FF15 /* AppDisplayClassInfoDataSource.swift */,
-				9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */,
 			);
 			path = AppDisplayClassInfo;
 			sourceTree = "<group>";
@@ -1079,10 +1073,10 @@
 			isa = PBXGroup;
 			children = (
 				9097F6A42B14BC9F0056FF15 /* BaseAPIService.swift */,
-				9097F6A82B14BC9F0056FF15 /* AppDisplayClassInfo */,
-				9097F6A12B14BC9F0056FF15 /* AppMainQuickMenu */,
-				9097F69E2B14BC9E0056FF15 /* AppDisplayBySubClass */,
-				9097F6A52B14BC9F0056FF15 /* AppGoodsInfo */,
+				9097F6AA2B14BC9F0056FF15 /* AppDisplayClassInfoAPIService.swift */,
+				9097F6A32B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift */,
+				9097F6A02B14BC9F0056FF15 /* AppDisplayBySubClassAPIService.swift */,
+				9097F6A62B14BC9F0056FF15 /* AppGoodsInfoAPIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -1184,20 +1178,6 @@
 				90FCF4CC2B16AC5B00BBA1AB /* String.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		90FCF4CE2B16B4C000BBA1AB /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
-		90FCF4CF2B16B4C500BBA1AB /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		90FCF4D02B16B4C800BBA1AB /* Model */ = {
@@ -1445,12 +1425,16 @@
 				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
 				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
 				9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */,
+				9060ECBB2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */,
 				9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */,
 				9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */,
+				9060ECB92B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift in Sources */,
 				9097F6CD2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift in Sources */,
 				9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppDisplayBySubClassModelObjectMother.swift in Sources */,
 				9097F69A2B14BA500056FF15 /* TestAPIService.swift in Sources */,
+				9060ECB72B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */,
+				9060ECBD2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift in Sources */,
 				9060ECA92B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift in Sources */,
 				9097F6982B14BA1C0056FF15 /* NetworkServiceTests.swift in Sources */,
 				9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */,

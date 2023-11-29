@@ -12,23 +12,23 @@ enum TestAPI: TargetType {
     case test
 
     var baseURL: URL {
-        URL(string: "www.naver.com")!
+        return URL(string: "https://www.teamfresh.co.kr/")!
     }
 
     var path: String {
-        "path"
+        return "path"
     }
 
     var method: Moya.Method {
-        .get
+        return .get
     }
 
     var task: Moya.Task {
-        .requestPlain
+        return .requestPlain
     }
 
     var headers: [String : String]? {
-        [:]
+        return [:]
     }
 
     var sampleData: Data {
