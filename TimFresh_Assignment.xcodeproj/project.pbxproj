@@ -461,7 +461,6 @@
 		908CBABF2B0A58E200653F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				901F4F112B1174C300963F4D /* LaunchScreen */,
 				908CBAC12B0A58E200653F66 /* Preview Content */,
 				9097F6292B12E90E0056FF15 /* Assets */,
 				908CBAFF2B0A58E300653F66 /* TimFresh-Assignment-Info.plist */,
@@ -851,6 +850,7 @@
 		908CBBAB2B0A5E0000653F66 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				901F4F112B1174C300963F4D /* LaunchScreen */,
 				90EFCE822B0B30D4006FE3C9 /* ToastView.swift */,
 			);
 			path = Common;
