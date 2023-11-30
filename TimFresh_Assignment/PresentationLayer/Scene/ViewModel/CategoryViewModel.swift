@@ -44,7 +44,15 @@ final class CategoryViewModel: ObservableObject {
 
     func viewWillAppear() {
         resetProperties()
+        loadAppDisplayClassList()
+        loadAppMainQuickMenuList()
+    }
+
+    func loadAppDisplayClassList() {
         fetchAppDisplayClassList()
+    }
+
+    func loadAppMainQuickMenuList() {
         fetchAppMainQuickMenuList()
     }
 

@@ -175,6 +175,8 @@
 		90FCF4F02B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4EC2B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift */; };
 		90FCF4F12B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4ED2B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift */; };
 		90FCF4F22B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4EE2B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift */; };
+		90FCF4F42B18DF2200BBA1AB /* CategoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4F32B18DF2200BBA1AB /* CategoryViewModelTests.swift */; };
+		90FCF4F62B18DF2B00BBA1AB /* CategoryDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4F52B18DF2B00BBA1AB /* CategoryDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,6 +356,8 @@
 		90FCF4EC2B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchUseCaseTests.swift; sourceTree = "<group>"; };
 		90FCF4ED2B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
 		90FCF4EE2B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		90FCF4F32B18DF2200BBA1AB /* CategoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModelTests.swift; sourceTree = "<group>"; };
+		90FCF4F52B18DF2B00BBA1AB /* CategoryDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +406,8 @@
 		497603362B18112200203397 /* ViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				90FCF4F32B18DF2200BBA1AB /* CategoryViewModelTests.swift */,
+				90FCF4F52B18DF2B00BBA1AB /* CategoryDetailViewModelTests.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -1475,12 +1481,14 @@
 				9097F6C92B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift in Sources */,
 				9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */,
 				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
+				90FCF4F42B18DF2200BBA1AB /* CategoryViewModelTests.swift in Sources */,
 				497603422B18130900203397 /* AppGoodsInfoModelTests.swift in Sources */,
 				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
 				9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */,
 				9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */,
 				9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */,
 				9097F6CD2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift in Sources */,
+				90FCF4F62B18DF2B00BBA1AB /* CategoryDetailViewModelTests.swift in Sources */,
 				9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */,
 				90FCF4F12B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppDisplayBySubClassModelObjectMother.swift in Sources */,
