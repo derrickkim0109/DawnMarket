@@ -13,11 +13,15 @@ struct PaginationModel {
 
     func hasNext(items: Int) -> Bool {
         if totalPage == 1 {
-            return false
-        } else if totalPage > 1 {
-            if items == totalElements {
+            if items < totalElements {
+                return true
+            } else {
                 return false
-            } else if items < totalElements {
+            }
+        } else if totalPage > 1 {
+            if items >= totalElements {
+                return false
+            } else if items < totalElements && totalPage > currentPage {
                 return true
             }
         }
