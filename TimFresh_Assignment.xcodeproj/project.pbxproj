@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497603422B18130900203397 /* AppGoodsInfoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603412B18130900203397 /* AppGoodsInfoModelTests.swift */; };
+		497603442B18131900203397 /* AppDisplayBySubClassModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603432B18131900203397 /* AppDisplayBySubClassModelTests.swift */; };
+		497603462B18132E00203397 /* AppDisplayClassInfoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603452B18132E00203397 /* AppDisplayClassInfoModelTests.swift */; };
+		497603482B18134000203397 /* AppMainQuickMenuModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603472B18134000203397 /* AppMainQuickMenuModelTests.swift */; };
 		9005E96E2B162EA100100FC2 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005E96D2B162EA100100FC2 /* NavigationCoordinator.swift */; };
 		901F4F132B1174D500963F4D /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F4F122B1174D500963F4D /* LaunchScreenView.swift */; };
 		901F4F152B1175E400963F4D /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F4F142B1175E400963F4D /* LaunchScreenStep.swift */; };
@@ -28,10 +32,6 @@
 		9060ECB12B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */; };
 		9060ECB32B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */; };
 		9060ECB52B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */; };
-		9060ECB72B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB62B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift */; };
-		9060ECB92B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB82B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift */; };
-		9060ECBB2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECBA2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift */; };
-		9060ECBD2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECBC2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift */; };
 		908CBB4C2B0A58E300653F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC02B0A58E200653F66 /* Assets.xcassets */; };
 		908CBB4D2B0A58E300653F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */; };
 		908CBB582B0A58E300653F66 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBACF2B0A58E200653F66 /* Image.swift */; };
@@ -171,6 +171,10 @@
 		90FCF4D82B174D2D00BBA1AB /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90FCF4D32B174D2D00BBA1AB /* SpoqaHanSansNeo-Medium.otf */; };
 		90FCF4D92B174D2D00BBA1AB /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90FCF4D42B174D2D00BBA1AB /* SpoqaHanSansNeo-Bold.otf */; };
 		90FCF4DA2B174D2D00BBA1AB /* SpoqaHanSansNeo-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90FCF4D52B174D2D00BBA1AB /* SpoqaHanSansNeo-Thin.otf */; };
+		90FCF4EF2B18A05000BBA1AB /* AppMainQuickMenuFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4EB2B18A05000BBA1AB /* AppMainQuickMenuFetchUseCaseTests.swift */; };
+		90FCF4F02B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4EC2B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift */; };
+		90FCF4F12B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4ED2B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift */; };
+		90FCF4F22B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCF4EE2B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +188,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		497603412B18130900203397 /* AppGoodsInfoModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoModelTests.swift; sourceTree = "<group>"; };
+		497603432B18131900203397 /* AppDisplayBySubClassModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassModelTests.swift; sourceTree = "<group>"; };
+		497603452B18132E00203397 /* AppDisplayClassInfoModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoModelTests.swift; sourceTree = "<group>"; };
+		497603472B18134000203397 /* AppMainQuickMenuModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuModelTests.swift; sourceTree = "<group>"; };
 		9005E96D2B162EA100100FC2 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		901C46F82B0774F200E7AF40 /* TimFresh_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimFresh_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901F4F122B1174D500963F4D /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -206,10 +214,6 @@
 		9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchRepositoryTests.swift; sourceTree = "<group>"; };
 		9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchRepositoryTests.swift; sourceTree = "<group>"; };
 		9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryTests.swift; sourceTree = "<group>"; };
-		9060ECB62B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
-		9060ECB82B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchUseCaseTests.swift; sourceTree = "<group>"; };
-		9060ECBA2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchUseCaseTests.swift; sourceTree = "<group>"; };
-		9060ECBC2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
 		908CBAC02B0A58E200653F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		908CBACF2B0A58E200653F66 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -346,6 +350,10 @@
 		90FCF4D32B174D2D00BBA1AB /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
 		90FCF4D42B174D2D00BBA1AB /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
 		90FCF4D52B174D2D00BBA1AB /* SpoqaHanSansNeo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.otf"; sourceTree = "<group>"; };
+		90FCF4EB2B18A05000BBA1AB /* AppMainQuickMenuFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		90FCF4EC2B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		90FCF4ED2B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
+		90FCF4EE2B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +379,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		497603342B18112200203397 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				497603352B18112200203397 /* ModelTests */,
+				497603362B18112200203397 /* ViewModelTests */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		497603352B18112200203397 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				497603452B18132E00203397 /* AppDisplayClassInfoModelTests.swift */,
+				497603472B18134000203397 /* AppMainQuickMenuModelTests.swift */,
+				497603432B18131900203397 /* AppDisplayBySubClassModelTests.swift */,
+				497603412B18130900203397 /* AppGoodsInfoModelTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		497603362B18112200203397 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		497603372B18115200203397 /* UseCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				90FCF4ED2B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift */,
+				90FCF4EB2B18A05000BBA1AB /* AppMainQuickMenuFetchUseCaseTests.swift */,
+				90FCF4EC2B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift */,
+				90FCF4EE2B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift */,
+			);
+			path = UseCaseTests;
+			sourceTree = "<group>";
+		};
 		901C46EF2B0774F200E7AF40 = {
 			isa = PBXGroup;
 			children = (
@@ -448,34 +494,10 @@
 		9060ECBF2B161816000B3CF4 /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
-				9097F68B2B1405700056FF15 /* UseCaseTests */,
-				9060ECC22B16183E000B3CF4 /* EntityTests */,
+				497603372B18115200203397 /* UseCaseTests */,
 				9097F68C2B1405750056FF15 /* RepositoryTests */,
 			);
 			path = DomainLayer;
-			sourceTree = "<group>";
-		};
-		9060ECC02B16181D000B3CF4 /* PresentationLayer */ = {
-			isa = PBXGroup;
-			children = (
-				9060ECC12B161825000B3CF4 /* ModelTests */,
-				9097F68A2B14055C0056FF15 /* ViewModelTests */,
-			);
-			path = PresentationLayer;
-			sourceTree = "<group>";
-		};
-		9060ECC12B161825000B3CF4 /* ModelTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ModelTests;
-			sourceTree = "<group>";
-		};
-		9060ECC22B16183E000B3CF4 /* EntityTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EntityTests;
 			sourceTree = "<group>";
 		};
 		908CBABE2B0A58E200653F66 /* TimFresh_Assignment */ = {
@@ -802,8 +824,8 @@
 			isa = PBXGroup;
 			children = (
 				908CBB312B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift */,
-				908CBB302B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift */,
 				908CBB322B0A58E300653F66 /* AppMainQuickMenuFetchModelMapper.swift */,
+				908CBB302B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift */,
 				908CBB332B0A58E300653F66 /* AppGoodsInfoFetchModelMapper.swift */,
 			);
 			path = ModelMapper;
@@ -928,7 +950,7 @@
 				9097F68F2B14058C0056FF15 /* Mock */,
 				9060ECBE2B161801000B3CF4 /* DataLayer */,
 				9060ECBF2B161816000B3CF4 /* DomainLayer */,
-				9060ECC02B16181D000B3CF4 /* PresentationLayer */,
+				497603342B18112200203397 /* PresentationLayer */,
 			);
 			path = TimFresh_AssignmentTests;
 			sourceTree = "<group>";
@@ -984,24 +1006,6 @@
 			path = AppGoodsInfo;
 			sourceTree = "<group>";
 		};
-		9097F68A2B14055C0056FF15 /* ViewModelTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModelTests;
-			sourceTree = "<group>";
-		};
-		9097F68B2B1405700056FF15 /* UseCaseTests */ = {
-			isa = PBXGroup;
-			children = (
-				9060ECB62B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift */,
-				9060ECB82B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift */,
-				9060ECBA2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift */,
-				9060ECBC2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift */,
-			);
-			path = UseCaseTests;
-			sourceTree = "<group>";
-		};
 		9097F68C2B1405750056FF15 /* RepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1039,7 +1043,6 @@
 		9097F68F2B14058C0056FF15 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				90FCF4D02B16B4C800BBA1AB /* Model */,
 				9097F6922B140A7D0056FF15 /* DataSource */,
 				9097F6932B140A830056FF15 /* Repository */,
 				9097F6942B140A8B0056FF15 /* UseCase */,
@@ -1234,13 +1237,6 @@
 				90FCF4CC2B16AC5B00BBA1AB /* String.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		90FCF4D02B16B4C800BBA1AB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1479,18 +1475,16 @@
 				9097F6C92B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift in Sources */,
 				9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */,
 				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
+				497603422B18130900203397 /* AppGoodsInfoModelTests.swift in Sources */,
 				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
 				9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */,
-				9060ECBB2B1617CC000B3CF4 /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */,
 				9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */,
 				9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */,
-				9060ECB92B1617C1000B3CF4 /* AppMainQuickMenuFetchUseCaseTests.swift in Sources */,
 				9097F6CD2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift in Sources */,
 				9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */,
+				90FCF4F12B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppDisplayBySubClassModelObjectMother.swift in Sources */,
 				9097F69A2B14BA500056FF15 /* TestAPIService.swift in Sources */,
-				9060ECB72B1617B1000B3CF4 /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */,
-				9060ECBD2B1617D6000B3CF4 /* AppGoodsInfoFetchUseCaseTests.swift in Sources */,
 				9060ECA92B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift in Sources */,
 				9097F6982B14BA1C0056FF15 /* NetworkServiceTests.swift in Sources */,
 				9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */,
@@ -1503,9 +1497,13 @@
 				9097F67F2B137CEE0056FF15 /* AppMainQuickMenuModelObjectMother.swift in Sources */,
 				9097F6C12B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
 				9097F67D2B137CBA0056FF15 /* AppDisplayBySubClassDTOObjectMother.swift in Sources */,
+				90FCF4F22B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift in Sources */,
 				9097F6732B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift in Sources */,
 				9097F6832B137D080056FF15 /* AppMainQuickMenuDTOObjectMother.swift in Sources */,
+				497603482B18134000203397 /* AppMainQuickMenuModelTests.swift in Sources */,
+				90FCF4EF2B18A05000BBA1AB /* AppMainQuickMenuFetchUseCaseTests.swift in Sources */,
 				9097F6772B137C760056FF15 /* AppDisplayClassDTOObjectMother.swift in Sources */,
+				90FCF4F02B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */,
 				9097F67B2B137CB20056FF15 /* AppDisplayBySubClassEntityObjectMother.swift in Sources */,
 				9060ECB12B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift in Sources */,
 				9097F6BD2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift in Sources */,
@@ -1513,11 +1511,13 @@
 				9097F6CB2B14CFCC0056FF15 /* MockAppDisplayClassInfoFetchUseCase.swift in Sources */,
 				9097F6812B137D000056FF15 /* AppMainQuickMenuEntityObjectMother.swift in Sources */,
 				9060ECAF2B1611EC000B3CF4 /* AppDisplayClassInfoFetchRepositoryTests.swift in Sources */,
+				497603442B18131900203397 /* AppDisplayBySubClassModelTests.swift in Sources */,
 				9097F6BB2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift in Sources */,
 				9097F6872B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift in Sources */,
 				9097F6B92B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift in Sources */,
 				9097F66D2B137BD90056FF15 /* Scenario.swift in Sources */,
 				9097F6D12B14D0710056FF15 /* MockAppGoodsInfoFetchUseCase.swift in Sources */,
+				497603462B18132E00203397 /* AppDisplayClassInfoModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
