@@ -13,7 +13,7 @@ final class MockAppMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterf
     var scenario: Scenario = .success
     var entity: AppMainQuickMenuFetchEntity = AppMainQuickMenuEntityObjectMother.getAppMainQuickMenuFetchEntityWithCompleteData()
 
-    func fetchAppMainQuickMenuList() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError> {
+    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError> {
         switch scenario {
         case .success:
             return Just(entity)

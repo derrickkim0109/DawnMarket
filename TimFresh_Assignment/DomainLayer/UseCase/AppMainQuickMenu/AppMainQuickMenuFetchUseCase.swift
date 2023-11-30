@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 protocol AppMainQuickMenuFetchUseCaseInterface {
-    func fetchAppMainQuickMenuList() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError>
+    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError>
 }
 
 final class AppMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface {
@@ -19,7 +19,7 @@ final class AppMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface 
         self.repository = repository
     }
 
-    func fetchAppMainQuickMenuList() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError> {
+    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError> {
         return repository.fetch()
             .mapAppMainQuickMenuFetchError()
     }

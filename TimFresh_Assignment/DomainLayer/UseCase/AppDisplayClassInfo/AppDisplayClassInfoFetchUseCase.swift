@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 protocol AppDisplayClassInfoFetchUseCaseInterface {
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> 
+    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> 
 }
 
 final class AppDisplayClassInfoFetchUseCase: AppDisplayClassInfoFetchUseCaseInterface {
@@ -19,7 +19,7 @@ final class AppDisplayClassInfoFetchUseCase: AppDisplayClassInfoFetchUseCaseInte
         self.repository = repository
     }
 
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> {
+    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> {
         return repository.fetch()
             .mapAppDisplayClassInfoListFetchError()
     }

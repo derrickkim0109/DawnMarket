@@ -13,7 +13,7 @@ final class MockAppDisplayClassInfoFetchUseCase: AppDisplayClassInfoFetchUseCase
     var scenario: Scenario = .success
     var entity: AppDisplayClassInfoFetchEntity = AppDisplayClassEntityObjectMother.getAppDisplayClassInfoFetchEntityWithCompleteData()
 
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> {
+    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, AppDisplayClassInfoFetchError> {
         switch scenario {
         case .success:
             return Just(entity)

@@ -72,7 +72,7 @@ extension CategoryViewModel {
     }
     
     private func fetchAppDisplayClassList() {
-        appDisplayClassFetchUseCase.fetchAppDisplayClassInfoList()
+        appDisplayClassFetchUseCase.fetch()
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
@@ -95,7 +95,7 @@ extension CategoryViewModel {
     }
 
     private func fetchAppMainQuickMenuList() {
-        appMainQuickMenuFetchUseCase.fetchAppMainQuickMenuList()
+        appMainQuickMenuFetchUseCase.fetch()
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
