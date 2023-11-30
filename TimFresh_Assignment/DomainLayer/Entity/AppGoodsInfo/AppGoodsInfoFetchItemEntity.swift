@@ -78,7 +78,7 @@ extension AppGoodsInfoFetchItemEntity {
     static let insufficientMock = AppGoodsInfoFetchItemEntity(
         cancelApplicationDate: "",
         cancelOrderNo: "",
-        discountPrice: 0,
+        discountPrice: 10,
         deleteYn: "",
         deliveryCompletedDate: "",
         goodsBadgeImagePath: "",
@@ -102,8 +102,8 @@ extension AppGoodsInfoFetchItemEntity {
         minBuyQuantity: 0,
         minorBuyYn: "",
         orderExchangeRtgsOrderNo: "",
-        salePrice: 0,
-        supplyPrice: 0,
+        salePrice: 70,
+        supplyPrice: 70,
         taxationYn: "",
         temperatureCode: ""
     )
