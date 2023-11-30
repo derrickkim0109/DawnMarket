@@ -7,10 +7,9 @@
 
 struct AppMainQuickMenuFetchModelMapper {
     static func toPresentationModel(entity: AppMainQuickMenuFetchEntity) -> AppMainQuickMenuFetchModel {
-
         let appMainQuickMenuFetchModelList = entity.data.map {
             let imagePath = $0.quickMenuImagePath.makeImageURLString()
-
+            
             return AppMainQuickMenuFetchItemModel(
                 quickMenuConceptScreenIdentifier: $0.quickMenuConceptScreenIdentifier,
                 quickMenuConceptScreenName: $0.quickMenuConceptScreenName,

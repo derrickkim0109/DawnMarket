@@ -7,10 +7,9 @@
 
 struct AppGoodsInfoFetchModelMapper {
     static func toPresentationModel(entity: AppGoodsInfoFetchEntity) -> AppGoodsInfoFetchModel {
-
         let appGoodsInfoFetchModelList = entity.data.map {
             let imagePath = $0.imagePath.makeImageURLString()
-
+            
             return AppGoodsInfoFetchItemModel(
                 cancelApplicationDate: $0.cancelApplicationDate,
                 cancelOrderNo: $0.cancelOrderNo,
