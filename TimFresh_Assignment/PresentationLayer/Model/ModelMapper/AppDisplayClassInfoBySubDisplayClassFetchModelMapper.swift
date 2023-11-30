@@ -7,7 +7,7 @@
 
 struct AppDisplayClassInfoBySubDisplayClassFetchModelMapper {
     static func toPresentationModel(entity: AppDisplayClassInfoBySubDisplayClassFetchEntity) -> AppDisplayClassInfoBySubDisplayClassFetchModel {
-        let appSubDisplayClassInfoList = entity.data.makeAppSubDisplayClassInfoList()
+        let appSubDisplayClassInfoList = entity.data.appSubDisplayClassInfoList
 
         let appSubDisplayClassInfoFetchItemModel = appSubDisplayClassInfoList.map {
             AppSubDisplayClassInfoFetchItemModel(
@@ -15,14 +15,14 @@ struct AppDisplayClassInfoBySubDisplayClassFetchModelMapper {
                 displayClassLevel: $0.displayClassLevel,
                 displayClassSequence: $0.displayClassSequence,
                 parentsDisplayClassSequence: $0.parentsDisplayClassSequence,
-                subDisplayClassName: $0.subDisplayClassName
+                subDisplayClassName: $0.subDisplayClassName.replacingOccurrences(of: "/", with: ", ")
             )
         }
 
         let appSubDisplayClassInfoFetchModel = AppSubDisplayClassInfoFetchModel(
             displayClassName: entity.data.displayClassName,
             appSubDisplayClassInfoList: appSubDisplayClassInfoFetchItemModel
-        )
+        ).toModel()
 
         return AppDisplayClassInfoBySubDisplayClassFetchModel(
             data: appSubDisplayClassInfoFetchModel,
