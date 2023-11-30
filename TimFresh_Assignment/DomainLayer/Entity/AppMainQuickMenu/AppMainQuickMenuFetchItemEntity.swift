@@ -26,5 +26,14 @@ extension AppMainQuickMenuFetchItemEntity {
         quickMenuName: "농산물",
         quickMenuSequence: 9
     )
+    
+    static let insufficientMock = AppMainQuickMenuFetchItemEntity(
+        quickMenuConceptScreenIdentifier: "",
+        quickMenuConceptScreenName: "",
+        quickMenuImagePath: "",
+        quickMenuMovingScreenPath: "",
+        quickMenuName: "",
+        quickMenuSequence: 0
+    )
     #endif
 }

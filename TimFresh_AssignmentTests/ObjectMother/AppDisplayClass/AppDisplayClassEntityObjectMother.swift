@@ -12,8 +12,8 @@ struct AppDisplayClassEntityObjectMother {
         return AppDisplayClassInfoFetchEntity(data: getAppDisplayClassInfoFetchEntityListWithCompleteData(), message: "")
     }
 
-    static func getAppDisplayClassInfoFetchEntityWithEmptyData() -> AppDisplayClassInfoFetchEntity {
-        return AppDisplayClassInfoFetchEntity(data: [], message: "")
+    static func getAppDisplayClassInfoFetchEntityWithInsufficientData() -> AppDisplayClassInfoFetchEntity {
+        return AppDisplayClassInfoFetchEntity(data: [getAppDisplayClassInfoFetchItemEntityWithInsufficientData()], message: "")
     }
 
     static func getAppDisplayClassInfoFetchEntityListWithCompleteData(count: Int = 10) -> [AppDisplayClassInfoFetchItemEntity] {
@@ -22,5 +22,9 @@ struct AppDisplayClassEntityObjectMother {
 
     static func getAppDisplayClassInfoFetchItemEntityWithCompleteData() -> AppDisplayClassInfoFetchItemEntity {
         return AppDisplayClassInfoFetchItemEntity.completedMock
+    }
+    
+    static func getAppDisplayClassInfoFetchItemEntityWithInsufficientData() -> AppDisplayClassInfoFetchItemEntity {
+        return AppDisplayClassInfoFetchItemEntity.insufficientMock
     }
 }

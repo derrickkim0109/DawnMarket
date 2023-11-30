@@ -12,7 +12,7 @@ struct AppDisplayClassModelObjectMother {
         return AppDisplayClassInfoFetchModel(data: getAppDisplayClassInfoFetchItemModelListWithCompleteData(), message: "")
     }
 
-    static func getAppDisplayClassInfoFetchModelWithEmptyData() -> AppDisplayClassInfoFetchModel {
+    static func getAppDisplayClassInfoFetchModelWithInsufficientData() -> AppDisplayClassInfoFetchModel {
         return AppDisplayClassInfoFetchModel(data: [], message: "")
     }
 

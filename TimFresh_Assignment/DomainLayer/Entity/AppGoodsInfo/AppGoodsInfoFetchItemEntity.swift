@@ -74,5 +74,38 @@ extension AppGoodsInfoFetchItemEntity {
         taxationYn: "N",
         temperatureCode: ""
     )
+    
+    static let insufficientMock = AppGoodsInfoFetchItemEntity(
+        cancelApplicationDate: "",
+        cancelOrderNo: "",
+        discountPrice: 0,
+        deleteYn: "",
+        deliveryCompletedDate: "",
+        goodsBadgeImagePath: "",
+        goodsBadgeSequence: 0,
+        goodsCode: "",
+        goodsCountQuantity: 1,
+        goodsDisplayYn: "",
+        goodsGroupCode: "",
+        goodsGroupName: "",
+        goodsGroupOptionName: "",
+        goodsGroupOptionSequence: 0,
+        goodsGroupOptionValue: "",
+        goodsName: "",
+        goodsNrm: "",
+        goodsOrderNo: "",
+        goodsOptionUseYn: "",
+        goodsState: "",
+        goodsSupplementImageSequence: 0,
+        imagePath: "",
+        maxBuyQuantity: 0,
+        minBuyQuantity: 0,
+        minorBuyYn: "",
+        orderExchangeRtgsOrderNo: "",
+        salePrice: 0,
+        supplyPrice: 0,
+        taxationYn: "",
+        temperatureCode: ""
+    )
 #endif
 }

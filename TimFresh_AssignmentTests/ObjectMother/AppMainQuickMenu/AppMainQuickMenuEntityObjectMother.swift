@@ -12,8 +12,8 @@ struct AppMainQuickMenuEntityObjectMother {
         return AppMainQuickMenuFetchEntity(data: getAppMainQuickMenuFetchEntityListWithCompleteData(), message: "")
     }
 
-    static func getAppMainQuickMenuFetchEntityWithEmptyData() -> AppMainQuickMenuFetchEntity {
-        return AppMainQuickMenuFetchEntity(data: [], message: "")
+    static func getAppMainQuickMenuFetchEntityWithInsufficientData() -> AppMainQuickMenuFetchEntity {
+        return AppMainQuickMenuFetchEntity(data: [getAppMainQuickMenuFetchItemEntityWithInsufficientData()], message: "")
     }
 
     static func getAppMainQuickMenuFetchEntityListWithCompleteData(count: Int = 20) -> [AppMainQuickMenuFetchItemEntity] {
@@ -22,5 +22,9 @@ struct AppMainQuickMenuEntityObjectMother {
 
     static func getAppMainQuickMenuFetchItemEntityWithCompleteData() -> AppMainQuickMenuFetchItemEntity {
         return AppMainQuickMenuFetchItemEntity.completedMock
+    }   
+    
+    static func getAppMainQuickMenuFetchItemEntityWithInsufficientData() -> AppMainQuickMenuFetchItemEntity {
+        return AppMainQuickMenuFetchItemEntity.insufficientMock
     }
 }

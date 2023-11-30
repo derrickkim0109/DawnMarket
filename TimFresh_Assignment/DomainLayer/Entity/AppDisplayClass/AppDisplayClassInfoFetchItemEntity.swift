@@ -22,5 +22,12 @@ extension AppDisplayClassInfoFetchItemEntity {
         displayClassName: "농축수산물",
         displayClassSequence: 51
     )
+    
+    static let insufficientMock = AppDisplayClassInfoFetchItemEntity(
+        displayClassCode: "",
+        displayClassImagePath: "",
+        displayClassName: "",
+        displayClassSequence: 0
+    )
     #endif
 }

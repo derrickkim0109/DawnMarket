@@ -22,5 +22,13 @@ extension AppSubDisplayClassInfoFetchItemEntity {
         parentsDisplayClassSequence: 51,
         subDisplayClassName: "채소과일"
     )
+    
+    static let insufficientMock = AppSubDisplayClassInfoFetchItemEntity(
+        displayClassCode: "",
+        displayClassLevel: "",
+        displayClassSequence: 0,
+        parentsDisplayClassSequence: 0,
+        subDisplayClassName: ""
+    )
 #endif
 }

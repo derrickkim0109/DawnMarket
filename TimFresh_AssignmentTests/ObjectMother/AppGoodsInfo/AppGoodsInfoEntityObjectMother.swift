@@ -15,9 +15,9 @@ struct AppGoodsInfoEntityObjectMother {
         )
     }
 
-    static func getAppSubDisplayClassInfoFetchEntityWithEmptyData() -> AppGoodsInfoFetchEntity {
+    static func getAppGoodsInfoFetchEntityWithInsufficientData() -> AppGoodsInfoFetchEntity {
         return AppGoodsInfoFetchEntity(
-            data: [],
+            data: [getAppGoodsInfoFetchItemEntityWithInsufficientData()],
             pagination: getAppGoodsInfoPaginationEntityWithInsufficientData()
         )
     }
@@ -29,6 +29,10 @@ struct AppGoodsInfoEntityObjectMother {
 
     static func getAppGoodsInfoFetchItemEntityWithCompleteData() -> AppGoodsInfoFetchItemEntity {
         return AppGoodsInfoFetchItemEntity.completedMock
+    }
+    
+    static func getAppGoodsInfoFetchItemEntityWithInsufficientData() -> AppGoodsInfoFetchItemEntity {
+        return AppGoodsInfoFetchItemEntity.insufficientMock
     }
 
     static func getAppGoodsInfoPaginationEntityWithCompleteData() -> PaginationEntity {

@@ -32,7 +32,7 @@ struct AppDisplayBySubClassEntityObjectMother {
     static func getAppSubDisplayClassInfoFetchEntityWithInsufficientData() -> AppSubDisplayClassInfoFetchEntity {
         return AppSubDisplayClassInfoFetchEntity(
             displayClassName: "농축수산물",
-            appSubDisplayClassInfoList: []
+            appSubDisplayClassInfoList: [getAppSubDisplayClassInfoFetchItemEntityWithInsufficientData()]
         )
     }
 
@@ -42,5 +42,9 @@ struct AppDisplayBySubClassEntityObjectMother {
 
     static func getAppSubDisplayClassInfoFetchItemEntityWithCompleteData() -> AppSubDisplayClassInfoFetchItemEntity {
         return AppSubDisplayClassInfoFetchItemEntity.completedMock
+    }
+    
+    static func getAppSubDisplayClassInfoFetchItemEntityWithInsufficientData() -> AppSubDisplayClassInfoFetchItemEntity {
+        return AppSubDisplayClassInfoFetchItemEntity.insufficientMock
     }
 }
