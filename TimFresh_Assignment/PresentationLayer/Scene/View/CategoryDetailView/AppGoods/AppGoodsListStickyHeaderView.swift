@@ -31,7 +31,7 @@ struct AppGoodsListStickyHeaderView: View {
 extension AppGoodsListStickyHeaderView {
     private func headerTitleView() -> some View {
         HStack(spacing: 0) {
-            Text("\(viewModel.pagination?.totalElements ?? 0)")
+            Text("\(viewModel.getTotalElements())")
                 .font(
                     .pretendard(
                         size: 13,

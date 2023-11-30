@@ -36,20 +36,12 @@ class CategoryDetailViewModel: ObservableObject {
     
     private(set) var toastMessage: String = "개발 예정"
     
-    @Published private(set) var selectedSubCategorySequence: Int = 0 {
-        didSet {
-            resetAppGoodsInfoList()
-        }
-    }
-    @Published private(set) var selectedSearchValue: SearchValueType = .recommended {
-        didSet {
-            resetAppGoodsInfoList()
-        }
-    }
+    @Published private(set) var selectedSubCategorySequence: Int = 0
+    @Published private(set) var selectedSearchValue: SearchValueType = .recommended
 
     var viewModelError: String?
-    var pagination: PaginationModel?
-    
+    private var pagination: PaginationModel?
+
     private var appGoodsCurrentPage = 0
     private let appGoodsSize = 20
 
@@ -89,12 +81,13 @@ class CategoryDetailViewModel: ObservableObject {
     }
     
     func didSelectSearchValue(_ type: SearchValueType) {
+        resetAppGoodsInfoList()
         selectedSearchValue = type
         fetchAppGoodsInfo()
     }
     
     func hasNext() -> Bool {
-        return pagination?.hasNext(items: fetchedAppGoodsInfoList.count) == true
+        return pagination?.hasNext(items: fetchedAppGoodsInfoList.count) ?? false
     }
     
     func showToastByDebounce(_ message: String) {
@@ -105,6 +98,10 @@ class CategoryDetailViewModel: ObservableObject {
     func setupFetchError(_ error: String) {
         viewModelError = error
         showErrorAlert = true
+    }
+
+    func getTotalElements() -> Int64 {
+        return pagination?.totalElements ?? 0
     }
 }
 
@@ -126,14 +123,15 @@ extension CategoryDetailViewModel {
                 guard !appSubDisplayClassInfoList.isEmpty else {
                     return
                 }
-                
+
                 self?.fetchedAppSubDisplayClassInfoList.append(
                     contentsOf: appSubDisplayClassInfoList
                 )
+
             }
             .store(in: &cancellable)
     }
-    
+
     private func fetchAppGoodsInfo() {
         let requestValue = AppGoodsInfoFetchRequestValue(
             displayClassSequence: displayClassItem.displayClassSequence,
@@ -160,10 +158,12 @@ extension CategoryDetailViewModel {
                 
                 self?.appGoodsCurrentPage += 1
                 self?.pagination = appGoodsInfoFetchModel.pagination
-                
-                self?.fetchedAppGoodsInfoList.append(
-                    contentsOf: appGoodsInfoFetchModel.data
-                )
+
+                if self?.validateCount() == true {
+                    self?.fetchedAppGoodsInfoList.append(
+                        contentsOf: appGoodsInfoFetchModel.data
+                    )
+                }
             }
             .store(in: &cancellable)
     }
@@ -172,5 +172,10 @@ extension CategoryDetailViewModel {
         fetchedAppGoodsInfoList = []
         viewModelError = nil
         appGoodsCurrentPage = 0
+    }
+
+    private func validateCount() -> Bool {
+        let totalElements = pagination?.totalElements ?? 0
+        return fetchedAppGoodsInfoList.count < totalElements
     }
 }

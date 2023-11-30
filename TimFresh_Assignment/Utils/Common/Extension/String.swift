@@ -9,6 +9,9 @@ import Foundation
 
 extension String {
     func makeImageURLString() -> String {
+        guard !self.isEmpty else {
+            return ""
+        }
         let appConfiguration = AppConfiguration()
         let baseURLString = appConfiguration.imageBaseURL + self
         return baseURLString
