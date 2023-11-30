@@ -66,6 +66,10 @@ class CategoryDetailViewModel: ObservableObject {
         loadAppGoodsInfo()
     }
     
+    func loadAppDisplayBySubClass() {
+        fetchAppDisplayBySubClass()
+    }
+
     func loadAppGoodsInfo() {
         fetchAppGoodsInfo()
     }
