@@ -1,5 +1,5 @@
 //
-//  AppDisplayClassInfoFetchRepository.swift
+//  AppDisplayClassInfoRepository.swift
 //  TimFresh_Assignment
 //
 //  Created by Derrick kim on 11/18/23.
@@ -8,7 +8,7 @@
 import Combine
 import Moya
 
-final class AppDisplayClassInfoFetchRepository : AppDisplayClassInfoFetchRepositoryInterface {
+final class AppDisplayClassInfoRepository: AppDisplayClassInfoRepositoryInterface {
     private let dataSource: AppDisplayClassInfoDataSourceInterface
 
     init(dataSource: AppDisplayClassInfoDataSourceInterface) {

@@ -12,7 +12,7 @@ import Moya
 
 final class AppMainQuickMenuFetchRepositoryTests: XCTestCase {
     var mockDataSource: MockAppMainQuickMenuFetchDataSource!
-    var repository: AppMainQuickMenuFetchRepositoryInterface!
+    var repository: AppMainQuickMenuRepositoryInterface!
 
     private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
 
@@ -20,7 +20,7 @@ final class AppMainQuickMenuFetchRepositoryTests: XCTestCase {
         super.setUp()
 
         mockDataSource = MockAppMainQuickMenuFetchDataSource()
-        repository = AppMainQuickMenuFetchRepository(dataSource: mockDataSource)
+        repository = AppMainQuickMenuRepository(dataSource: mockDataSource)
     }
 
     override func tearDownWithError() throws {

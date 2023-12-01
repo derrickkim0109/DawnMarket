@@ -10,7 +10,7 @@ import Moya
 import Combine
 @testable import TimFresh_Assignment
 
-final class MockAppMainQuickMenuFetchRepository: AppMainQuickMenuFetchRepositoryInterface {
+final class MockAppMainQuickMenuFetchRepository: AppMainQuickMenuRepositoryInterface {
     var scenario: Scenario = .success
     var entity: AppMainQuickMenuFetchEntity = AppMainQuickMenuEntityObjectMother.getAppMainQuickMenuFetchEntityWithCompleteData()
 

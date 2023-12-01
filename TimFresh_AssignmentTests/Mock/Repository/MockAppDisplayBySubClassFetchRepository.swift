@@ -10,7 +10,7 @@ import Moya
 import Combine
 @testable import TimFresh_Assignment
 
-final class MockAppDisplayBySubClassFetchRepository: AppDisplayBySubClassFetchRepositoryInterface {
+final class MockAppDisplayBySubClassFetchRepository: AppDisplayBySubClassRepositoryInterface {
     var scenario: Scenario = .success
     var entity: AppDisplayClassInfoBySubDisplayClassFetchEntity = AppDisplayBySubClassEntityObjectMother.getAppDisplayClassInfoBySubDisplayClassFetchEntityWithCompleteData()
 

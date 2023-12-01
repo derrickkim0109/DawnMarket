@@ -12,7 +12,7 @@ import Moya
 
 final class AppDisplayClassInfoFetchRepositoryTests: XCTestCase {
     var mockDataSource: MockAppDisplayClassInfoDataSource!
-    var repository: AppDisplayClassInfoFetchRepositoryInterface!
+    var repository: AppDisplayClassInfoRepositoryInterface!
 
     private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
 
@@ -20,7 +20,7 @@ final class AppDisplayClassInfoFetchRepositoryTests: XCTestCase {
         super.setUp()
 
         mockDataSource = MockAppDisplayClassInfoDataSource()
-        repository = AppDisplayClassInfoFetchRepository(dataSource: mockDataSource)
+        repository = AppDisplayClassInfoRepository(dataSource: mockDataSource)
     }
 
     override func tearDownWithError() throws {

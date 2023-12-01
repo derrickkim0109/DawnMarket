@@ -47,7 +47,7 @@ extension CategoryDIContainer {
         let dataSource: AppDisplayClassInfoDataSourceInterface = AppDisplayClassInfoDataSource(
             provider: networkProvider
         )
-        let repository: AppDisplayClassInfoFetchRepositoryInterface = AppDisplayClassInfoFetchRepository(dataSource: dataSource)
+        let repository: AppDisplayClassInfoRepositoryInterface = AppDisplayClassInfoRepository(dataSource: dataSource)
         let useCase: AppDisplayClassInfoFetchUseCaseInterface = AppDisplayClassInfoFetchUseCase(
             repository: repository
         )
@@ -59,7 +59,7 @@ extension CategoryDIContainer {
         let dataSource: AppMainQuickMenuFetchDataSourceInterface = AppMainQuickMenuFetchDataSource(
             provider: networkProvider
         )
-        let repository: AppMainQuickMenuFetchRepositoryInterface = AppMainQuickMenuFetchRepository(dataSource: dataSource)
+        let repository: AppMainQuickMenuRepositoryInterface = AppMainQuickMenuRepository(dataSource: dataSource)
         let useCase: AppMainQuickMenuFetchUseCaseInterface = AppMainQuickMenuFetchUseCase(
             repository: repository
         )
@@ -72,7 +72,7 @@ extension CategoryDIContainer {
         let dataSource: AppDisplayBySubClassFetchDataSourceInterface = AppDisplayBySubClassFetchDataSource(
             provider: networkProvider
         )
-        let repository: AppDisplayBySubClassFetchRepositoryInterface = AppDisplayBySubClassFetchRepository(dataSource: dataSource)
+        let repository: AppDisplayBySubClassRepositoryInterface = AppDisplayBySubClassRepository(dataSource: dataSource)
         let useCase: AppDisplayBySubClassFetchUseCaseInterface = AppDisplayBySubClassFetchUseCase(
             repository: repository
         )
@@ -84,7 +84,7 @@ extension CategoryDIContainer {
         let dataSource: AppGoodsInfoFetchRepositoryDataSourceInterface = AppGoodsInfoFetchRepositoryDataSource(
             provider: networkProvider
         )
-        let repository: AppGoodsInfoFetchRepositoryInterface = AppGoodsInfoFetchRepository(
+        let repository: AppGoodsInfoRepositoryInterface = AppGoodsInfoRepository(
             dataSource: dataSource)
         let useCase: AppGoodsInfoFetchUseCaseInterface = AppGoodsInfoFetchUseCase(
             repository: repository

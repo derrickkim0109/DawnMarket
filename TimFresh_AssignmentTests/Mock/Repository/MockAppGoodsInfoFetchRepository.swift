@@ -10,7 +10,7 @@ import Moya
 import Combine
 @testable import TimFresh_Assignment
 
-final class MockAppGoodsInfoFetchRepository: AppGoodsInfoFetchRepositoryInterface {
+final class MockAppGoodsInfoFetchRepository: AppGoodsInfoRepositoryInterface {
     var scenario: Scenario = .success
     var entity: AppGoodsInfoFetchEntity = AppGoodsInfoEntityObjectMother.getAppGoodsInfoFetchEntityWithCompleteData()
 

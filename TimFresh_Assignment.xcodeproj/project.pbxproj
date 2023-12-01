@@ -36,10 +36,10 @@
 		908CBB4D2B0A58E300653F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */; };
 		908CBB582B0A58E300653F66 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBACF2B0A58E200653F66 /* Image.swift */; };
 		908CBB592B0A58E300653F66 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD02B0A58E200653F66 /* Font.swift */; };
-		908CBB5B2B0A58E300653F66 /* AppDisplayClassInfoFetchRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD42B0A58E200653F66 /* AppDisplayClassInfoFetchRepositoryInterface.swift */; };
-		908CBB5C2B0A58E300653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD52B0A58E200653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift */; };
-		908CBB5D2B0A58E300653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD62B0A58E200653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift */; };
-		908CBB5E2B0A58E300653F66 /* AppGoodsInfoFetchRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD72B0A58E200653F66 /* AppGoodsInfoFetchRepositoryInterface.swift */; };
+		908CBB5B2B0A58E300653F66 /* AppDisplayClassInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD42B0A58E200653F66 /* AppDisplayClassInfoRepositoryInterface.swift */; };
+		908CBB5C2B0A58E300653F66 /* AppDisplayBySubClassRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD52B0A58E200653F66 /* AppDisplayBySubClassRepositoryInterface.swift */; };
+		908CBB5D2B0A58E300653F66 /* AppMainQuickMenuRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD62B0A58E200653F66 /* AppMainQuickMenuRepositoryInterface.swift */; };
+		908CBB5E2B0A58E300653F66 /* AppGoodsInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBAD72B0A58E200653F66 /* AppGoodsInfoRepositoryInterface.swift */; };
 		908CBB5F2B0A58E300653F66 /* AppMainQuickMenuFetchItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBADA2B0A58E200653F66 /* AppMainQuickMenuFetchItemEntity.swift */; };
 		908CBB602B0A58E300653F66 /* AppMainQuickMenuFetchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBADB2B0A58E200653F66 /* AppMainQuickMenuFetchEntity.swift */; };
 		908CBB612B0A58E300653F66 /* AppDisplayClassInfoFetchItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBADD2B0A58E200653F66 /* AppDisplayClassInfoFetchItemEntity.swift */; };
@@ -72,10 +72,10 @@
 		908CBB822B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB152B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift */; };
 		908CBB832B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB172B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift */; };
 		908CBB842B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB182B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift */; };
-		908CBB8E2B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */; };
-		908CBB8F2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */; };
-		908CBB902B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */; };
-		908CBB912B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift */; };
+		908CBB8E2B0A58E300653F66 /* AppDisplayBySubClassRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB292B0A58E300653F66 /* AppDisplayBySubClassRepository.swift */; };
+		908CBB8F2B0A58E300653F66 /* AppMainQuickMenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2A2B0A58E300653F66 /* AppMainQuickMenuRepository.swift */; };
+		908CBB902B0A58E300653F66 /* AppGoodsInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2B2B0A58E300653F66 /* AppGoodsInfoRepository.swift */; };
+		908CBB912B0A58E300653F66 /* AppDisplayClassInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoRepository.swift */; };
 		908CBB922B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB302B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift */; };
 		908CBB932B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB312B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift */; };
 		908CBB942B0A58E300653F66 /* AppMainQuickMenuFetchModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CBB322B0A58E300653F66 /* AppMainQuickMenuFetchModelMapper.swift */; };
@@ -220,10 +220,10 @@
 		908CBAC22B0A58E200653F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		908CBACF2B0A58E200653F66 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		908CBAD02B0A58E200653F66 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		908CBAD42B0A58E200653F66 /* AppDisplayClassInfoFetchRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchRepositoryInterface.swift; sourceTree = "<group>"; };
-		908CBAD52B0A58E200653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchRepositoryInterface.swift; sourceTree = "<group>"; };
-		908CBAD62B0A58E200653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchRepositoryInterface.swift; sourceTree = "<group>"; };
-		908CBAD72B0A58E200653F66 /* AppGoodsInfoFetchRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryInterface.swift; sourceTree = "<group>"; };
+		908CBAD42B0A58E200653F66 /* AppDisplayClassInfoRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoRepositoryInterface.swift; sourceTree = "<group>"; };
+		908CBAD52B0A58E200653F66 /* AppDisplayBySubClassRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassRepositoryInterface.swift; sourceTree = "<group>"; };
+		908CBAD62B0A58E200653F66 /* AppMainQuickMenuRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuRepositoryInterface.swift; sourceTree = "<group>"; };
+		908CBAD72B0A58E200653F66 /* AppGoodsInfoRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoRepositoryInterface.swift; sourceTree = "<group>"; };
 		908CBADA2B0A58E200653F66 /* AppMainQuickMenuFetchItemEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchItemEntity.swift; sourceTree = "<group>"; };
 		908CBADB2B0A58E200653F66 /* AppMainQuickMenuFetchEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchEntity.swift; sourceTree = "<group>"; };
 		908CBADD2B0A58E200653F66 /* AppDisplayClassInfoFetchItemEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchItemEntity.swift; sourceTree = "<group>"; };
@@ -257,10 +257,10 @@
 		908CBB152B0A58E300653F66 /* PageResponseAppGoodsInfoResponseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageResponseAppGoodsInfoResponseDTO.swift; sourceTree = "<group>"; };
 		908CBB172B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift; sourceTree = "<group>"; };
 		908CBB182B0A58E300653F66 /* AppGoodsInfoFetchRequestDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRequestDTO.swift; sourceTree = "<group>"; };
-		908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchRepository.swift; sourceTree = "<group>"; };
-		908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchRepository.swift; sourceTree = "<group>"; };
-		908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepository.swift; sourceTree = "<group>"; };
-		908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchRepository.swift; sourceTree = "<group>"; };
+		908CBB292B0A58E300653F66 /* AppDisplayBySubClassRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassRepository.swift; sourceTree = "<group>"; };
+		908CBB2A2B0A58E300653F66 /* AppMainQuickMenuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuRepository.swift; sourceTree = "<group>"; };
+		908CBB2B2B0A58E300653F66 /* AppGoodsInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoRepository.swift; sourceTree = "<group>"; };
+		908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoRepository.swift; sourceTree = "<group>"; };
 		908CBB302B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift; sourceTree = "<group>"; };
 		908CBB312B0A58E300653F66 /* AppDisplayClassInfoFetchModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchModelMapper.swift; sourceTree = "<group>"; };
 		908CBB322B0A58E300653F66 /* AppMainQuickMenuFetchModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchModelMapper.swift; sourceTree = "<group>"; };
@@ -550,10 +550,10 @@
 		908CBAD22B0A58E200653F66 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				908CBAD42B0A58E200653F66 /* AppDisplayClassInfoFetchRepositoryInterface.swift */,
-				908CBAD52B0A58E200653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift */,
-				908CBAD62B0A58E200653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift */,
-				908CBAD72B0A58E200653F66 /* AppGoodsInfoFetchRepositoryInterface.swift */,
+				908CBAD42B0A58E200653F66 /* AppDisplayClassInfoRepositoryInterface.swift */,
+				908CBAD52B0A58E200653F66 /* AppDisplayBySubClassRepositoryInterface.swift */,
+				908CBAD62B0A58E200653F66 /* AppMainQuickMenuRepositoryInterface.swift */,
+				908CBAD72B0A58E200653F66 /* AppGoodsInfoRepositoryInterface.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -711,6 +711,7 @@
 		908CBB042B0A58E300653F66 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				908CBB282B0A58E300653F66 /* Repository */,
 				908CBB052B0A58E300653F66 /* DTO */,
 				908CBB192B0A58E300653F66 /* DataSource */,
 			);
@@ -720,8 +721,8 @@
 		908CBB052B0A58E300653F66 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				908CBB062B0A58E300653F66 /* Response */,
 				908CBB162B0A58E300653F66 /* Request */,
+				908CBB062B0A58E300653F66 /* Response */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -787,7 +788,6 @@
 		908CBB192B0A58E300653F66 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				908CBB282B0A58E300653F66 /* Repository */,
 				9097F69D2B14BC9E0056FF15 /* Network */,
 			);
 			path = DataSource;
@@ -796,10 +796,10 @@
 		908CBB282B0A58E300653F66 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift */,
-				908CBB2A2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift */,
-				908CBB292B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift */,
-				908CBB2B2B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift */,
+				908CBB2C2B0A58E300653F66 /* AppDisplayClassInfoRepository.swift */,
+				908CBB2A2B0A58E300653F66 /* AppMainQuickMenuRepository.swift */,
+				908CBB292B0A58E300653F66 /* AppDisplayBySubClassRepository.swift */,
+				908CBB2B2B0A58E300653F66 /* AppGoodsInfoRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1387,13 +1387,13 @@
 				908CBB6A2B0A58E300653F66 /* AppDisplayBySubClassFetchUseCase.swift in Sources */,
 				908CBB952B0A58E300653F66 /* AppGoodsInfoFetchModelMapper.swift in Sources */,
 				90EFCE812B0B2259006FE3C9 /* AppMainQuickMenuCellView.swift in Sources */,
-				908CBB5D2B0A58E300653F66 /* AppMainQuickMenuFetchRepositoryInterface.swift in Sources */,
+				908CBB5D2B0A58E300653F66 /* AppMainQuickMenuRepositoryInterface.swift in Sources */,
 				90EFCE8F2B0BB77A006FE3C9 /* CategoryDetailViewModel.swift in Sources */,
 				908CBB9E2B0A58E300653F66 /* PaginationModel.swift in Sources */,
 				90EFCEA42B0CE53D006FE3C9 /* AppSubDisplayClassCellView.swift in Sources */,
-				908CBB5B2B0A58E300653F66 /* AppDisplayClassInfoFetchRepositoryInterface.swift in Sources */,
+				908CBB5B2B0A58E300653F66 /* AppDisplayClassInfoRepositoryInterface.swift in Sources */,
 				908CBB9A2B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModel.swift in Sources */,
-				908CBB5C2B0A58E300653F66 /* AppDisplayBySubClassFetchRepositoryInterface.swift in Sources */,
+				908CBB5C2B0A58E300653F66 /* AppDisplayBySubClassRepositoryInterface.swift in Sources */,
 				908CBB642B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchEntity.swift in Sources */,
 				9097F6AB2B14BC9F0056FF15 /* AppDisplayBySubClassFetchDataSource.swift in Sources */,
 				90EFCEA62B0CE606006FE3C9 /* AppGoodsListStickyHeaderView.swift in Sources */,
@@ -1411,7 +1411,7 @@
 				908CBB592B0A58E300653F66 /* Font.swift in Sources */,
 				908CBB832B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift in Sources */,
 				908CBB6B2B0A58E300653F66 /* AppDisplayBySubClassFetchError.swift in Sources */,
-				908CBB8F2B0A58E300653F66 /* AppMainQuickMenuFetchRepository.swift in Sources */,
+				908CBB8F2B0A58E300653F66 /* AppMainQuickMenuRepository.swift in Sources */,
 				90FCF4CD2B16AC5B00BBA1AB /* String.swift in Sources */,
 				908CBB662B0A58E300653F66 /* AppSubDisplayClassInfoFetchEntity.swift in Sources */,
 				90EFCE6C2B0AE654006FE3C9 /* TabBarContainerView.swift in Sources */,
@@ -1427,7 +1427,7 @@
 				908CBB922B0A58E300653F66 /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift in Sources */,
 				908CBB9F2B0A58E300653F66 /* AppDisplayClassInfoFetchModel.swift in Sources */,
 				90EFCE9F2B0CD718006FE3C9 /* UINavigationController.swift in Sources */,
-				908CBB902B0A58E300653F66 /* AppGoodsInfoFetchRepository.swift in Sources */,
+				908CBB902B0A58E300653F66 /* AppGoodsInfoRepository.swift in Sources */,
 				908CBBAE2B0A5E0000653F66 /* CategoryViewModel.swift in Sources */,
 				908CBBA02B0A58E300653F66 /* AppDisplayClassInfoFetchItemModel.swift in Sources */,
 				908CBB702B0A58E300653F66 /* AppDisplayClassInfoFetchError.swift in Sources */,
@@ -1437,10 +1437,10 @@
 				908CBB9C2B0A58E300653F66 /* SearchValueType.swift in Sources */,
 				90EFCE982B0C80C8006FE3C9 /* CategoryDIContainerInterface.swift in Sources */,
 				9097F6B12B14BC9F0056FF15 /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
-				908CBB8E2B0A58E300653F66 /* AppDisplayBySubClassFetchRepository.swift in Sources */,
+				908CBB8E2B0A58E300653F66 /* AppDisplayBySubClassRepository.swift in Sources */,
 				908CBB9D2B0A58E300653F66 /* AppGoodsInfoFetchModel.swift in Sources */,
 				908CBB6E2B0A58E300653F66 /* AppGoodsInfoFetchError.swift in Sources */,
-				908CBB5E2B0A58E300653F66 /* AppGoodsInfoFetchRepositoryInterface.swift in Sources */,
+				908CBB5E2B0A58E300653F66 /* AppGoodsInfoRepositoryInterface.swift in Sources */,
 				908CBB9B2B0A58E300653F66 /* AppGoodsInfoFetchItemModel.swift in Sources */,
 				90EFCE752B0AF8B1006FE3C9 /* CategoryHeaderView.swift in Sources */,
 				901F4F152B1175E400963F4D /* LaunchScreenStep.swift in Sources */,
@@ -1452,7 +1452,7 @@
 				90EFCE792B0B0805006FE3C9 /* AppDisplayClassCellView.swift in Sources */,
 				908CBB682B0A58E300653F66 /* PaginationEntity.swift in Sources */,
 				9097F6AE2B14BC9F0056FF15 /* AppMainQuickMenuAPIService.swift in Sources */,
-				908CBB912B0A58E300653F66 /* AppDisplayClassInfoFetchRepository.swift in Sources */,
+				908CBB912B0A58E300653F66 /* AppDisplayClassInfoRepository.swift in Sources */,
 				9097F6282B12D9C50056FF15 /* TabBarItemPreferenceKey.swift in Sources */,
 				908CBB812B0A58E300653F66 /* AppGoodsInfoResponseDTO.swift in Sources */,
 				908CBB582B0A58E300653F66 /* Image.swift in Sources */,
@@ -1667,7 +1667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimFresh_Assignment/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = GDKDK6KP5Z;
+				DEVELOPMENT_TEAM = G49825PSVC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TimFresh_Assignment/Resources/TimFresh-Assignment-Info.plist";
@@ -1698,7 +1698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimFresh_Assignment/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = GDKDK6KP5Z;
+				DEVELOPMENT_TEAM = G49825PSVC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TimFresh_Assignment/Resources/TimFresh-Assignment-Info.plist";
@@ -1727,7 +1727,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GDKDK6KP5Z;
+				DEVELOPMENT_TEAM = G49825PSVC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1749,7 +1749,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GDKDK6KP5Z;
+				DEVELOPMENT_TEAM = G49825PSVC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

@@ -8,6 +8,6 @@
 import Combine
 import Moya
 
-protocol AppDisplayClassInfoFetchRepositoryInterface {
+protocol AppDisplayClassInfoRepositoryInterface {
     func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError>
 }

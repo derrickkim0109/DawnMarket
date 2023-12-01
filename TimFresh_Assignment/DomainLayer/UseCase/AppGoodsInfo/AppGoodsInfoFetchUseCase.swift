@@ -9,29 +9,24 @@ import Combine
 import Foundation
 
 protocol AppGoodsInfoFetchUseCaseInterface {
-    func fetch(request: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError>
+    func fetch(requestValue: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError>
 }
 
 final class AppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
-    private let repository: AppGoodsInfoFetchRepositoryInterface
+    private let repository: AppGoodsInfoRepositoryInterface
 
-    init(repository: AppGoodsInfoFetchRepositoryInterface) {
+    init(repository: AppGoodsInfoRepositoryInterface) {
         self.repository = repository
     }
 
-    func fetch(request: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
-        let pageRequest = AppGoodsInfoFetchRequestDTO.PageRequest(
-            page: request.page,
-            size: request.size
+    func fetch(requestValue: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
+        return repository.fetch(
+            displayClassSequence: requestValue.displayClassSequence,
+            subDisplayClassSequence: requestValue.subDisplayClassSequence,
+            page: requestValue.page,
+            size: requestValue.size,
+            searchValue: requestValue.searchValue
         )
-        let requestDTO = AppGoodsInfoFetchRequestDTO(
-            displayClassSequence: request.displayClassSequence,
-            subDisplayClassSequence: request.subDisplayClassSequence,
-            pageRequest: pageRequest,
-            searchValue: request.searchValue
-        )
-
-        return repository.fetch(requestDTO: requestDTO)
         .mapAppGoodsInfoFetchError()
     }
 }

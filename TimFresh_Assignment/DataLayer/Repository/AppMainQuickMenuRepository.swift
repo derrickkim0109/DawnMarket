@@ -1,5 +1,5 @@
 //
-//  AppMainQuickMenuFetchRepository.swift
+//  AppMainQuickMenuRepository.swift
 //  TimFresh_Assignment
 //
 //  Created by Derrick kim on 11/18/23.
@@ -8,7 +8,7 @@
 import Combine
 import Moya
 
-final class AppMainQuickMenuFetchRepository : AppMainQuickMenuFetchRepositoryInterface {
+final class AppMainQuickMenuRepository: AppMainQuickMenuRepositoryInterface {
     private let dataSource: AppMainQuickMenuFetchDataSourceInterface
 
     init(dataSource: AppMainQuickMenuFetchDataSourceInterface) {

@@ -145,7 +145,7 @@ extension CategoryDetailViewModel {
             searchValue: selectedSearchValue.rawValue
         )
         
-        appGoodsInfoFetchUseCase.fetch(request: requestValue)
+        appGoodsInfoFetchUseCase.fetch(requestValue: requestValue)
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
