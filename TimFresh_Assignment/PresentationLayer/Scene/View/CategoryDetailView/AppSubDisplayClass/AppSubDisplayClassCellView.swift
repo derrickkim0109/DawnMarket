@@ -10,19 +10,19 @@ import SwiftUI
 struct AppSubDisplayClassCellView: View {
     @ObservedObject var viewModel: CategoryDetailViewModel
     let item: AppSubDisplayClassInfoFetchItemModel
-
+    
     var body: some View {
         VStack(spacing: 0) {
             Divider()
                 .foregroundStyle(Color.gray100)
-
+            
             HStack(spacing: 0) {
                 Divider()
                     .foregroundStyle(Color.gray100)
                     .frame(width: 1)
-
+                
                 appSubDisplayClassTitleView()
-
+                
                 Spacer()
             }
             .onTapGesture {
@@ -45,6 +45,7 @@ extension AppSubDisplayClassCellView {
                     maxWidth: .infinity,
                     alignment: .leading
                 )
+                .contentShape(Rectangle())
         }
         .padding(10)
         .frame(
@@ -59,6 +60,6 @@ extension AppSubDisplayClassCellView {
     let container = CategoryDIContainer()
     let viewModel = container.categoryDetailViewDependencies(categoryRouter: container.categoryRouter(), displayClassItem: .completedMock)
     viewModel.viewWillAppear()
-
+    
     return AppSubDisplayClassCellView(viewModel: viewModel, item: .completedMock)
 }
