@@ -387,12 +387,12 @@
 		491597312B35022A0072E02C /* MorningMarket */ = {
 			isa = PBXGroup;
 			children = (
-				491597322B35022A0072E02C /* Resources */,
-				4915974C2B35022A0072E02C /* DomainLayer */,
-				4915976E2B35022A0072E02C /* Utils */,
 				4915977A2B35022A0072E02C /* Application */,
-				491597802B35022A0072E02C /* DataLayer */,
 				491597A92B35022A0072E02C /* PresentationLayer */,
+				4915974C2B35022A0072E02C /* DomainLayer */,
+				491597802B35022A0072E02C /* DataLayer */,
+				4915976E2B35022A0072E02C /* Utils */,
+				491597322B35022A0072E02C /* Resources */,
 			);
 			path = MorningMarket;
 			sourceTree = "<group>";
@@ -418,10 +418,10 @@
 		491597352B35022A0072E02C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				491597392B35022A0072E02C /* Fonts */,
 				491597362B35022A0072E02C /* Assets.xcassets */,
 				491597372B35022A0072E02C /* Image.swift */,
 				491597382B35022A0072E02C /* Font.swift */,
-				491597392B35022A0072E02C /* Fonts */,
 				4915974A2B35022A0072E02C /* Color.swift */,
 			);
 			path = Assets;
@@ -477,8 +477,8 @@
 		4915974D2B35022A0072E02C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				4915974E2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift */,
 				4915974F2B35022A0072E02C /* AppDisplayClassInfoRepositoryInterface.swift */,
+				4915974E2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift */,
 				491597502B35022A0072E02C /* AppGoodsInfoRepositoryInterface.swift */,
 				491597512B35022A0072E02C /* AppDisplayBySubClassRepositoryInterface.swift */,
 			);
@@ -488,8 +488,8 @@
 		491597522B35022A0072E02C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				491597532B35022A0072E02C /* AppMainQuickMenu */,
 				491597562B35022A0072E02C /* AppDisplayClass */,
+				491597532B35022A0072E02C /* AppMainQuickMenu */,
 				491597592B35022A0072E02C /* AppDisplaySubClass */,
 				4915975D2B35022A0072E02C /* AppGoodsInfo */,
 			);
@@ -537,10 +537,10 @@
 		491597612B35022A0072E02C /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				491597622B35022A0072E02C /* AppDisplayBySubClass */,
-				491597652B35022A0072E02C /* AppMainQuickMenu */,
-				491597682B35022A0072E02C /* AppGoodsInfo */,
 				4915976B2B35022A0072E02C /* AppDisplayClassInfo */,
+				491597652B35022A0072E02C /* AppMainQuickMenu */,
+				491597622B35022A0072E02C /* AppDisplayBySubClass */,
+				491597682B35022A0072E02C /* AppGoodsInfo */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -748,11 +748,11 @@
 		491597952B35022A0072E02C /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				491597962B35022A0072E02C /* AppDisplayBySubClass */,
-				491597992B35022A0072E02C /* AppMainQuickMenu */,
-				4915979C2B35022A0072E02C /* API */,
-				4915979E2B35022A0072E02C /* AppGoodsInfo */,
 				491597A12B35022A0072E02C /* AppDisplayClassInfo */,
+				491597992B35022A0072E02C /* AppMainQuickMenu */,
+				491597962B35022A0072E02C /* AppDisplayBySubClass */,
+				4915979E2B35022A0072E02C /* AppGoodsInfo */,
+				4915979C2B35022A0072E02C /* API */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -804,8 +804,8 @@
 		491597A42B35022A0072E02C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				491597A52B35022A0072E02C /* AppMainQuickMenuRepository.swift */,
 				491597A62B35022A0072E02C /* AppDisplayClassInfoRepository.swift */,
+				491597A52B35022A0072E02C /* AppMainQuickMenuRepository.swift */,
 				491597A72B35022A0072E02C /* AppDisplayBySubClassRepository.swift */,
 				491597A82B35022A0072E02C /* AppGoodsInfoRepository.swift */,
 			);
@@ -825,11 +825,11 @@
 			isa = PBXGroup;
 			children = (
 				491597AB2B35022A0072E02C /* ModelMapper */,
+				491597BF2B35022A0072E02C /* AppDisplayClassInfo */,
 				491597B02B35022A0072E02C /* AppMainQuickMenu */,
-				491597B32B35022A0072E02C /* TabBar */,
 				491597B52B35022A0072E02C /* AppDisplaySubClasss */,
 				491597B92B35022A0072E02C /* AppGoodsInfo */,
-				491597BF2B35022A0072E02C /* AppDisplayClassInfo */,
+				491597B32B35022A0072E02C /* TabBar */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1669,7 +1669,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MorningMarket/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = G49825PSVC;
+				DEVELOPMENT_TEAM = PZ78W9Y6LP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MorningMarket/Resources/MorningMarket-Info.plist";
@@ -1700,7 +1700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MorningMarket/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = G49825PSVC;
+				DEVELOPMENT_TEAM = PZ78W9Y6LP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MorningMarket/Resources/MorningMarket-Info.plist";
@@ -1730,7 +1730,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G49825PSVC;
+				DEVELOPMENT_TEAM = PZ78W9Y6LP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -1753,7 +1753,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G49825PSVC;
+				DEVELOPMENT_TEAM = PZ78W9Y6LP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
