@@ -13,8 +13,8 @@ import Combine
 final class MockAppGoodsInfoFetchRepository: AppGoodsInfoRepositoryInterface {
     var scenario: Scenario = .success
     var entity: AppGoodsInfoFetchEntity = AppGoodsInfoEntityObjectMother.getAppGoodsInfoFetchEntityWithCompleteData()
-
-    func fetch(requestDTO: AppGoodsInfoFetchRequestDTO) -> AnyPublisher<AppGoodsInfoFetchEntity, MoyaError> {
+    
+    func fetch(displayClassSequence: Int64, subDisplayClassSequence: Int, page: Int, size: Int, searchValue: String) -> AnyPublisher<MorningMarket.AppGoodsInfoFetchEntity, Moya.MoyaError> {
         switch scenario {
         case .success:
             return Just(entity)

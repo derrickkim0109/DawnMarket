@@ -43,7 +43,7 @@ final class AppGoodsInfoFetchUseCaseTests: XCTestCase {
         )
 
         // when
-        useCase.fetch(request: requestValue)
+        useCase.fetch(requestValue: requestValue)
             .sink { completion in
                 switch completion {
                 case let .failure(error):
@@ -61,7 +61,7 @@ final class AppGoodsInfoFetchUseCaseTests: XCTestCase {
     }
 
     //MARK: 유효하지 않은 displayClassSequence일 경우 failToFindAppGoodsInfoList Error를 리턴한다.
-    func test_Should_Fail_To_SearchAppByKeyword_When_Keyword_Is_Invalid() {
+    func test_Should_Fail_To_FetchAppGoodsInfo_When_DisplayClassSequence_Is_Invalid() {
         // given
         let expectation = XCTestExpectation(description: "유효하지 않은 displayClassSequence로 조회 실패")
         let requestValue = AppGoodsInfoFetchRequestValue(
@@ -74,7 +74,7 @@ final class AppGoodsInfoFetchUseCaseTests: XCTestCase {
         mockRepository.scenario = .failure
         
         // when
-        useCase.fetch(request: requestValue)
+        useCase.fetch(requestValue: requestValue)
             .sink { completion in
                 switch completion {
                 case let .failure(error):

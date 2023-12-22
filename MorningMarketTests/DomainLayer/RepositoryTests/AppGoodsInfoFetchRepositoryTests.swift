@@ -34,31 +34,26 @@ final class AppGoodsInfoFetchRepositoryTests: XCTestCase {
     func test_Should_Success_To_FetchAppGoodsInfo() {
         // given
         let expectation = XCTestExpectation(description: "카테고리 하위목록 조회 성공")
-        let pageRequest = AppGoodsInfoFetchRequestDTO.PageRequest(
-            page: 0,
-            size: 20
-        )
-
-        let requestDTO = AppGoodsInfoFetchRequestDTO(
-            displayClassSequence: 51,
-            subDisplayClassSequence: 0,
-            pageRequest: pageRequest,
-            searchValue: "추천순"
-        )
 
         // when
-        repository.fetch(requestDTO: requestDTO)
-            .sink { completion in
-                switch completion {
-                case let .failure(error):
-                    XCTFail(error.localizedDescription)
-                case .finished:
-                    expectation.fulfill()
-                }
-            } receiveValue: { entity in
-                XCTAssertTrue(type(of: entity) == AppGoodsInfoFetchEntity.self)
+        repository.fetch(
+            displayClassSequence: 51,
+            subDisplayClassSequence: 0,
+            page: 0,
+            size: 20,
+            searchValue: "추천순"
+        )
+        .sink { completion in
+            switch completion {
+            case let .failure(error):
+                XCTFail(error.localizedDescription)
+            case .finished:
+                expectation.fulfill()
             }
-            .store(in: &cancellable)
+        } receiveValue: { entity in
+            XCTAssertTrue(type(of: entity) == AppGoodsInfoFetchEntity.self)
+        }
+        .store(in: &cancellable)
 
         // then
         wait(for: [expectation], timeout: 5)
@@ -68,33 +63,28 @@ final class AppGoodsInfoFetchRepositoryTests: XCTestCase {
     func test_Should_Fail_To_FetchAppGoodsInfo_When_ServerError() {
         // given
         let expectation = XCTestExpectation(description: "Server Error로 인한 API 실패")
-        let pageRequest = AppGoodsInfoFetchRequestDTO.PageRequest(
-            page: 0,
-            size: 20
-        )
-
-        let requestDTO = AppGoodsInfoFetchRequestDTO(
-            displayClassSequence: 51,
-            subDisplayClassSequence: 0,
-            pageRequest: pageRequest,
-            searchValue: "추천순"
-        )
 
         mockDataSource.scenario = .failure
 
         // when
-        repository.fetch(requestDTO: requestDTO)
-            .sink { completion in
-                switch completion {
-                case .failure:
-                    expectation.fulfill()
-                case .finished:
-                    XCTFail()
-                }
-            } receiveValue: { _ in
+        repository.fetch(
+            displayClassSequence: 51,
+            subDisplayClassSequence: 0,
+            page: 0,
+            size: 20,
+            searchValue: "추천순"
+        )
+        .sink { completion in
+            switch completion {
+            case .failure:
+                expectation.fulfill()
+            case .finished:
                 XCTFail()
             }
-            .store(in: &cancellable)
+        } receiveValue: { _ in
+            XCTFail()
+        }
+        .store(in: &cancellable)
 
         // then
         wait(for: [expectation], timeout: 5)
@@ -103,34 +93,29 @@ final class AppGoodsInfoFetchRepositoryTests: XCTestCase {
     func test_Should_Fail_To_FetchAppGoodsInfo_When_BadRequestError() {
         // given
         let expectation = XCTestExpectation(description: "Bad Request로 인한 API 실패")
-        let pageRequest = AppGoodsInfoFetchRequestDTO.PageRequest(
-            page: 0,
-            size: 20
-        )
-
-        let requestDTO = AppGoodsInfoFetchRequestDTO(
-            displayClassSequence: 51,
-            subDisplayClassSequence: 0,
-            pageRequest: pageRequest,
-            searchValue: "추천순"
-        )
 
         mockDataSource.scenario = .failure
         mockDataSource.networkError = MoyaError.statusCode(Response(statusCode: 400, data: Data()))
 
         // when
-        repository.fetch(requestDTO: requestDTO)
-            .sink { completion in
-                switch completion {
-                case .failure:
-                    expectation.fulfill()
-                case .finished:
-                    XCTFail()
-                }
-            } receiveValue: { _ in
+        repository.fetch(
+            displayClassSequence: 51,
+            subDisplayClassSequence: 0,
+            page: 0,
+            size: 20,
+            searchValue: "추천순"
+        )
+        .sink { completion in
+            switch completion {
+            case .failure:
+                expectation.fulfill()
+            case .finished:
                 XCTFail()
             }
-            .store(in: &cancellable)
+        } receiveValue: { _ in
+            XCTFail()
+        }
+        .store(in: &cancellable)
 
         // then
         wait(for: [expectation], timeout: 5)

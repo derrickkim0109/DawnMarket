@@ -34,12 +34,10 @@ final class AppDisplayBySubClassFetchRepositoryTests: XCTestCase {
     func test_Should_Success_To_FetchAppSubDisplayClassInfo() {
         // given
         let expectation = XCTestExpectation(description: "카테고리 하위목록 조회 성공")
-        let requestDTO = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO(
-            displayClassSequence: 52
-        )
+        let displayClassSequence: Int64 = 52
 
         // when
-        repository.fetch(requestDTO: requestDTO)
+        repository.fetch(displayClassSequence: displayClassSequence)
             .sink { completion in
                 switch completion {
                 case let .failure(error):
@@ -60,14 +58,12 @@ final class AppDisplayBySubClassFetchRepositoryTests: XCTestCase {
     func test_Should_Fail_To_FetchAppSubDisplayClassInfo_When_ServerError() {
         // given
         let expectation = XCTestExpectation(description: "Server Error로 인한 API 실패")
-        let requestDTO = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO(
-            displayClassSequence: 52
-        )
+        let displayClassSequence: Int64 = 52
 
         mockDataSource.scenario = .failure
 
         // when
-        repository.fetch(requestDTO: requestDTO)
+        repository.fetch(displayClassSequence: displayClassSequence)
             .sink { completion in
                 switch completion {
                 case .failure:
@@ -87,15 +83,13 @@ final class AppDisplayBySubClassFetchRepositoryTests: XCTestCase {
     func test_Should_Fail_To_FetchAppSubDisplayClassInfo_When_BadRequestError() {
         // given
         let expectation = XCTestExpectation(description: "Bad Request로 인한 API 실패")
-        let requestDTO = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO(
-            displayClassSequence: 52
-        )
+        let displayClassSequence: Int64 = 52
 
         mockDataSource.scenario = .failure
         mockDataSource.networkError = MoyaError.statusCode(Response(statusCode: 400, data: Data()))
 
         // when
-        repository.fetch(requestDTO: requestDTO)
+        repository.fetch(displayClassSequence: displayClassSequence)
             .sink { completion in
                 switch completion {
                 case .failure:

@@ -12,7 +12,7 @@ final class MockAppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
     var scenario: Scenario = .success
     var entity: AppGoodsInfoFetchEntity = AppGoodsInfoEntityObjectMother.getAppGoodsInfoFetchEntityWithCompleteData()
 
-    func fetch(request: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
+    func fetch(requestValue request: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
         switch scenario {
         case .success:
             return Just(entity)

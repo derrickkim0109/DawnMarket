@@ -14,7 +14,7 @@ final class MockAppDisplayBySubClassFetchRepository: AppDisplayBySubClassReposit
     var scenario: Scenario = .success
     var entity: AppDisplayClassInfoBySubDisplayClassFetchEntity = AppDisplayBySubClassEntityObjectMother.getAppDisplayClassInfoBySubDisplayClassFetchEntityWithCompleteData()
 
-    func fetch(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, MoyaError> {
+    func fetch(displayClassSequence: Int64) -> AnyPublisher<MorningMarket.AppDisplayClassInfoBySubDisplayClassFetchEntity, Moya.MoyaError> {
         switch scenario {
         case .success:
             return Just(entity)

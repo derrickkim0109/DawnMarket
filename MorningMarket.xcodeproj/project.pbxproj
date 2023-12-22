@@ -644,8 +644,8 @@
 		4915977A2B35022A0072E02C /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4915977B2B35022A0072E02C /* AppConfiguration.swift */,
 				4915977C2B35022A0072E02C /* RootView.swift */,
+				4915977B2B35022A0072E02C /* AppConfiguration.swift */,
 				4915977D2B35022A0072E02C /* DIContainer */,
 			);
 			path = Application;
@@ -815,8 +815,8 @@
 		491597A92B35022A0072E02C /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				491597AA2B35022A0072E02C /* Model */,
 				491597C22B35022A0072E02C /* Scene */,
+				491597AA2B35022A0072E02C /* Model */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -896,9 +896,9 @@
 		491597C22B35022A0072E02C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				491597C32B35022A0072E02C /* ViewModel */,
-				491597C62B35022A0072E02C /* View */,
 				491597E32B35022A0072E02C /* Flow */,
+				491597C62B35022A0072E02C /* View */,
+				491597C32B35022A0072E02C /* ViewModel */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -915,10 +915,10 @@
 		491597C62B35022A0072E02C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				491597C72B35022A0072E02C /* CategoryDetailView */,
-				491597D02B35022A0072E02C /* TabBar */,
 				491597D42B35022A0072E02C /* Common */,
+				491597D02B35022A0072E02C /* TabBar */,
 				491597DA2B35022A0072E02C /* CategoryView */,
+				491597C72B35022A0072E02C /* CategoryDetailView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -926,9 +926,9 @@
 		491597C72B35022A0072E02C /* CategoryDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				491597CD2B35022A0072E02C /* AppSubDisplayClass */,
 				491597C82B35022A0072E02C /* AppGoods */,
 				491597CC2B35022A0072E02C /* CategoryDetailView.swift */,
-				491597CD2B35022A0072E02C /* AppSubDisplayClass */,
 			);
 			path = CategoryDetailView;
 			sourceTree = "<group>";
@@ -984,10 +984,10 @@
 		491597DA2B35022A0072E02C /* CategoryView */ = {
 			isa = PBXGroup;
 			children = (
-				491597DB2B35022A0072E02C /* CategoryView.swift */,
-				491597DC2B35022A0072E02C /* AppMainQuickMenu */,
-				491597DF2B35022A0072E02C /* CategoryHeaderView.swift */,
 				491597E02B35022A0072E02C /* AppDisplayClass */,
+				491597DC2B35022A0072E02C /* AppMainQuickMenu */,
+				491597DB2B35022A0072E02C /* CategoryView.swift */,
+				491597DF2B35022A0072E02C /* CategoryHeaderView.swift */,
 			);
 			path = CategoryView;
 			sourceTree = "<group>";
@@ -1013,8 +1013,8 @@
 		491597E32B35022A0072E02C /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				491597E42B35022A0072E02C /* CategoryRouter.swift */,
 				491597E52B35022A0072E02C /* Router */,
+				491597E42B35022A0072E02C /* CategoryRouter.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
