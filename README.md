@@ -90,7 +90,7 @@
 - Domain Layer에 다른 레이어(예: Presentation — UIKit, Data Layer — Mapping Codable)가 포함되지 않도록 처리했습니다. 
 - Presentation Layer에 Domain Entity를 맵핑하기 위한 Mapper 타입, Model 타입을 구현하여 Domain인과의 의존성을 최소화 시켰습니다.
 
-## 📋 과제요구사항관리
+## 📋 일정관리
 
 <img width="1225" alt="스크린샷 2023-11-11 13 14 44" src="https://hackmd.io/_uploads/S1ImGBwBT.png">
 
