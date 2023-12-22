@@ -9,9 +9,13 @@ import SwiftUI
 import Kingfisher
 
 struct AppMainQuickMenuCellView: View {
-    @ObservedObject var viewModel: CategoryViewModel
+    @ObservedObject private var viewModel: CategoryViewModel
+    private let item: AppMainQuickMenuFetchItemModel
 
-    let item: AppMainQuickMenuFetchItemModel
+    init(viewModel: CategoryViewModel, item: AppMainQuickMenuFetchItemModel) {
+        self.viewModel = viewModel
+        self.item = item
+    }
 
     var body: some View {
         appMainQuickMenuInfoView()

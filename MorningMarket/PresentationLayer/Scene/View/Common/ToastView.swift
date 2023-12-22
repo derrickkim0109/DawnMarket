@@ -9,10 +9,20 @@ import SwiftUI
 import Combine
 
 struct ToastView<Content: View>: View {
-    @Binding var isPresented: Bool
-    var duration: Double
-    var content: () -> Content
     @State private var cancellable: AnyCancellable?
+    @Binding private var isPresented: Bool
+    private var duration: Double
+    private var content: Content
+
+    init(
+        isPresented: Binding<Bool>,
+        duration: Double,
+        @ViewBuilder content: () -> Content
+    ) {
+        self._isPresented = isPresented
+        self.duration = duration
+        self.content = content()
+    }
 
     var body: some View {
         if isPresented {
@@ -44,7 +54,7 @@ struct ToastView<Content: View>: View {
 
 extension ToastView {
     private func toastContentView() -> some View {
-        content()
+        content
             .padding()
             .background(Color.blue900)
             .foregroundColor(Color.white)

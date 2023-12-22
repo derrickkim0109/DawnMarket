@@ -9,9 +9,16 @@ import SwiftUI
 import Kingfisher
 
 struct AppDisplayClassCellView: View {
-    @ObservedObject var viewModel: CategoryViewModel
+    @ObservedObject private var viewModel: CategoryViewModel
+    private let item: AppDisplayClassInfoFetchItemModel
 
-    let item: AppDisplayClassInfoFetchItemModel
+    init(
+        viewModel: CategoryViewModel,
+        item: AppDisplayClassInfoFetchItemModel
+    ) {
+        self.viewModel = viewModel
+        self.item = item
+    }
 
     var body: some View {
         NavigationLink {

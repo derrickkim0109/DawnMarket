@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct LaunchScreenView: View {
-    @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
-
     @State private var startAnimation = false
+    @ObservedObject private var launchScreenState: LaunchScreenStateManager
+
+    init(launchScreenState: LaunchScreenStateManager) {
+        self.launchScreenState = launchScreenState
+    }
 
     var body: some View {
         ZStack {
@@ -69,7 +72,6 @@ struct LaunchScreenView: View {
 
 struct LaunchScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchScreenView()
-            .environmentObject(LaunchScreenStateManager())
+        LaunchScreenView(launchScreenState: LaunchScreenStateManager())
     }
 }

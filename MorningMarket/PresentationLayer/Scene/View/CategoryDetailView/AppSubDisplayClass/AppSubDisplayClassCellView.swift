@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct AppSubDisplayClassCellView: View {
-    @ObservedObject var viewModel: CategoryDetailViewModel
-    let item: AppSubDisplayClassInfoFetchItemModel
-    
+    @ObservedObject private var viewModel: CategoryDetailViewModel
+    private let item: AppSubDisplayClassInfoFetchItemModel
+
+    init(
+        viewModel: CategoryDetailViewModel,
+        item: AppSubDisplayClassInfoFetchItemModel
+    ) {
+        self.viewModel = viewModel
+        self.item = item
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             Divider()

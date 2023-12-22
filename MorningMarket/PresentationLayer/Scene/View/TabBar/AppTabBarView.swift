@@ -9,8 +9,12 @@ import SwiftUI
 
 struct AppTabBarView: View {
     @State private var tabSelection: TabBarItemType = .category
-    var categoryDIContainer: CategoryDIContainerInterface
-    
+    private var categoryDIContainer: CategoryDIContainerInterface
+
+    init(categoryDIContainer: CategoryDIContainerInterface) {
+        self.categoryDIContainer = categoryDIContainer
+    }
+
     var body: some View {
         NavigationView {
             TabBarContainerView(selection: $tabSelection) {

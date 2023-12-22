@@ -22,9 +22,9 @@ struct RootView: App {
                 AppTabBarView(categoryDIContainer: categoryDIContainer)
 
                 if launchScreenState.state != .finished {
-                    LaunchScreenView()
+                    LaunchScreenView(launchScreenState: launchScreenState)
                 }
-            }.environmentObject(launchScreenState)
+            }
         }
     }
 }

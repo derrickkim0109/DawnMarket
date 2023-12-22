@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CategoryDetailView: View {
-    @StateObject var viewModel: CategoryDetailViewModel
-    @Environment(\.presentationMode) var presentationMode
+    @StateObject private var viewModel: CategoryDetailViewModel
+    @Environment(\.presentationMode) private var presentationMode
 
     init(viewModel: CategoryDetailViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)

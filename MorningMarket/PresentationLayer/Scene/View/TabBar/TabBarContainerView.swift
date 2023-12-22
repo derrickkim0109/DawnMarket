@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct TabBarContainerView<Content: View>: View {
-    let content: Content
-    @Binding var selection: TabBarItemType
-    @State var showToast: Bool = false
-
+    @State private var showToast: Bool = false
     @State private var allTabItemType: [TabBarItemType] = TabBarItemType.allCases
-    
+    @Binding private var selection: TabBarItemType
+    private let content: Content
+
     init(
         selection: Binding<TabBarItemType>,
         @ViewBuilder content: () -> Content

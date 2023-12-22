@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct AppGoodsListStickyHeaderView: View {
-    @ObservedObject var viewModel: CategoryDetailViewModel
+    @ObservedObject private var viewModel: CategoryDetailViewModel
+
+    init(viewModel: CategoryDetailViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {

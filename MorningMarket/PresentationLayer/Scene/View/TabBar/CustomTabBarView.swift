@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct CustomTabBarView: View {
-    @State var localSelection: TabBarItemType
-    @Binding var selection: TabBarItemType
-    @Binding var showToast: Bool
+    @State private var localSelection: TabBarItemType
+    @Binding private var selection: TabBarItemType
+    @Binding private var showToast: Bool
 
-    let allTabItemType: [TabBarItemType]
+    private let allTabItemType: [TabBarItemType]
+
+    init(
+        localSelection: TabBarItemType,
+        selection: Binding<TabBarItemType>,
+        showToast: Binding<Bool>,
+        allTabItemType: [TabBarItemType]
+    ) {
+        self._localSelection = State(initialValue: localSelection)
+        self._selection = selection
+        self._showToast = showToast
+        self.allTabItemType = allTabItemType
+    }
 
     var body: some View {
         HStack {

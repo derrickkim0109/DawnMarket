@@ -9,8 +9,16 @@ import SwiftUI
 import Kingfisher
 
 struct AppGoodsCellView: View {
-    @ObservedObject var viewModel: CategoryDetailViewModel
-    let item: AppGoodsInfoFetchItemModel
+    @ObservedObject private var viewModel: CategoryDetailViewModel
+    private let item: AppGoodsInfoFetchItemModel
+
+    init(
+        viewModel: CategoryDetailViewModel,
+        item: AppGoodsInfoFetchItemModel
+    ) {
+        self.viewModel = viewModel
+        self.item = item
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {

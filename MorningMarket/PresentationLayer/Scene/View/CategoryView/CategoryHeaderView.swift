@@ -9,7 +9,11 @@ import SwiftUI
 import Combine
 
 struct CategoryHeaderView: View {
-    @ObservedObject var viewModel: CategoryViewModel
+    @ObservedObject private var viewModel: CategoryViewModel
+
+    init(viewModel: CategoryViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         HStack {

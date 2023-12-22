@@ -9,9 +9,13 @@ import SwiftUI
 import Combine
 
 struct AppGoodsListView: View {
-    @ObservedObject var viewModel: CategoryDetailViewModel
+    @ObservedObject private var viewModel: CategoryDetailViewModel
     @State private var isLoading: Bool = false
     @State private var cancellable = Set<AnyCancellable>()
+
+    init(viewModel: CategoryDetailViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         LazyVGrid(columns: getGridItemSize(), spacing: 0, pinnedViews: [.sectionHeaders]) {

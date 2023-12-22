@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct AppSubDisplayClassListView: View {
-    @ObservedObject var viewModel: CategoryDetailViewModel
+    @ObservedObject private var viewModel: CategoryDetailViewModel
+
+    init(viewModel: CategoryDetailViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack(spacing: 0) {
