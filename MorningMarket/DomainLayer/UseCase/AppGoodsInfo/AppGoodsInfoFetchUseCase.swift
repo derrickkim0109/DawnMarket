@@ -22,7 +22,7 @@ final class AppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
     func fetch(
         requestValue: AppGoodsInfoFetchRequestValue
     ) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
-        return repository.fetch(
+        return repository.fetchAppGoodsInfo(
             displayClassSequence: requestValue.displayClassSequence,
             subDisplayClassSequence: requestValue.subDisplayClassSequence,
             page: requestValue.page,

@@ -15,8 +15,8 @@ final class AppInfoRepository: AppInfoRepositoryInterface {
         self.dataSource = dataSource
     }
 
-    func fetch() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError> {
-        return dataSource.fetch()
+    func fetchAppDisplayClassInfo() -> AnyPublisher<AppDisplayClassInfoFetchEntity, MoyaError> {
+        return dataSource.fetchAppDisplayClassInfo()
             .map { responseDTO in
                 let entity = responseDTO.toEntity()
                 return entity
@@ -24,8 +24,8 @@ final class AppInfoRepository: AppInfoRepositoryInterface {
             .eraseToAnyPublisher()
     }
 
-    func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError> {
-        return dataSource.fetch()
+    func fetchAppMainQuickMenu() -> AnyPublisher<AppMainQuickMenuFetchEntity, MoyaError> {
+        return dataSource.fetchAppMainQuickMenu()
             .map { responseDTO in
                 let entity = responseDTO.toEntity()
                 return entity
@@ -33,12 +33,12 @@ final class AppInfoRepository: AppInfoRepositoryInterface {
             .eraseToAnyPublisher()
     }
 
-    func fetch(displayClassSequence: Int64) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, MoyaError> {
+    func fetchAppDisplayBySubClass(displayClassSequence: Int64) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, MoyaError> {
         let requestDTO = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO(
             displayClassSequence: displayClassSequence
         )
 
-        return dataSource.fetch(requestDTO: requestDTO)
+        return dataSource.fetchAppDisplayBySubClass(requestDTO: requestDTO)
             .map { responseDTO in
                 let entity = responseDTO.toEntity()
                 return entity
@@ -46,7 +46,7 @@ final class AppInfoRepository: AppInfoRepositoryInterface {
             .eraseToAnyPublisher()
     }
 
-    func fetch(
+    func fetchAppGoodsInfo(
         displayClassSequence: Int64,
         subDisplayClassSequence: Int,
         page: Int,
@@ -64,7 +64,7 @@ final class AppInfoRepository: AppInfoRepositoryInterface {
             searchValue: searchValue
         )
 
-        return dataSource.fetch(requestDTO: requestDTO)
+        return dataSource.fetchAppGoodsInfo(requestDTO: requestDTO)
             .map { responseDTO in
                 let entity = responseDTO.toEntity()
                 return entity

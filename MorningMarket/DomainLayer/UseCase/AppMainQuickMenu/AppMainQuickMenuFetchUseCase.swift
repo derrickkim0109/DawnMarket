@@ -20,7 +20,7 @@ final class AppMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface 
     }
 
     func fetch() -> AnyPublisher<AppMainQuickMenuFetchEntity, AppMainQuickMenuFetchError> {
-        return repository.fetch()
+        return repository.fetchAppMainQuickMenu()
             .mapAppMainQuickMenuFetchError()
     }
 }

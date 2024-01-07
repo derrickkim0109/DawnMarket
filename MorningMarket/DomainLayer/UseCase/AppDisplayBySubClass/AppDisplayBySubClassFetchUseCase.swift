@@ -22,7 +22,7 @@ final class AppDisplayBySubClassFetchUseCase: AppDisplayBySubClassFetchUseCaseIn
     func fetch(
         by displayClassSequence: Int64
     ) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, AppDisplayBySubClassFetchError> {
-        return repository.fetch(displayClassSequence: displayClassSequence)
+        return repository.fetchAppDisplayBySubClass(displayClassSequence: displayClassSequence)
             .mapAppDisplayBySubClassFetchError()
     }
 }

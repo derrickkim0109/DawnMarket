@@ -11,10 +11,10 @@ import CombineMoya
 import Foundation
 
 protocol AppInfoDataSourceInterface {
-    func fetch() -> AnyPublisher<ListResultAppDisplayClassInfoResponseDTO, MoyaError>
-    func fetch() -> AnyPublisher<ListResultAppMainQuickMenuResponseDTO, MoyaError>
-    func fetch(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO) -> AnyPublisher<SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO, MoyaError>
-    func fetch(requestDTO: AppGoodsInfoFetchRequestDTO) -> AnyPublisher<PageResponseAppGoodsInfoResponseDTO, MoyaError>
+    func fetchAppDisplayClassInfo() -> AnyPublisher<ListResultAppDisplayClassInfoResponseDTO, MoyaError>
+    func fetchAppMainQuickMenu() -> AnyPublisher<ListResultAppMainQuickMenuResponseDTO, MoyaError>
+    func fetchAppDisplayBySubClass(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO) -> AnyPublisher<SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO, MoyaError>
+    func fetchAppGoodsInfo(requestDTO: AppGoodsInfoFetchRequestDTO) -> AnyPublisher<PageResponseAppGoodsInfoResponseDTO, MoyaError>
 }
 
 final class AppInfoDataSource: AppInfoDataSourceInterface {
@@ -24,21 +24,21 @@ final class AppInfoDataSource: AppInfoDataSourceInterface {
         self.provider = provider
     }
 
-    func fetch() -> AnyPublisher<ListResultAppDisplayClassInfoResponseDTO, MoyaError> {
+    func fetchAppDisplayClassInfo() -> AnyPublisher<ListResultAppDisplayClassInfoResponseDTO, MoyaError> {
         return provider.requestPublisher(.fetchAppDisplayClassInfo)
             .map(ListResultAppDisplayClassInfoResponseDTO.self)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 
-    func fetch() -> AnyPublisher<ListResultAppMainQuickMenuResponseDTO, MoyaError> {
+    func fetchAppMainQuickMenu() -> AnyPublisher<ListResultAppMainQuickMenuResponseDTO, MoyaError> {
         return provider.requestPublisher(.fetchAppMainQuickMenu)
             .map(ListResultAppMainQuickMenuResponseDTO.self)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 
-    func fetch(
+    func fetchAppDisplayBySubClass(
         requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO
     ) -> AnyPublisher<SingleResultAppDisplayClassInfoBySubDisplayClassInfoResponseDTO, MoyaError> {
         return provider.requestPublisher(.fetchAppDisplayBySubClass(requestDTO: requestDTO))
@@ -47,7 +47,7 @@ final class AppInfoDataSource: AppInfoDataSourceInterface {
             .eraseToAnyPublisher()
     }
 
-    func fetch(
+    func fetchAppGoodsInfo(
         requestDTO: AppGoodsInfoFetchRequestDTO
     ) -> AnyPublisher<PageResponseAppGoodsInfoResponseDTO, MoyaError> {
         return provider.requestPublisher(.fetchAppGoodsInfo(requestDTO: requestDTO))
