@@ -1,36 +1,55 @@
 //
-//  AppGoodsInfoAPIService.swift
+//  AppInfoAPIService.swift
 //  MorningMarket
 //
-//  Created by Derrick kim on 11/19/23.
+//  Created by Derrick kim on 11/18/23.
 //
 
 import Foundation
 import Moya
 
-enum AppGoodsInfoAPIService {
-    case fetch(requestDTO: AppGoodsInfoFetchRequestDTO)
+enum AppInfoAPIService {
+    case fetchAppDisplayClassInfo
+    case fetchAppMainQuickMenu
+    case fetchAppDisplayBySubClass(requestDTO: AppDisplayClassInfoBySubDisplayClassInfoRequestDTO)
+    case fetchAppGoodsInfo(requestDTO: AppGoodsInfoFetchRequestDTO)
 }
 
-extension AppGoodsInfoAPIService: BaseAPIService {
+extension AppInfoAPIService: BaseAPIService {
     var path: String {
         switch self {
-        case .fetch(let requestDTO):
-            let path = "app/disp-clas-infos/disp-clas/\(requestDTO.displayClassSequence)/sub-disp-clas/\(requestDTO.subDisplayClassSequence)/goods-infos"
-            return path
+        case .fetchAppDisplayClassInfo:
+            return "app/disp-clas-infos/disp-clas-nm"
+
+        case .fetchAppMainQuickMenu:
+            return "app/main-infos/quick-menu"
+
+        case .fetchAppDisplayBySubClass(let requestDTO):
+            return "app/disp-clas-infos/disp-clas/\(requestDTO.displayClassSequence)/sub-disp-clas-infos"
+
+        case .fetchAppGoodsInfo(let requestDTO):
+            return "app/disp-clas-infos/disp-clas/\(requestDTO.displayClassSequence)/sub-disp-clas/\(requestDTO.subDisplayClassSequence)/goods-infos"
         }
     }
 
     var method: Moya.Method {
         switch self {
-        case .fetch:
+        case .fetchAppDisplayClassInfo,
+             .fetchAppMainQuickMenu,
+             .fetchAppDisplayBySubClass,
+             .fetchAppGoodsInfo:
             return .get
         }
     }
 
     var task: Moya.Task {
         switch self {
-        case .fetch(let requestDTO):
+        case .fetchAppDisplayClassInfo,
+             .fetchAppMainQuickMenu,
+             .fetchAppDisplayBySubClass:
+            return .requestPlain
+
+        case .fetchAppGoodsInfo(let requestDTO):
             return .requestParameters(
                 parameters: [
                     "page": requestDTO.pageRequest.page,
@@ -43,7 +62,154 @@ extension AppGoodsInfoAPIService: BaseAPIService {
     }
 
     var sampleData: Data {
+        switch self {
+        case .fetchAppDisplayClassInfo:
+            return AppDisplaySampleData.appDisPLayClassInfo
+
+        case .fetchAppMainQuickMenu:
+            return AppDisplaySampleData.appMainQuickMenu
+
+        case .fetchAppDisplayBySubClass:
+            return AppDisplaySampleData.appDisplayBySubClass
+
+        case .fetchAppGoodsInfo:
+            return AppDisplaySampleData.appGoodsInfo
+        }
+    }
+}
+
+enum AppDisplaySampleData {
+    static let appDisPLayClassInfo = """
+        {
+          "data": [
+            {
+              "dispClasSeq": 51,
+              "dispClasNm": "농축수산물",
+              "dispClasImgPath": "disp-clas-info/51/8703f654-207e-425f-8543-8b63f56f5e41.jpg",
+              "dispClasCd": "DPDCH23097"
+            },
+            {
+              "dispClasSeq": 58,
+              "dispClasNm": "가공식품",
+              "dispClasImgPath": "disp-clas-info/58/8c798e31-55d9-4f10-8b96-7653cd9ec9dc.png",
+              "dispClasCd": "DPDCH23098"
+            },
+            {
+              "dispClasSeq": 63,
+              "dispClasNm": "주방/위생용품",
+              "dispClasImgPath": "disp-clas-info/63/94a6e4d8-5933-4fb9-8866-6f139c07fa71.png",
+              "dispClasCd": "DPDCH23099"
+            }
+          ],
+          "message": null
+        }
         """
+            .data(using: .utf8)!
+
+    static let appMainQuickMenu = """
+        {
+          "data": [
+            {
+              "quickMenuSeq": 9,
+              "quickMenuNm": "농산물",
+              "quickMenuImgPath": "quick-menu-info/9/6a9974c9-c322-4831-95a3-48e5e6d8f451.png",
+              "quickMenuConcScrenNm": "기획전",
+              "quickMenuConcScrenIden": "DPPL230910",
+              "quickMenuMovScrenPath": null
+            },
+            {
+              "quickMenuSeq": 6,
+              "quickMenuNm": "냉동상품",
+              "quickMenuImgPath": "quick-menu-info/6/754372bf-9bf6-4763-98d5-5d3291ca9548.png",
+              "quickMenuConcScrenNm": "기획전",
+              "quickMenuConcScrenIden": "DPPL230911",
+              "quickMenuMovScrenPath": null
+            },
+            {
+              "quickMenuSeq": 8,
+              "quickMenuNm": "베스트",
+              "quickMenuImgPath": "quick-menu-info/8/8ab2cf08-2083-4fa4-a7a2-dcf44c602d1f.png",
+              "quickMenuConcScrenNm": "베스트",
+              "quickMenuConcScrenIden": null,
+              "quickMenuMovScrenPath": null
+            },
+            {
+              "quickMenuSeq": 7,
+              "quickMenuNm": "한상차림",
+              "quickMenuImgPath": "quick-menu-info/7/5cb4ce8e-cb7c-415e-bf0b-75b5667a1074.png",
+              "quickMenuConcScrenNm": "기획전",
+              "quickMenuConcScrenIden": "DPPL23098",
+              "quickMenuMovScrenPath": null
+            },
+            {
+              "quickMenuSeq": 10,
+              "quickMenuNm": "이벤트/쿠폰",
+              "quickMenuImgPath": "quick-menu-info/10/37564376-bcd7-4374-a4e4-d38d990661d7.png",
+              "quickMenuConcScrenNm": "이벤트/쿠폰",
+              "quickMenuConcScrenIden": null,
+              "quickMenuMovScrenPath": null
+            }
+          ],
+          "message": null
+        }
+        """
+            .data(using: .utf8)!
+
+    static let appDisplayBySubClass = """
+        {
+            "data": {
+                "dispClasNm": "농축수산물",
+                "appSubDispClasInfoList": [
+                    {
+                        "dispClasSeq": 52,
+                        "subDispClasNm": "채소과일",
+                        "prntsDispClasSeq": 51,
+                        "dispClasCd": "DPDCM23091",
+                        "dispClasLvl": "중분류"
+                    },
+                    {
+                        "dispClasSeq": 53,
+                        "subDispClasNm": "냉동채소과일",
+                        "prntsDispClasSeq": 51,
+                        "dispClasCd": "DPDCM23092",
+                        "dispClasLvl": "중분류"
+                    },
+                    {
+                        "dispClasSeq": 54,
+                        "subDispClasNm": "축산/축산가공",
+                        "prntsDispClasSeq": 51,
+                        "dispClasCd": "DPDCM23093",
+                        "dispClasLvl": "중분류"
+                    },
+                    {
+                        "dispClasSeq": 55,
+                        "subDispClasNm": "수산/수산가공",
+                        "prntsDispClasSeq": 51,
+                        "dispClasCd": "DPDCM23094",
+                        "dispClasLvl": "중분류"
+                    },
+                    {
+                        "dispClasSeq": 56,
+                        "subDispClasNm": "란류/란가공",
+                        "prntsDispClasSeq": 51,
+                        "dispClasCd": "DPDCM23095",
+                        "dispClasLvl": "중분류"
+                    },
+                    {
+                        "dispClasSeq": 57,
+                        "subDispClasNm": "양곡/분말가루",
+                        "prntsDispClasSeq": 51,
+                        "dispClasCd": "DPDCM23096",
+                        "dispClasLvl": "중분류"
+                    }
+                ]
+            },
+            "message": null
+        }
+        """
+            .data(using: .utf8)!
+
+    static let appGoodsInfo = """
         {
           "data": [
             {
@@ -259,6 +425,4 @@ extension AppGoodsInfoAPIService: BaseAPIService {
         }
         """
             .data(using: .utf8)!
-    }
 }
-
