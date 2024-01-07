@@ -116,14 +116,10 @@
 		497603442B18131900203397 /* AppDisplayBySubClassModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603432B18131900203397 /* AppDisplayBySubClassModelTests.swift */; };
 		497603462B18132E00203397 /* AppDisplayClassInfoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603452B18132E00203397 /* AppDisplayClassInfoModelTests.swift */; };
 		497603482B18134000203397 /* AppMainQuickMenuModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497603472B18134000203397 /* AppMainQuickMenuModelTests.swift */; };
-		9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA42B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift */; };
-		9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA62B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift */; };
-		9060ECA92B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA82B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift */; };
-		9060ECAB2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECAA2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift */; };
-		9060ECAF2B1611EC000B3CF4 /* AppDisplayClassInfoFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECAE2B1611EC000B3CF4 /* AppDisplayClassInfoFetchRepositoryTests.swift */; };
-		9060ECB12B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */; };
-		9060ECB32B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */; };
-		9060ECB52B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */; };
+		901F43D62B4ACB0900D7CCFA /* MockAppInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F43D52B4ACB0900D7CCFA /* MockAppInfoDataSource.swift */; };
+		901F43D82B4ACB8700D7CCFA /* MockAppInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F43D72B4ACB8700D7CCFA /* MockAppInfoRepository.swift */; };
+		9060ECA72B1609AB000B3CF4 /* AppInfoDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECA62B1609AB000B3CF4 /* AppInfoDataSourceTests.swift */; };
+		9060ECAF2B1611EC000B3CF4 /* AppInfoRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060ECAE2B1611EC000B3CF4 /* AppInfoRepositoryTests.swift */; };
 		9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6312B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift */; };
 		9097F66D2B137BD90056FF15 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F66C2B137BD90056FF15 /* Scenario.swift */; };
 		9097F6732B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6722B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift */; };
@@ -143,14 +139,6 @@
 		9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6B42B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift */; };
 		9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6B62B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift */; };
 		9097F6B92B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6B82B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift */; };
-		9097F6BB2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6BA2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift */; };
-		9097F6BD2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6BC2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift */; };
-		9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6BE2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift */; };
-		9097F6C12B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C02B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift */; };
-		9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C22B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift */; };
-		9097F6C52B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C42B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift */; };
-		9097F6C72B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C62B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift */; };
-		9097F6C92B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6C82B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift */; };
 		9097F6CB2B14CFCC0056FF15 /* MockAppDisplayClassInfoFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6CA2B14CFCC0056FF15 /* MockAppDisplayClassInfoFetchUseCase.swift */; };
 		9097F6CD2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6CC2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift */; };
 		9097F6CF2B14D0560056FF15 /* MockAppDisplayBySubClassFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9097F6CE2B14D0560056FF15 /* MockAppDisplayBySubClassFetchUseCase.swift */; };
@@ -289,14 +277,10 @@
 		497603452B18132E00203397 /* AppDisplayClassInfoModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoModelTests.swift; sourceTree = "<group>"; };
 		497603472B18134000203397 /* AppMainQuickMenuModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuModelTests.swift; sourceTree = "<group>"; };
 		901C46F82B0774F200E7AF40 /* MorningMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorningMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9060ECA42B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchDataSourceTests.swift; sourceTree = "<group>"; };
-		9060ECA62B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDataSourceTests.swift; sourceTree = "<group>"; };
-		9060ECA82B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchDataSourceTests.swift; sourceTree = "<group>"; };
-		9060ECAA2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryDataSourceTests.swift; sourceTree = "<group>"; };
-		9060ECAE2B1611EC000B3CF4 /* AppDisplayClassInfoFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchRepositoryTests.swift; sourceTree = "<group>"; };
-		9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchRepositoryTests.swift; sourceTree = "<group>"; };
-		9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchRepositoryTests.swift; sourceTree = "<group>"; };
-		9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryTests.swift; sourceTree = "<group>"; };
+		901F43D52B4ACB0900D7CCFA /* MockAppInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppInfoDataSource.swift; sourceTree = "<group>"; };
+		901F43D72B4ACB8700D7CCFA /* MockAppInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppInfoRepository.swift; sourceTree = "<group>"; };
+		9060ECA62B1609AB000B3CF4 /* AppInfoDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoDataSourceTests.swift; sourceTree = "<group>"; };
+		9060ECAE2B1611EC000B3CF4 /* AppInfoRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoRepositoryTests.swift; sourceTree = "<group>"; };
 		9097F62F2B12FC590056FF15 /* MorningMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorningMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9097F6312B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDTOTests.swift; sourceTree = "<group>"; };
 		9097F66C2B137BD90056FF15 /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
@@ -317,14 +301,6 @@
 		9097F6B42B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuDTOTests.swift; sourceTree = "<group>"; };
 		9097F6B62B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassDTOTests.swift; sourceTree = "<group>"; };
 		9097F6B82B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoDTOTests.swift; sourceTree = "<group>"; };
-		9097F6BA2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayClassInfoDataSource.swift; sourceTree = "<group>"; };
-		9097F6BC2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppMainQuickMenuFetchDataSource.swift; sourceTree = "<group>"; };
-		9097F6BE2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayBySubClassFetchDataSource.swift; sourceTree = "<group>"; };
-		9097F6C02B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppGoodsInfoFetchRepositoryDataSource.swift; sourceTree = "<group>"; };
-		9097F6C22B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayClassInfoFetchRepository.swift; sourceTree = "<group>"; };
-		9097F6C42B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppMainQuickMenuFetchRepository.swift; sourceTree = "<group>"; };
-		9097F6C62B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayBySubClassFetchRepository.swift; sourceTree = "<group>"; };
-		9097F6C82B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppGoodsInfoFetchRepository.swift; sourceTree = "<group>"; };
 		9097F6CA2B14CFCC0056FF15 /* MockAppDisplayClassInfoFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayClassInfoFetchUseCase.swift; sourceTree = "<group>"; };
 		9097F6CC2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppMainQuickMenuFetchUseCase.swift; sourceTree = "<group>"; };
 		9097F6CE2B14D0560056FF15 /* MockAppDisplayBySubClassFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDisplayBySubClassFetchUseCase.swift; sourceTree = "<group>"; };
@@ -1103,10 +1079,7 @@
 		9097F68C2B1405750056FF15 /* RepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				9060ECAE2B1611EC000B3CF4 /* AppDisplayClassInfoFetchRepositoryTests.swift */,
-				9060ECB02B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift */,
-				9060ECB22B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift */,
-				9060ECB42B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift */,
+				9060ECAE2B1611EC000B3CF4 /* AppInfoRepositoryTests.swift */,
 			);
 			path = RepositoryTests;
 			sourceTree = "<group>";
@@ -1115,10 +1088,7 @@
 			isa = PBXGroup;
 			children = (
 				9097F6972B14BA1C0056FF15 /* NetworkServiceTests.swift */,
-				9060ECA62B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift */,
-				9060ECA42B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift */,
-				9060ECA82B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift */,
-				9060ECAA2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift */,
+				9060ECA62B1609AB000B3CF4 /* AppInfoDataSourceTests.swift */,
 			);
 			path = DataSourceTests;
 			sourceTree = "<group>";
@@ -1148,10 +1118,7 @@
 			isa = PBXGroup;
 			children = (
 				9097F6992B14BA500056FF15 /* TestAPIService.swift */,
-				9097F6BA2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift */,
-				9097F6BC2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift */,
-				9097F6BE2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift */,
-				9097F6C02B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift */,
+				901F43D52B4ACB0900D7CCFA /* MockAppInfoDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -1159,10 +1126,7 @@
 		9097F6932B140A830056FF15 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				9097F6C22B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift */,
-				9097F6C42B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift */,
-				9097F6C62B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift */,
-				9097F6C82B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift */,
+				901F43D72B4ACB8700D7CCFA /* MockAppInfoRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1399,33 +1363,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9060ECB52B161206000B3CF4 /* AppGoodsInfoFetchRepositoryTests.swift in Sources */,
-				9097F6C92B14CB350056FF15 /* MockAppGoodsInfoFetchRepository.swift in Sources */,
 				9097F6B52B14C0D20056FF15 /* AppMainQuickMenuDTOTests.swift in Sources */,
 				9097F6B72B14C2C90056FF15 /* AppDisplayBySubClassDTOTests.swift in Sources */,
+				901F43D62B4ACB0900D7CCFA /* MockAppInfoDataSource.swift in Sources */,
 				90FCF4F42B18DF2200BBA1AB /* CategoryViewModelTests.swift in Sources */,
 				497603422B18130900203397 /* AppGoodsInfoModelTests.swift in Sources */,
 				9097F6322B12FC590056FF15 /* AppDisplayClassInfoDTOTests.swift in Sources */,
-				9097F6BF2B14C85C0056FF15 /* MockAppDisplayBySubClassFetchDataSource.swift in Sources */,
-				9060ECA52B1609A2000B3CF4 /* AppMainQuickMenuFetchDataSourceTests.swift in Sources */,
-				9097F6C32B14CB0C0056FF15 /* MockAppDisplayClassInfoFetchRepository.swift in Sources */,
 				9097F6CD2B14D04A0056FF15 /* MockAppMainQuickMenuFetchUseCase.swift in Sources */,
 				90FCF4F62B18DF2B00BBA1AB /* CategoryDetailViewModelTests.swift in Sources */,
-				9060ECA72B1609AB000B3CF4 /* AppDisplayClassInfoDataSourceTests.swift in Sources */,
+				9060ECA72B1609AB000B3CF4 /* AppInfoDataSourceTests.swift in Sources */,
 				90FCF4F12B18A05000BBA1AB /* AppDisplayClassInfoFetchUseCaseTests.swift in Sources */,
 				9097F6792B137CAA0056FF15 /* AppDisplayBySubClassModelObjectMother.swift in Sources */,
 				9097F69A2B14BA500056FF15 /* TestAPIService.swift in Sources */,
-				9060ECA92B1609BE000B3CF4 /* AppDisplayBySubClassFetchDataSourceTests.swift in Sources */,
 				9097F6982B14BA1C0056FF15 /* NetworkServiceTests.swift in Sources */,
 				9097F6852B137D280056FF15 /* AppGoodsInfoModelObjectMother.swift in Sources */,
 				9097F6752B137C5E0056FF15 /* AppDisplayClassModelObjectMother.swift in Sources */,
 				9097F6CF2B14D0560056FF15 /* MockAppDisplayBySubClassFetchUseCase.swift in Sources */,
 				9097F6892B137D3A0056FF15 /* AppGoodsInfoDTOObjectMother.swift in Sources */,
-				9097F6C52B14CB170056FF15 /* MockAppMainQuickMenuFetchRepository.swift in Sources */,
-				9060ECB32B1611FF000B3CF4 /* AppDisplayBySubClassFetchRepositoryTests.swift in Sources */,
-				9097F6C72B14CB280056FF15 /* MockAppDisplayBySubClassFetchRepository.swift in Sources */,
 				9097F67F2B137CEE0056FF15 /* AppMainQuickMenuModelObjectMother.swift in Sources */,
-				9097F6C12B14C86C0056FF15 /* MockAppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
 				9097F67D2B137CBA0056FF15 /* AppDisplayBySubClassDTOObjectMother.swift in Sources */,
 				90FCF4F22B18A05000BBA1AB /* AppGoodsInfoFetchUseCaseTests.swift in Sources */,
 				9097F6732B137C500056FF15 /* AppDisplayClassEntityObjectMother.swift in Sources */,
@@ -1435,14 +1390,11 @@
 				9097F6772B137C760056FF15 /* AppDisplayClassDTOObjectMother.swift in Sources */,
 				90FCF4F02B18A05000BBA1AB /* AppDisplayBySubClassFetchUseCaseTests.swift in Sources */,
 				9097F67B2B137CB20056FF15 /* AppDisplayBySubClassEntityObjectMother.swift in Sources */,
-				9060ECB12B1611F7000B3CF4 /* AppMainQuickMenuFetchRepositoryTests.swift in Sources */,
-				9097F6BD2B14C84C0056FF15 /* MockAppMainQuickMenuFetchDataSource.swift in Sources */,
-				9060ECAB2B1609CC000B3CF4 /* AppGoodsInfoFetchRepositoryDataSourceTests.swift in Sources */,
 				9097F6CB2B14CFCC0056FF15 /* MockAppDisplayClassInfoFetchUseCase.swift in Sources */,
 				9097F6812B137D000056FF15 /* AppMainQuickMenuEntityObjectMother.swift in Sources */,
-				9060ECAF2B1611EC000B3CF4 /* AppDisplayClassInfoFetchRepositoryTests.swift in Sources */,
+				9060ECAF2B1611EC000B3CF4 /* AppInfoRepositoryTests.swift in Sources */,
 				497603442B18131900203397 /* AppDisplayBySubClassModelTests.swift in Sources */,
-				9097F6BB2B14C8390056FF15 /* MockAppDisplayClassInfoDataSource.swift in Sources */,
+				901F43D82B4ACB8700D7CCFA /* MockAppInfoRepository.swift in Sources */,
 				9097F6872B137D330056FF15 /* AppGoodsInfoEntityObjectMother.swift in Sources */,
 				9097F6B92B14C4A30056FF15 /* AppGoodsInfoDTOTests.swift in Sources */,
 				9097F66D2B137BD90056FF15 /* Scenario.swift in Sources */,
