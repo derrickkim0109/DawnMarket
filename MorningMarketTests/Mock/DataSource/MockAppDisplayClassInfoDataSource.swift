@@ -16,7 +16,7 @@ final class MockAppDisplayClassInfoDataSource: AppDisplayClassInfoDataSourceInte
     var appDisplayClassInfoResponseDTO = AppDisplayClassDTOObjectMother.getListResultAppDisplayClassInfoResponseDTOWithCompleteData()
     var networkError = MoyaError.statusCode(.init(statusCode: 500, data: Data()))
 
-    func fetchAppDisplayClassInfoList() -> AnyPublisher<ListResultAppDisplayClassInfoResponseDTO, MoyaError> {
+    func fetch() -> AnyPublisher<ListResultAppDisplayClassInfoResponseDTO, MoyaError> {
         switch scenario {
         case .success:
             return Just(appDisplayClassInfoResponseDTO)

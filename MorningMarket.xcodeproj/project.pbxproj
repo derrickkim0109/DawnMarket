@@ -27,10 +27,7 @@
 		491597F92B35022A0072E02C /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 491597492B35022A0072E02C /* SpoqaHanSansNeo-Regular.otf */; };
 		491597FA2B35022A0072E02C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915974A2B35022A0072E02C /* Color.swift */; };
 		491597FB2B35022A0072E02C /* MorningMarket-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4915974B2B35022A0072E02C /* MorningMarket-Info.plist */; };
-		491597FC2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915974E2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift */; };
-		491597FD2B35022A0072E02C /* AppDisplayClassInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915974F2B35022A0072E02C /* AppDisplayClassInfoRepositoryInterface.swift */; };
-		491597FE2B35022A0072E02C /* AppGoodsInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597502B35022A0072E02C /* AppGoodsInfoRepositoryInterface.swift */; };
-		491597FF2B35022A0072E02C /* AppDisplayBySubClassRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597512B35022A0072E02C /* AppDisplayBySubClassRepositoryInterface.swift */; };
+		491597FD2B35022A0072E02C /* AppInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915974F2B35022A0072E02C /* AppInfoRepositoryInterface.swift */; };
 		491598002B35022A0072E02C /* AppMainQuickMenuFetchItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597542B35022A0072E02C /* AppMainQuickMenuFetchItemEntity.swift */; };
 		491598012B35022A0072E02C /* AppMainQuickMenuFetchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597552B35022A0072E02C /* AppMainQuickMenuFetchEntity.swift */; };
 		491598022B35022A0072E02C /* AppDisplayClassInfoFetchItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597572B35022A0072E02C /* AppDisplayClassInfoFetchItemEntity.swift */; };
@@ -70,19 +67,10 @@
 		491598242B35022A0072E02C /* PageResponseAppGoodsInfoResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597902B35022A0072E02C /* PageResponseAppGoodsInfoResponseDTO.swift */; };
 		491598252B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597922B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift */; };
 		491598262B35022A0072E02C /* AppGoodsInfoFetchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597932B35022A0072E02C /* AppGoodsInfoFetchRequestDTO.swift */; };
-		491598272B35022A0072E02C /* AppDisplayBySubClassFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597972B35022A0072E02C /* AppDisplayBySubClassFetchDataSource.swift */; };
-		491598282B35022A0072E02C /* AppDisplayBySubClassAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597982B35022A0072E02C /* AppDisplayBySubClassAPIService.swift */; };
-		491598292B35022A0072E02C /* AppMainQuickMenuFetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915979A2B35022A0072E02C /* AppMainQuickMenuFetchDataSource.swift */; };
-		4915982A2B35022A0072E02C /* AppMainQuickMenuAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915979B2B35022A0072E02C /* AppMainQuickMenuAPIService.swift */; };
 		4915982B2B35022A0072E02C /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915979D2B35022A0072E02C /* BaseAPIService.swift */; };
-		4915982C2B35022A0072E02C /* AppGoodsInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915979F2B35022A0072E02C /* AppGoodsInfoAPIService.swift */; };
-		4915982D2B35022A0072E02C /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A02B35022A0072E02C /* AppGoodsInfoFetchRepositoryDataSource.swift */; };
-		4915982E2B35022A0072E02C /* AppDisplayClassInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A22B35022A0072E02C /* AppDisplayClassInfoDataSource.swift */; };
-		4915982F2B35022A0072E02C /* AppDisplayClassInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A32B35022A0072E02C /* AppDisplayClassInfoAPIService.swift */; };
-		491598302B35022A0072E02C /* AppMainQuickMenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A52B35022A0072E02C /* AppMainQuickMenuRepository.swift */; };
-		491598312B35022A0072E02C /* AppDisplayClassInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A62B35022A0072E02C /* AppDisplayClassInfoRepository.swift */; };
-		491598322B35022A0072E02C /* AppDisplayBySubClassRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A72B35022A0072E02C /* AppDisplayBySubClassRepository.swift */; };
-		491598332B35022A0072E02C /* AppGoodsInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A82B35022A0072E02C /* AppGoodsInfoRepository.swift */; };
+		4915982E2B35022A0072E02C /* AppInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A22B35022A0072E02C /* AppInfoDataSource.swift */; };
+		4915982F2B35022A0072E02C /* AppInfoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A32B35022A0072E02C /* AppInfoAPIService.swift */; };
+		491598312B35022A0072E02C /* AppInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597A62B35022A0072E02C /* AppInfoRepository.swift */; };
 		491598342B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597AC2B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift */; };
 		491598352B35022A0072E02C /* AppDisplayClassInfoFetchModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597AD2B35022A0072E02C /* AppDisplayClassInfoFetchModelMapper.swift */; };
 		491598362B35022A0072E02C /* AppMainQuickMenuFetchModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491597AE2B35022A0072E02C /* AppMainQuickMenuFetchModelMapper.swift */; };
@@ -211,10 +199,7 @@
 		491597492B35022A0072E02C /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
 		4915974A2B35022A0072E02C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4915974B2B35022A0072E02C /* MorningMarket-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MorningMarket-Info.plist"; sourceTree = "<group>"; };
-		4915974E2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuRepositoryInterface.swift; sourceTree = "<group>"; };
-		4915974F2B35022A0072E02C /* AppDisplayClassInfoRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoRepositoryInterface.swift; sourceTree = "<group>"; };
-		491597502B35022A0072E02C /* AppGoodsInfoRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoRepositoryInterface.swift; sourceTree = "<group>"; };
-		491597512B35022A0072E02C /* AppDisplayBySubClassRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassRepositoryInterface.swift; sourceTree = "<group>"; };
+		4915974F2B35022A0072E02C /* AppInfoRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoRepositoryInterface.swift; sourceTree = "<group>"; };
 		491597542B35022A0072E02C /* AppMainQuickMenuFetchItemEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchItemEntity.swift; sourceTree = "<group>"; };
 		491597552B35022A0072E02C /* AppMainQuickMenuFetchEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchEntity.swift; sourceTree = "<group>"; };
 		491597572B35022A0072E02C /* AppDisplayClassInfoFetchItemEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchItemEntity.swift; sourceTree = "<group>"; };
@@ -254,19 +239,10 @@
 		491597902B35022A0072E02C /* PageResponseAppGoodsInfoResponseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageResponseAppGoodsInfoResponseDTO.swift; sourceTree = "<group>"; };
 		491597922B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift; sourceTree = "<group>"; };
 		491597932B35022A0072E02C /* AppGoodsInfoFetchRequestDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRequestDTO.swift; sourceTree = "<group>"; };
-		491597972B35022A0072E02C /* AppDisplayBySubClassFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassFetchDataSource.swift; sourceTree = "<group>"; };
-		491597982B35022A0072E02C /* AppDisplayBySubClassAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassAPIService.swift; sourceTree = "<group>"; };
-		4915979A2B35022A0072E02C /* AppMainQuickMenuFetchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchDataSource.swift; sourceTree = "<group>"; };
-		4915979B2B35022A0072E02C /* AppMainQuickMenuAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuAPIService.swift; sourceTree = "<group>"; };
 		4915979D2B35022A0072E02C /* BaseAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
-		4915979F2B35022A0072E02C /* AppGoodsInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoAPIService.swift; sourceTree = "<group>"; };
-		491597A02B35022A0072E02C /* AppGoodsInfoFetchRepositoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoFetchRepositoryDataSource.swift; sourceTree = "<group>"; };
-		491597A22B35022A0072E02C /* AppDisplayClassInfoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoDataSource.swift; sourceTree = "<group>"; };
-		491597A32B35022A0072E02C /* AppDisplayClassInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoAPIService.swift; sourceTree = "<group>"; };
-		491597A52B35022A0072E02C /* AppMainQuickMenuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuRepository.swift; sourceTree = "<group>"; };
-		491597A62B35022A0072E02C /* AppDisplayClassInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoRepository.swift; sourceTree = "<group>"; };
-		491597A72B35022A0072E02C /* AppDisplayBySubClassRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayBySubClassRepository.swift; sourceTree = "<group>"; };
-		491597A82B35022A0072E02C /* AppGoodsInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoodsInfoRepository.swift; sourceTree = "<group>"; };
+		491597A22B35022A0072E02C /* AppInfoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoDataSource.swift; sourceTree = "<group>"; };
+		491597A32B35022A0072E02C /* AppInfoAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoAPIService.swift; sourceTree = "<group>"; };
+		491597A62B35022A0072E02C /* AppInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoRepository.swift; sourceTree = "<group>"; };
 		491597AC2B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift; sourceTree = "<group>"; };
 		491597AD2B35022A0072E02C /* AppDisplayClassInfoFetchModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayClassInfoFetchModelMapper.swift; sourceTree = "<group>"; };
 		491597AE2B35022A0072E02C /* AppMainQuickMenuFetchModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainQuickMenuFetchModelMapper.swift; sourceTree = "<group>"; };
@@ -477,10 +453,7 @@
 		4915974D2B35022A0072E02C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				4915974F2B35022A0072E02C /* AppDisplayClassInfoRepositoryInterface.swift */,
-				4915974E2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift */,
-				491597502B35022A0072E02C /* AppGoodsInfoRepositoryInterface.swift */,
-				491597512B35022A0072E02C /* AppDisplayBySubClassRepositoryInterface.swift */,
+				4915974F2B35022A0072E02C /* AppInfoRepositoryInterface.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -557,8 +530,8 @@
 		491597652B35022A0072E02C /* AppMainQuickMenu */ = {
 			isa = PBXGroup;
 			children = (
-				491597662B35022A0072E02C /* AppMainQuickMenuFetchError.swift */,
 				491597672B35022A0072E02C /* AppMainQuickMenuFetchUseCase.swift */,
+				491597662B35022A0072E02C /* AppMainQuickMenuFetchError.swift */,
 			);
 			path = AppMainQuickMenu;
 			sourceTree = "<group>";
@@ -566,8 +539,8 @@
 		491597682B35022A0072E02C /* AppGoodsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				491597692B35022A0072E02C /* AppGoodsInfoFetchError.swift */,
 				4915976A2B35022A0072E02C /* AppGoodsInfoFetchUseCase.swift */,
+				491597692B35022A0072E02C /* AppGoodsInfoFetchError.swift */,
 			);
 			path = AppGoodsInfo;
 			sourceTree = "<group>";
@@ -575,8 +548,8 @@
 		4915976B2B35022A0072E02C /* AppDisplayClassInfo */ = {
 			isa = PBXGroup;
 			children = (
-				4915976C2B35022A0072E02C /* AppDisplayClassInfoFetchError.swift */,
 				4915976D2B35022A0072E02C /* AppDisplayClassInfoFetchUseCase.swift */,
+				4915976C2B35022A0072E02C /* AppDisplayClassInfoFetchError.swift */,
 			);
 			path = AppDisplayClassInfo;
 			sourceTree = "<group>";
@@ -748,31 +721,11 @@
 		491597952B35022A0072E02C /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				491597A12B35022A0072E02C /* AppDisplayClassInfo */,
-				491597992B35022A0072E02C /* AppMainQuickMenu */,
-				491597962B35022A0072E02C /* AppDisplayBySubClass */,
-				4915979E2B35022A0072E02C /* AppGoodsInfo */,
+				491597A22B35022A0072E02C /* AppInfoDataSource.swift */,
+				491597A32B35022A0072E02C /* AppInfoAPIService.swift */,
 				4915979C2B35022A0072E02C /* API */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		491597962B35022A0072E02C /* AppDisplayBySubClass */ = {
-			isa = PBXGroup;
-			children = (
-				491597972B35022A0072E02C /* AppDisplayBySubClassFetchDataSource.swift */,
-				491597982B35022A0072E02C /* AppDisplayBySubClassAPIService.swift */,
-			);
-			path = AppDisplayBySubClass;
-			sourceTree = "<group>";
-		};
-		491597992B35022A0072E02C /* AppMainQuickMenu */ = {
-			isa = PBXGroup;
-			children = (
-				4915979A2B35022A0072E02C /* AppMainQuickMenuFetchDataSource.swift */,
-				4915979B2B35022A0072E02C /* AppMainQuickMenuAPIService.swift */,
-			);
-			path = AppMainQuickMenu;
 			sourceTree = "<group>";
 		};
 		4915979C2B35022A0072E02C /* API */ = {
@@ -783,31 +736,10 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		4915979E2B35022A0072E02C /* AppGoodsInfo */ = {
-			isa = PBXGroup;
-			children = (
-				4915979F2B35022A0072E02C /* AppGoodsInfoAPIService.swift */,
-				491597A02B35022A0072E02C /* AppGoodsInfoFetchRepositoryDataSource.swift */,
-			);
-			path = AppGoodsInfo;
-			sourceTree = "<group>";
-		};
-		491597A12B35022A0072E02C /* AppDisplayClassInfo */ = {
-			isa = PBXGroup;
-			children = (
-				491597A22B35022A0072E02C /* AppDisplayClassInfoDataSource.swift */,
-				491597A32B35022A0072E02C /* AppDisplayClassInfoAPIService.swift */,
-			);
-			path = AppDisplayClassInfo;
-			sourceTree = "<group>";
-		};
 		491597A42B35022A0072E02C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				491597A62B35022A0072E02C /* AppDisplayClassInfoRepository.swift */,
-				491597A52B35022A0072E02C /* AppMainQuickMenuRepository.swift */,
-				491597A72B35022A0072E02C /* AppDisplayBySubClassRepository.swift */,
-				491597A82B35022A0072E02C /* AppGoodsInfoRepository.swift */,
+				491597A62B35022A0072E02C /* AppInfoRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1374,29 +1306,23 @@
 			files = (
 				491598252B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassInfoRequestDTO.swift in Sources */,
 				491598122B35022A0072E02C /* View.swift in Sources */,
-				4915982A2B35022A0072E02C /* AppMainQuickMenuAPIService.swift in Sources */,
-				491598272B35022A0072E02C /* AppDisplayBySubClassFetchDataSource.swift in Sources */,
 				4915983D2B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassFetchModel.swift in Sources */,
 				491598052B35022A0072E02C /* AppSubDisplayClassInfoFetchItemEntity.swift in Sources */,
 				491598452B35022A0072E02C /* CategoryDetailViewModel.swift in Sources */,
 				491598072B35022A0072E02C /* AppGoodsInfoFetchItemEntity.swift in Sources */,
-				491598332B35022A0072E02C /* AppGoodsInfoRepository.swift in Sources */,
-				491598302B35022A0072E02C /* AppMainQuickMenuRepository.swift in Sources */,
 				491598552B35022A0072E02C /* AppMainQuickMenuCellView.swift in Sources */,
 				491598202B35022A0072E02C /* ListResultAppDisplayClassInfoResponseDTO.swift in Sources */,
-				4915982C2B35022A0072E02C /* AppGoodsInfoAPIService.swift in Sources */,
 				491598402B35022A0072E02C /* AppGoodsInfoFetchModel.swift in Sources */,
 				491598192B35022A0072E02C /* CategoryDIContainerInterface.swift in Sources */,
 				491598212B35022A0072E02C /* AppDisplayClassInfoResponseDTO.swift in Sources */,
 				491598012B35022A0072E02C /* AppMainQuickMenuFetchEntity.swift in Sources */,
-				4915982F2B35022A0072E02C /* AppDisplayClassInfoAPIService.swift in Sources */,
-				4915982D2B35022A0072E02C /* AppGoodsInfoFetchRepositoryDataSource.swift in Sources */,
+				4915982F2B35022A0072E02C /* AppInfoAPIService.swift in Sources */,
 				491598542B35022A0072E02C /* CategoryView.swift in Sources */,
 				491598152B35022A0072E02C /* TabBarItemPreferenceKey.swift in Sources */,
 				491598432B35022A0072E02C /* AppDisplayClassInfoFetchModel.swift in Sources */,
 				491598102B35022A0072E02C /* AppDisplayClassInfoFetchError.swift in Sources */,
 				4915984D2B35022A0072E02C /* CustomTabBarView.swift in Sources */,
-				491597FD2B35022A0072E02C /* AppDisplayClassInfoRepositoryInterface.swift in Sources */,
+				491597FD2B35022A0072E02C /* AppInfoRepositoryInterface.swift in Sources */,
 				491598462B35022A0072E02C /* CategoryViewModel.swift in Sources */,
 				4915983A2B35022A0072E02C /* TabBarItemType.swift in Sources */,
 				4915981A2B35022A0072E02C /* CategoryDIContainer.swift in Sources */,
@@ -1407,7 +1333,6 @@
 				4915984B2B35022A0072E02C /* AppSubDisplayClassListView.swift in Sources */,
 				4915983C2B35022A0072E02C /* AppSubDisplayClassInfoFetchItemModel.swift in Sources */,
 				491598182B35022A0072E02C /* RootView.swift in Sources */,
-				491597FF2B35022A0072E02C /* AppDisplayBySubClassRepositoryInterface.swift in Sources */,
 				491598032B35022A0072E02C /* AppDisplayClassInfoFetchEntity.swift in Sources */,
 				491598522B35022A0072E02C /* LaunchScreenView.swift in Sources */,
 				4915983F2B35022A0072E02C /* SearchValueType.swift in Sources */,
@@ -1429,10 +1354,8 @@
 				4915980E2B35022A0072E02C /* AppGoodsInfoFetchError.swift in Sources */,
 				4915981D2B35022A0072E02C /* AppSubDisplayClassInfoResponseDTO.swift in Sources */,
 				491598422B35022A0072E02C /* PaginationModel.swift in Sources */,
-				4915982E2B35022A0072E02C /* AppDisplayClassInfoDataSource.swift in Sources */,
-				491598282B35022A0072E02C /* AppDisplayBySubClassAPIService.swift in Sources */,
+				4915982E2B35022A0072E02C /* AppInfoDataSource.swift in Sources */,
 				4915980C2B35022A0072E02C /* AppMainQuickMenuFetchError.swift in Sources */,
-				491597FC2B35022A0072E02C /* AppMainQuickMenuRepositoryInterface.swift in Sources */,
 				491598582B35022A0072E02C /* AppDisplayClassListView.swift in Sources */,
 				491598062B35022A0072E02C /* AppSubDisplayClassInfoFetchEntity.swift in Sources */,
 				4915985A2B35022A0072E02C /* CategoryRouter.swift in Sources */,
@@ -1440,22 +1363,19 @@
 				491597EA2B35022A0072E02C /* Image.swift in Sources */,
 				491598092B35022A0072E02C /* AppGoodsInfoFetchEntity.swift in Sources */,
 				491598022B35022A0072E02C /* AppDisplayClassInfoFetchItemEntity.swift in Sources */,
-				491598292B35022A0072E02C /* AppMainQuickMenuFetchDataSource.swift in Sources */,
 				4915981F2B35022A0072E02C /* AppMainQuickMenuResponseDTO.swift in Sources */,
-				491598322B35022A0072E02C /* AppDisplayBySubClassRepository.swift in Sources */,
 				4915984C2B35022A0072E02C /* AppSubDisplayClassCellView.swift in Sources */,
 				4915984E2B35022A0072E02C /* AppTabBarView.swift in Sources */,
 				491598562B35022A0072E02C /* AppMainQuickMenuListView.swift in Sources */,
 				491598572B35022A0072E02C /* CategoryHeaderView.swift in Sources */,
 				491598342B35022A0072E02C /* AppDisplayClassInfoBySubDisplayClassFetchModelMapper.swift in Sources */,
 				491598492B35022A0072E02C /* AppGoodsCellView.swift in Sources */,
-				491597FE2B35022A0072E02C /* AppGoodsInfoRepositoryInterface.swift in Sources */,
 				4915985C2B35022A0072E02C /* NavigationCoordinator.swift in Sources */,
 				4915980D2B35022A0072E02C /* AppMainQuickMenuFetchUseCase.swift in Sources */,
 				491598002B35022A0072E02C /* AppMainQuickMenuFetchItemEntity.swift in Sources */,
 				491598442B35022A0072E02C /* AppDisplayClassInfoFetchItemModel.swift in Sources */,
 				491598502B35022A0072E02C /* LaunchScreenStateManager.swift in Sources */,
-				491598312B35022A0072E02C /* AppDisplayClassInfoRepository.swift in Sources */,
+				491598312B35022A0072E02C /* AppInfoRepository.swift in Sources */,
 				491598592B35022A0072E02C /* AppDisplayClassCellView.swift in Sources */,
 				491598412B35022A0072E02C /* AppGoodsInfoFetchRequestValue.swift in Sources */,
 				4915983B2B35022A0072E02C /* AppSubDisplayClassInfoFetchModel.swift in Sources */,

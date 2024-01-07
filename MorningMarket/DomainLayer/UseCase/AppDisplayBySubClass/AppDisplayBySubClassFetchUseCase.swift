@@ -13,13 +13,15 @@ protocol AppDisplayBySubClassFetchUseCaseInterface {
 }
 
 final class AppDisplayBySubClassFetchUseCase: AppDisplayBySubClassFetchUseCaseInterface {
-    private let repository: AppDisplayBySubClassRepositoryInterface
+    private let repository: AppInfoRepositoryInterface
 
-    init(repository: AppDisplayBySubClassRepositoryInterface) {
+    init(repository: AppInfoRepositoryInterface) {
         self.repository = repository
     }
 
-    func fetch(by displayClassSequence: Int64) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, AppDisplayBySubClassFetchError> {
+    func fetch(
+        by displayClassSequence: Int64
+    ) -> AnyPublisher<AppDisplayClassInfoBySubDisplayClassFetchEntity, AppDisplayBySubClassFetchError> {
         return repository.fetch(displayClassSequence: displayClassSequence)
             .mapAppDisplayBySubClassFetchError()
     }

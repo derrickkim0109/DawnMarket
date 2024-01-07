@@ -13,9 +13,9 @@ protocol AppDisplayClassInfoFetchUseCaseInterface {
 }
 
 final class AppDisplayClassInfoFetchUseCase: AppDisplayClassInfoFetchUseCaseInterface {
-    private let repository: AppDisplayClassInfoRepositoryInterface
+    private let repository: AppInfoRepositoryInterface
 
-    init(repository: AppDisplayClassInfoRepositoryInterface) {
+    init(repository: AppInfoRepositoryInterface) {
         self.repository = repository
     }
 

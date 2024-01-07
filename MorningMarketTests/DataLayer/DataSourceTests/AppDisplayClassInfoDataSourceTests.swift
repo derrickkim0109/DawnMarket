@@ -31,7 +31,7 @@ final class AppDisplayClassInfoDataSourceTests: XCTestCase {
         let expectation = XCTestExpectation(description: "카테고리 대분류 조회 성공")
 
         // when
-        datasource.fetchAppDisplayClassInfoList()
+        datasource.fetch()
             .sink { completion in
                 switch completion {
                 case let .failure(error):
@@ -55,7 +55,7 @@ final class AppDisplayClassInfoDataSourceTests: XCTestCase {
         datasource.scenario = .failure
 
         // when
-        datasource.fetchAppDisplayClassInfoList()
+        datasource.fetch()
             .sink { completion in
                 switch completion {
                 case .failure:

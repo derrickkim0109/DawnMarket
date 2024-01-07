@@ -13,13 +13,15 @@ protocol AppGoodsInfoFetchUseCaseInterface {
 }
 
 final class AppGoodsInfoFetchUseCase: AppGoodsInfoFetchUseCaseInterface {
-    private let repository: AppGoodsInfoRepositoryInterface
+    private let repository: AppInfoRepositoryInterface
 
-    init(repository: AppGoodsInfoRepositoryInterface) {
+    init(repository: AppInfoRepositoryInterface) {
         self.repository = repository
     }
 
-    func fetch(requestValue: AppGoodsInfoFetchRequestValue) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
+    func fetch(
+        requestValue: AppGoodsInfoFetchRequestValue
+    ) -> AnyPublisher<AppGoodsInfoFetchEntity, AppGoodsInfoFetchError> {
         return repository.fetch(
             displayClassSequence: requestValue.displayClassSequence,
             subDisplayClassSequence: requestValue.subDisplayClassSequence,

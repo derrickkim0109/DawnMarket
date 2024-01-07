@@ -13,9 +13,9 @@ protocol AppMainQuickMenuFetchUseCaseInterface {
 }
 
 final class AppMainQuickMenuFetchUseCase: AppMainQuickMenuFetchUseCaseInterface {
-    private let repository: AppMainQuickMenuRepositoryInterface
+    private let repository: AppInfoRepositoryInterface
 
-    init(repository: AppMainQuickMenuRepositoryInterface) {
+    init(repository: AppInfoRepositoryInterface) {
         self.repository = repository
     }
 

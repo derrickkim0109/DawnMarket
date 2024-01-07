@@ -43,11 +43,7 @@ final class CategoryDIContainer: CategoryDIContainerInterface {
 extension CategoryDIContainer {
     // MARK: categoryViewDependencies
     private func appDisplayClassFetchDependencies() -> AppDisplayClassInfoFetchUseCaseInterface {
-        let networkProvider = MoyaProvider<AppDisplayClassInfoAPIService>()
-        let dataSource: AppDisplayClassInfoDataSourceInterface = AppDisplayClassInfoDataSource(
-            provider: networkProvider
-        )
-        let repository: AppDisplayClassInfoRepositoryInterface = AppDisplayClassInfoRepository(dataSource: dataSource)
+        let repository: AppInfoRepositoryInterface = appInfoRepositoryDependencies()
         let useCase: AppDisplayClassInfoFetchUseCaseInterface = AppDisplayClassInfoFetchUseCase(
             repository: repository
         )
@@ -55,11 +51,7 @@ extension CategoryDIContainer {
     }
 
     private func appMainQuickMenuFetchDependencies() -> AppMainQuickMenuFetchUseCaseInterface {
-        let networkProvider = MoyaProvider<AppMainQuickMenuAPIService>()
-        let dataSource: AppMainQuickMenuFetchDataSourceInterface = AppMainQuickMenuFetchDataSource(
-            provider: networkProvider
-        )
-        let repository: AppMainQuickMenuRepositoryInterface = AppMainQuickMenuRepository(dataSource: dataSource)
+        let repository: AppInfoRepositoryInterface = appInfoRepositoryDependencies()
         let useCase: AppMainQuickMenuFetchUseCaseInterface = AppMainQuickMenuFetchUseCase(
             repository: repository
         )
@@ -68,11 +60,7 @@ extension CategoryDIContainer {
 
     // MARK: categoryDetailViewDependencies
     private func appDisplayBySubClassFetchDependencies() -> AppDisplayBySubClassFetchUseCaseInterface {
-        let networkProvider = MoyaProvider<AppDisplayBySubClassAPIService>()
-        let dataSource: AppDisplayBySubClassFetchDataSourceInterface = AppDisplayBySubClassFetchDataSource(
-            provider: networkProvider
-        )
-        let repository: AppDisplayBySubClassRepositoryInterface = AppDisplayBySubClassRepository(dataSource: dataSource)
+        let repository: AppInfoRepositoryInterface = appInfoRepositoryDependencies()
         let useCase: AppDisplayBySubClassFetchUseCaseInterface = AppDisplayBySubClassFetchUseCase(
             repository: repository
         )
@@ -80,15 +68,20 @@ extension CategoryDIContainer {
     }
 
     private func appGoodsInfoFetchDependencies() -> AppGoodsInfoFetchUseCaseInterface {
-        let networkProvider = MoyaProvider<AppGoodsInfoAPIService>()
-        let dataSource: AppGoodsInfoFetchRepositoryDataSourceInterface = AppGoodsInfoFetchRepositoryDataSource(
-            provider: networkProvider
-        )
-        let repository: AppGoodsInfoRepositoryInterface = AppGoodsInfoRepository(
-            dataSource: dataSource)
+        let repository: AppInfoRepositoryInterface = appInfoRepositoryDependencies()
         let useCase: AppGoodsInfoFetchUseCaseInterface = AppGoodsInfoFetchUseCase(
             repository: repository
         )
         return useCase
+    }
+
+    private func appInfoRepositoryDependencies() -> AppInfoRepositoryInterface {
+        let networkProvider = MoyaProvider<AppInfoAPIService>()
+        let dataSource: AppInfoDataSourceInterface = AppInfoDataSource(
+            provider: networkProvider
+        )
+        let repository: AppInfoRepositoryInterface = AppInfoRepository(dataSource: dataSource)
+
+        return repository
     }
 }
